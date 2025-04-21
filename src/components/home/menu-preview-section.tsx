@@ -4,24 +4,33 @@ import { Link } from "react-router-dom";
 
 const seasonalMenuItems = [
   {
-    name: "Seared Scallops",
-    description: "Hokkaido scallops, carrot purée, crispy leeks, brown butter",
-    category: "Appetizer"
+    name: "Roasted Beet & Arugula Salad",
+    description: "Roasted heirloom beets, wild arugula, whipped goat cheese mousse, candied walnuts, sherry vinaigrette",
+    category: "Salad"
   },
   {
     name: "Mushroom Tartine",
-    description: "Wild mushrooms, housemade sourdough, herb ricotta, truffle honey",
+    description: "Wild mushrooms, house-made sourdough, herb ricotta, hot honey",
     category: "Appetizer"
-  },
-  {
-    name: "Dry-Aged Duck Breast",
-    description: "Cherry gastrique, celeriac, charred radicchio, duck jus",
+  }, {
+    name: "Spring Egg Noodles",
+    description: "House-made egg noodles, sugar snap peas, spring onions, shiitake mushrooms, ginger-scallion oil, sesame, and yuzu soy glaze",
     category: "Main"
   },
   {
-    name: "Ora King Salmon",
-    description: "Spring pea purée, morels, preserved lemon, sorrel",
+    name: "Roasted Chicken Supreme",
+    description: "Confit garlic jus, cauliflower purée, charred fennel, cherry tomato glaze",
     category: "Main"
+  },
+  {
+    name: "Market Fish",
+    description: "Spring pea purée, roasted mushrooms, preserved lemon",
+    category: "Main"
+  },
+  {
+    name: "Strawberry and Cream Bambolone",
+    description: "Fluffy Italian doughnut filled with strawberry compote and vanilla bean pastry cream",
+    category: "Dessert"
   }
 ];
 
@@ -32,6 +41,7 @@ export function MenuPreviewSection() {
         <div className="text-center mb-16">
           <span className="text-sm text-umami-cream font-montserrat tracking-widest uppercase mb-3 inline-block">Taste</span>
           <h2 className="text-3xl md:text-4xl font-playfair mb-3">Current Seasonal Menu</h2>
+          <h3 className="text-2xl md:text-3xl text-umami-gold font-playfair mb-3">Spring April 1st - June 20th</h3>
           <p className="text-umami-light/80 max-w-2xl mx-auto font-montserrat">
             Our menu changes with the seasons, highlighting the finest ingredients at their peak. Here's a glimpse of our current offerings.
           </p>

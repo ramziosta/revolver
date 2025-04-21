@@ -12,12 +12,13 @@ export function ReservationSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-sm text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Reservations</span>
-            <h2 className="text-3xl md:text-4xl font-playfair mb-6">Book Your Table</h2>
+            <h2 className="text-3xl md:text-4xl font-playfair mb-6">Book Your Event</h2>
             
             <p className="text-muted-foreground mb-6 font-montserrat">
-              Secure your spot for an unforgettable dining experience at Revolver by Umami. We recommend booking in advance to ensure availability.
+              Secure your date for an unforgettable culinary journey with Revolver by Umami. Early reservations are encouraged to ensure availability.
+              Once received, our team will be in touch to craft your bespoke menu and bring your vision to life.
             </p>
-            
+
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">

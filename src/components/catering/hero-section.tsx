@@ -17,7 +17,7 @@ export const CateringHero = () => {
       
       <section className="py-8 bg-background">
         <div className="container mx-auto px-4 text-center">
-          <Button asChild className="bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
+          <Button asChild className="bg-gold text-umami-DEFAULT hover:text-umami-light  font-montserrat tracking-wider">
             <Link to="/catering-menu">View Catering Menu</Link>
           </Button>
         </div>

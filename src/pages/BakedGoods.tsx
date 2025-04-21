@@ -1,7 +1,7 @@
 
 import { Layout } from "@/components/layout/layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {Croissant, PieChart,CakeSlice, UtensilsCrossed, Coffee, Sandwich, Cookie, GlassWater, IceCream} from "lucide-react";
+import {Croissant, PieChart,CakeSlice, EggFried, Sandwich, Cookie, GlassWater, IceCream} from "lucide-react";
 
 const menuCategories = [
     {
@@ -188,9 +188,9 @@ const menuCategories = [
         ]
     },
     {
-        id: "brunch-bakes",
-        name: "Brunch Bakes",
-        icon: Coffee, // Temporary icon – maybe something like `Croissant` or `BreadSlice`?
+        id: "brunch",
+        name: "Brunch",
+        icon: EggFried, // Temporary icon – maybe something like `Croissant` or `BreadSlice`?
         items: [
             {
                 name: "Quiche",
@@ -266,7 +266,7 @@ const CateringMenu = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <Tabs defaultValue="breads" className="w-full">
-                            <TabsList className="w-full justify-start mb-8 bg-transparent space-x-2">
+                            <TabsList className="w-full mb-20 bg-transparent flex flex-wrap  gap-2">
                                 {menuCategories.map((category) => (
                                     <TabsTrigger
                                         key={category.id}

@@ -23,7 +23,7 @@ export function HeroSection() {
         </h1>
         
         <p className="text-umami-light/90 text-lg md:text-xl font-cormorant mb-8">
-          A unique dining experience featuring rotating seasonal menus with chef-curated recipes and the finest ingredients.
+          An elevated culinary experience through refined catering, exclusive at-home dining, and a seasonal meal subscription service. Each menu is thoughtfully curated by our chef, showcasing exceptional ingredients and ever-evolving flavor combinations.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
