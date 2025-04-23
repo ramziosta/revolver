@@ -19,26 +19,26 @@ const menuCategories = [
         description: "Wild mushrooms, pearl barley, green peas, and a light vegetable consommé",
         category: "Soup"
       },
-      {
-        name: "Curried Carrot & Coconut Soup",
-        description: "Gingered carrot purée, mild curry, coconut milk, lime leaf, and crispy shallots",
-        category: "Soup"
-      },
+      // {
+      //   name: "Curried Carrot & Coconut Soup",
+      //   description: "Gingered carrot purée, mild curry, coconut milk, lime leaf, and crispy shallots",
+      //   category: "Soup"
+      // },
       {
         name: "Spring Pea & Tarragon Soup",
         description: "Sweet peas blended with tarragon and crème fraîche, topped with sugar snap slivers and microgreens",
         category: "Soup"
       },
-      {
-        name: "Spring Onion & New Potato Soup",
-        description: "Creamy blend of new potatoes, charred spring onions, chives, and cultured butter",
-        category: "Soup"
-      },
-      {
-        name: "Asparagus & Lemon Soup",
-        description: "Fresh asparagus purée with preserved lemon, crème fraîche, and shaved radish",
-        category: "Soup"
-      },
+      // {
+      //   name: "Spring Onion & New Potato Soup",
+      //   description: "Creamy blend of new potatoes, charred spring onions, chives, and cultured butter",
+      //   category: "Soup"
+      // },
+      // {
+      //   name: "Asparagus & Lemon Soup",
+      //   description: "Fresh asparagus purée with preserved lemon, crème fraîche, and shaved radish",
+      //   category: "Soup"
+      // },
     ]
   },
   {
@@ -129,32 +129,36 @@ const menuCategories = [
     name: "Brunch",
     icon: EggFried,
     items: [
-       {
-        name: "Spring Egg Noodles",
-        description: "House-made egg noodles, sugar snap peas, spring onions, shiitake mushrooms, ginger-scallion oil, sesame, and yuzu soy glaze",
-         price: ""
-      },
       {
-        name: "Roasted Chicken Supreme",
-        description: "Confit garlic jus, cauliflower purée, charred fennel, cherry tomato glaze",
-        price: ""
-
-      },
-      {
-        name: "Market Fish",
-        description: "Spring pea purée, roasted mushrooms, preserved lemon",
+        name: "Seasonal Strata",
+        description: "Savory layered egg bake with seasonal vegetables, cheese, and crispy potato crust",
         price: ""
       },
       {
-        name: "Grass-Fed Ribeye",
-        description: "10 oz ribeye, potato puree, roasted seasonal vegetables, peppercorn demi glace",
+        name: "Signature Egg Bake Casserole",
+        description: "Fluffy baked eggs with roasted peppers, spinach, and cheddar",
         price: ""
       },
       {
-        name: "Wild Mushroom Risotto",
-        description: "Arborio rice, seasonal mushrooms, aged parmesan, herbs",
+        name: "Quiche Selection",
+        description: "A choice from a variety of quiches including Lorraine, Spinach & Feta, and Wild Mushroom, served with a fresh greens salad",
         price: ""
-      }
+      },
+      {
+        name: "Assorted Muffins & Sweet Breads",
+        description: "Chef's selection of house-baked muffins and sweet loaves",
+        price: ""
+      },
+      {
+        name: "European-Style Danish Pastries",
+        description: "Flaky danishes with fruit, almond, and cream cheese fillings",
+        price: ""
+      },
+      {
+        name: "House Jams & Spreads",
+        description: "A variety of artisanal jams, compound butters, and preserves",
+        price: ""
+      },
     ]
   },
   {
@@ -163,13 +167,13 @@ const menuCategories = [
     icon: CakeSlice,
     items: [
       {
-        name: "Dark Chocolate Mousse",
-        description: "Salted caramel, cocoa nib tuile, vanilla crème fraîche",
+        name: "Best Chocolate Chip Cookie",
+        description: "Valrhona chocolate and vanilla butter",
         price: ""
       },
       {
-        name: "Lemon Tart",
-        description: "Toasted meringue, blackberry, shortbread crumble",
+        name: "Fruit and Lemon Galette",
+        description: "Seasonal Fruit medley, vanilla custard, and lemon glaze",
         price: ""
       },
       {

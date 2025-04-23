@@ -89,13 +89,13 @@ const menuCategories = [
                 price: "JOD 3"
             },
             {
-                name: "Stamp Sugar Cookies",
+                name: "Stamped Sugar Cookies",
                 description: "Almond and Honey",
                 price: "JOD 3"
             },
             {
                 name: "Ginger Cookies",
-                description: "Ginger, Spice and everything nice",
+                description: "Ginger, spice and everything nice",
                 price: "JOD 3"
             },
             {
@@ -104,7 +104,7 @@ const menuCategories = [
                 price: "JOD 3"
             },
             {
-                name: "Lemon Cheesecake Bars",
+                name: "Limoncello Cheesecake Bars",
                 description: "Citrusy and creamy",
                 price: "JOD 3"
             },
@@ -159,7 +159,7 @@ const menuCategories = [
             {
                 name: "Tiered Cakes",
                 description:
-                    "Cake Du Jour (Check with us), 12 Layer Chocolate Cake, Strawberry, Banana Toffee, Birthday Cake Funfetti, Coconut, Lotus Chocolate, Olive Oil Lemon Basil. " ,
+                    "Tailored Layer Cake (Check with us), 12 Layer Chocolate Cake, Strawberry, Banana Toffee, Birthday Cake Funfetti, Coconut, Lotus Chocolate, Olive Oil Lemon Basil. " ,
 
                 specs:[
                     "Each cake features three or more generous layers, filled and topped with a variety of premium ingredients.",
@@ -170,7 +170,7 @@ const menuCategories = [
                 ],
             },
             {
-                name: "Coffee Cakes",
+                name: "Bundt and Coffee Cakes",
                 description: "Sour Cream Pound Cake, Vanilla Chocolate Marble Cake, Lemon Pound Cake with Lemon Curd, Spiced Coffee with Streusel Toppings."
             },
             {
@@ -195,55 +195,85 @@ const menuCategories = [
             {
                 name: "Quiche",
                 description: "Lorraine: Bacon and Swiss, Mediterranean:Tomato Basil and Feta, French: Mushroom and Goat Cheese",
-                price: "$4"
+                price: ""
             },
             {
                 name: "Egg Bake Casserole",
                 description: "Potato Strata topped with eggs, and fillings including: Mushrooms, Sausage, veggies, and Cheeses. Sauces include: Black Peppercorn Gravy, Ranchero, Hollandaise and more.",
-                price: "$4"
+                price: ""
             },
             {
                 name: "Home Fries",
                 description: "Crispy oven baked Potatoes with roasted garlic and herbs. Add cheese, baccon and veggies : Onions, Mushrooms and peppers.",
-                price: "$4"
+                price: ""
             },
             {
                 name: "Savory Egg Crêpe",
                 description: "Filled with eggs, and cheese, extra fillings include: Sausage, mushrooms, chicken, and veggies",
-                price: "$6"
+                price: ""
             },
             {
                 name: "Savory Herb Scone",
                 description: "Parmesan and chive scone served warm",
-                price: "$4"
+                price: ""
             },
             {
                 name: "Buttermilk Biscuits",
                 description: "Classic, Cheese, Roasted Garlic and Herb, Bacon and Cheddar.",
-                price: "$4"
+                price: ""
             }
         ]
     },
     {
         id: "pies-galettes",
         name: "Pies, Cobblers & Galettes",
-        icon: PieChart, // Example icon—replace as needed
+        icon: PieChart,
         items: [
             {
-                name: "Rustic Galette",
-                description: "Flaky free-form tart with cinnamon apples, Grilled Peaches and Burrata, Seasonal fruit, Plums and more.",
-                price: "$6"
+                name: "Rustic Seasonal Galette",
+                description: "Free-form tart with options like cinnamon apples, grilled peaches with burrata, or stone fruits.",
+                price: ""
             },
             {
                 name: "Berry Cobbler",
-                description: "Seasonal berries with vanilla biscuit topping",
-                price: "$7"
+                description: "Mixed seasonal berries baked with vanilla biscuit topping.",
+                price: ""
             },
             {
                 name: "Pecan Pie",
-                description: "Toasted pecans with brown sugar custard",
-                price: "$6"
-            }
+                description: "Toasted pecans in a rich brown sugar custard with flaky pie crust.",
+                price: ""
+            },
+            {
+                name: "Pumpkin Pie",
+                description: "Pumpkin in a rich butternut custard with flaky pie crust.",
+                price: ""
+            },
+            {
+                name: "Chocolate Cream Pie",
+                description: "Rich chocolate custard in a flaky pie crust with whipped cream and chocolate shavings",
+                price: ""
+            },
+            {
+                name: "Apple Pie",
+                description: "Classic apple pie with flaky crust and spiced apple filling.",
+                price: ""
+            },
+            {
+                name: "Banoffie Pie",
+                description: "Banana, toffee, and whipped cream in a graham cracker crust.",
+                price: ""
+            },
+            {
+                name: "Lemon Meringue Pie",
+                description: "Tart and creamy lemon custard in a flaky pie crust with toasted meringue.",
+                price: ""
+            },
+            {
+                name: "Peach Cobbler",
+                description: "Fresh peaches baked with vanilla biscuit topping.",
+                price: ""
+            },
         ]
     },
 ];
@@ -293,7 +323,7 @@ const CateringMenu = () => {
                                                         <h3 className="font-playfair text-xl">{item.name}</h3>
                                                         <span className="font-montserrat text-umami-gold">{item.price}</span>
                                                     </div>
-                                                    <p className="text-muted-foreground font-cormorant text-lg">{item.description}</p>
+                                                    <p className="text-umami-default font-cormorant text-xl">{item.description}</p>
                                                     {item.specs && Array.isArray(item.specs) && (
                                                         <ul className="list-disc pl-5 mt-2 text-muted-foreground font-cormorant text-lg space-y-1">
                                                             {item.specs.map((line, idx) => (
