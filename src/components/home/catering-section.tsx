@@ -24,7 +24,7 @@ export function CateringSection() {
           <div className="bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300">
             <h3 className="font-playfair text-xl mb-4">Corporate Events</h3>
             <p className="text-muted-foreground font-montserrat text-sm mb-4">
-              Impress clients and reward employees with our corporate catering options, from breakfast meetings to full-service dinners.
+              Impress clients and reward employees with our corporate catering options, from breakfast meetings, boxed lunches to full-service dinners.
             </p>
             <img 
               src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070" 

@@ -1169,7 +1169,7 @@ const CateringMenu = () => {
                                         <h3 className="text-2xl font-playfair mb-6 text-center">{subCategory.name}</h3>
                                         <div className="space-y-8">
                                           {subCategory.items.map((item, index) => (
-                                              <div key={index} className="border-b border-border pb-6">
+                                              <div key={index} className="border-b border-border  hover:bg-umami/5 p-4 -mx-4 transition-colors duration-300 pb-6">
                                                 <div className="flex justify-between items-start mb-2">
                                                   <h4 className="font-playfair text-xl">{item.name}</h4>
                                                   <span className="font-montserrat text-umami-gold">{item.price}</span>

@@ -282,15 +282,28 @@ const CateringMenu = () => {
     return (
         <Layout>
             {/* Hero Section */}
-            <section className="relative py-28 bg-umami text-umami-light">
-                <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-5xl font-playfair mb-4">Heavenly Backed Goods</h1>
-                    <p className="max-w-2xl mx-auto text-umami-light/80 font-montserrat">
+            <section className="relative h-[70vh] overflow-hidden">
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')",
+                        backgroundAttachment: "fixed"
+                    }}
+                >
+                    <div className="absolute inset-0 bg-black/60"></div>
+                </div>
+
+                {/* Text Content */}
+                <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10 text-white">
+                    <h1 className="text-4xl md:text-5xl font-playfair mb-4">Heavenly Baked Goods</h1>
+                    <p className="max-w-2xl mx-auto text-white/90 font-montserrat">
                         Crafted with premium ingredients, our baked goods offer exceptional flavor for every occasion.
                         From classic favorites to innovative creations, our menu is a celebration of the art of baking.
                     </p>
                 </div>
             </section>
+
 
             <section className="py-16 bg-background">
                 <div className="container mx-auto px-4">
@@ -318,7 +331,7 @@ const CateringMenu = () => {
                                         </p>
                                         <div className="space-y-8">
                                             {category.items.map((item, index) => (
-                                                <div key={index} className="border-b border-border pb-6">
+                                                <div key={index} className="border-b border-border  hover:bg-umami/5 p-4 -mx-4 transition-colors duration-300  pb-6">
                                                     <div className="flex justify-between items-start mb-2">
                                                         <h3 className="font-playfair text-xl">{item.name}</h3>
                                                         <span className="font-montserrat text-umami-gold">{item.price}</span>
