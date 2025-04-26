@@ -2,14 +2,13 @@
 import { Layout } from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Soup, Salad, Utensils, HandPlatter, EggFried, CakeSlice, Martini } from "lucide-react";
-import { motion } from "framer-motion";
-import { ChevronDown, Star, Coffee, Award } from "lucide-react";
+import { Soup, Salad, Utensils, HandPlatter, EggFried, CakeSlice, Martini, Star, Coffee} from "lucide-react";
 const menuCategories = [
   {
     id: "soups",
     name: "Soups",
     icon: Soup,
+    description:"",
     items: [
       {
         name: "Zucchini & Mint Soup",
@@ -47,6 +46,7 @@ const menuCategories = [
     id: "salads",
     name: "Salads",
     icon: Salad,
+    description:"",
     items: [
       {
         name: "Roasted Beet & Arugula Salad",
@@ -70,6 +70,7 @@ const menuCategories = [
     id: "starters",
     name: "Starters",
     icon: Utensils,
+    description:"",
     items: [
       {
         name: "Seared Scallops",
@@ -97,6 +98,7 @@ const menuCategories = [
     id: "mains",
     name: "Main Courses",
     icon: HandPlatter,
+    description:"",
     items: [
        {
         name: "Spring Egg Noodles",
@@ -130,6 +132,7 @@ const menuCategories = [
     id: "brunch",
     name: "Brunch",
     icon: EggFried,
+    description:"",
     items: [
       {
         name: "Seasonal Strata",
@@ -167,6 +170,7 @@ const menuCategories = [
     id: "desserts",
     name: "Desserts",
     icon: CakeSlice,
+    description:"",
     items: [
       {
         name: "Best Chocolate Chip Cookie",
@@ -199,6 +203,7 @@ const menuCategories = [
     id: "drinks",
     name: "Beverages",
     icon: Martini,
+    description:"",
     items: [
       {
         name: "Seasonal Craft Cocktails",
@@ -296,17 +301,17 @@ const Menu = () => {
                 </TabsList>
 
                 {menuCategories.map((category) => (
-                    <TabsContent key={category.id} value={category.id} className="space-y-8 mt-6">
-                      <div>
-                        <div className="text-center mb-10">
-                          <h2 className="text-3xl font-playfair">{category.name}</h2>
-                          <div className="h-0.5 w-16 bg-umami-gold mx-auto mt-3 mb-2"></div>
-                          {category.description && (
-                              <p className="text-muted-foreground font-montserrat max-w-xl mx-auto">
-                                {category.description}
-                              </p>
-                          )}
-                        </div>
+                  <TabsContent key={category.id} value={category.id} className="space-y-8 mt-6">
+                    <div>
+                      <div className="text-center mb-10">
+                        <h2 className="text-3xl font-playfair">{category.name}</h2>
+                        <div className="h-0.5 w-16 bg-umami-gold mx-auto mt-3 mb-2"></div>
+                        {category.description && (
+                          <p className="text-muted-foreground font-montserrat max-w-xl mx-auto">
+                            {category.description}
+                          </p>
+                        )}
+                      </div>
 
                         <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
                           {category.items.map((item, index) => (
