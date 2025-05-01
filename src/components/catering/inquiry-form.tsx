@@ -77,7 +77,7 @@ export const InquiryForm = () => {
               For immediate assistance or to speak with our catering coordinator directly:
             </p>
             <p className="font-montserrat">
-              <strong>Email:</strong> catering@revolverumami.com | <strong>Phone:</strong> (555) 123-4567
+              <strong>Email:</strong> umamiamman@gmail.com | <strong>Phone:</strong> (962) 7 9089 4715
             </p>
           </div>
         </div>

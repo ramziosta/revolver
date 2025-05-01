@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Logo } from "@/components/ui/logo";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
+import { useNavigate } from 'react-router-dom';
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Menu", path: "/menu" },
@@ -14,7 +14,6 @@ const navLinks = [
   { name: "Catering", path: "/catering" },
   { name: "Contact", path: "/contact" },
   { name: "Gallery", path: "/gallery" },
-  { name: "Subscribe", path: "/subscriptions" },
 
 ];
 
@@ -29,7 +28,7 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const navigate = useNavigate();
   return (
     <header
       className={cn(
@@ -55,7 +54,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button className="bg-transparent border border-umami-cream text-umami-cream hover:bg-umami-cream hover:text-umami font-montserrat tracking-wider text-sm">
-              Reservations
+              <Link to="/subscriptions">Meal Subscription Plans</Link>
             </Button>
           </nav>
           
@@ -84,12 +83,11 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button 
-                className="bg-transparent border border-umami-cream text-umami-cream hover:bg-umami-cream hover:text-umami font-montserrat tracking-wider text-sm"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Reservations
-              </Button>
+              <div className="text-center">
+                <Button asChild className="bg-umami text-umami-light hover:bg-umami-dark transition-colors duration-300 font-montserrat tracking-wider">
+                  <Link to="/subscriptions">Explore Plans</Link>
+                </Button>
+              </div>
             </nav>
           </div>
         </div>

@@ -5,16 +5,37 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
+
 const Contact = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative py-28 bg-umami text-umami-light">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-playfair mb-4">Contact Us</h1>
-          <p className="max-w-2xl mx-auto text-umami-light/80 font-montserrat">
+      {/* Hero Section with Parallax Effect */}
+      <section className="relative h-[70vh] overflow-hidden">
+        {/* Background Image with Parallax */}
+        <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+              backgroundAttachment: "fixed"
+            }}
+        >
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
+          <span className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
+            Contact
+          </span>
+          <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">
+            Let’s Talk — Whether It’s Catering, Reservations, or Collaboration.
+          </h1>
+          <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
+          <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
             We'd love to hear from you. Reach out for reservations, inquiries, or just to say hello.
+            Connect with us for custom orders, private dining inquiries, or any special requests. We're here to bring your vision to the table.
           </p>
+
         </div>
       </section>
       

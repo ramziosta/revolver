@@ -2,6 +2,8 @@
 import { Layout } from "@/components/layout/layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {Croissant, PieChart,CakeSlice, EggFried, Sandwich, Cookie, GlassWater, IceCream} from "lucide-react";
+import {Button} from "@/components/ui/button.tsx";
+import {Link} from "react-router-dom";
 
 const menuCategories = [
     {
@@ -64,7 +66,7 @@ const menuCategories = [
         icon: Cookie,
         items: [
             {
-                name: "Chocolate Chip Cookies",
+                name: "Best Chocolate Chip Cookies",
                 description: "",
                 price: "JOD 3"
             },
@@ -281,9 +283,9 @@ const menuCategories = [
 const CateringMenu = () => {
     return (
         <Layout>
-            {/* Hero Section */}
+            {/* Hero Section with Parallax Effect */}
             <section className="relative h-[70vh] overflow-hidden">
-                {/* Background Image */}
+                {/* Background Image with Parallax */}
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -294,13 +296,19 @@ const CateringMenu = () => {
                     <div className="absolute inset-0 bg-black/60"></div>
                 </div>
 
-                {/* Text Content */}
-                <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10 text-white">
-                    <h1 className="text-4xl md:text-5xl font-playfair mb-4">Heavenly Baked Goods</h1>
-                    <p className="max-w-2xl mx-auto text-white/90 font-montserrat">
-                        Crafted with premium ingredients, our baked goods offer exceptional flavor for every occasion.
-                        From classic favorites to innovative creations, our menu is a celebration of the art of baking.
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
+          <span className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
+            Heavenly Baked Goods
+          </span>
+                    <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">
+                        A Taste of Something Truly Special
+                    </h1>
+                    <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
+                    <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
+                        Our baked goods are crafted with care, using premium ingredients and time-honored techniques. Whether you crave something classic or boldly inventive, each bite is a celebration of flavor, texture, and tradition.
                     </p>
+
                 </div>
             </section>
 
@@ -351,16 +359,20 @@ const CateringMenu = () => {
                                 </TabsContent>
                             ))}
                         </Tabs>
-
+                        <div className="text-center">
+                            <Button asChild className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-8">
+                                <Link to="/contact">Place Your Order</Link>
+                            </Button>
+                        </div>
                         <div className="mt-12 bg-umami-light/5 p-8 rounded-sm">
                             <h3 className="font-playfair text-xl mb-4">Catering Information</h3>
-                            <p className="text-muted-foreground font-montserrat mb-4">
-                                All catering orders require 48-hour and 50% deposit. Delivery available for orders over $100.00.
-                                Delivery fees may apply. All prices are subject to change. All orders are subject to availability.
-                                All prices are subject to 6.875% sales tax. All prices are subject to 20% service charge.
-                                All prices are subject to 3% credit card processing fee. All prices are subject to 3% credit card processing fee.
-                                Cancellations require 24-hour advance notice. Minimum order quantities may apply.
-                            </p>
+                            {/*<p className="text-muted-foreground font-montserrat mb-4">*/}
+                            {/*    All catering orders require 48-hour and 50% deposit. Delivery available for orders over $100.00.*/}
+                            {/*    Delivery fees may apply. All prices are subject to change. All orders are subject to availability.*/}
+                            {/*    All prices are subject to 6.875% sales tax. All prices are subject to 20% service charge.*/}
+                            {/*    All prices are subject to 3% credit card processing fee. All prices are subject to 3% credit card processing fee.*/}
+                            {/*    Cancellations require 24-hour advance notice. Minimum order quantities may apply.*/}
+                            {/*</p>*/}
                             <p className="text-muted-foreground font-montserrat">
                                 Please contact us for custom menus, dietary accommodations, or special requests.
                             </p>

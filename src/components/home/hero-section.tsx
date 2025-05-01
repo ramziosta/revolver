@@ -32,7 +32,7 @@ export function HeroSection() {
           </Button>
           
           <Button asChild variant="outline" className="border-umami-light text-umami-default hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider">
-            <a href="#">Make a Reservation</a>
+            <a href="#book-event">Book Your Event</a>
           </Button>
         </div>
       </div>

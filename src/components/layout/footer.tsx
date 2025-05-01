@@ -14,32 +14,34 @@ export function Footer() {
               Explore the art of flavor through our seasonal, chef-curated menus featuring the finest local and imported ingredients.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-umami-light hover:text-umami-cream transition-colors">
+              <a href="https://instagram.com/umamiamman" className="text-umami-light hover:text-umami-cream transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-umami-light hover:text-umami-cream transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61570837547092#" className="text-umami-light hover:text-umami-cream transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-umami-light hover:text-umami-cream transition-colors">
-                <Twitter size={20} />
-              </a>
+              {/*<a href="#" className="text-umami-light hover:text-umami-cream transition-colors">*/}
+              {/*  <Twitter size={20} />*/}
+              {/*</a>*/}
             </div>
           </div>
           
           <div className="text-center md:text-left">
             <h3 className="font-playfair text-lg mb-4">Hours</h3>
             <div className="font-montserrat text-sm space-y-2 text-umami-light/80">
-              <p>Lunch: Tues-Sun 11:30am - 2:30pm</p>
-              <p>Dinner: Tues-Sun 5:30pm - 10:00pm</p>
-              <p>Closed Mondays</p>
+              <p>Flexible Scheduling to Fit Your Event<br />
+                We’re happy to accommodate your event hours—day or night—so everything runs smoothly on your timeline.</p>
+              {/*<p>Lunch: Tues-Sun 11:30am - 2:30pm</p>*/}
+              {/*<p>Dinner: Tues-Sun 5:30pm - 10:00pm</p>*/}
+              {/*<p>Closed Mondays</p>*/}
             </div>
             <div className="mt-6">
               <h3 className="font-playfair text-lg mb-4">Contact</h3>
               <address className="font-montserrat text-sm not-italic text-umami-light/80">
-                <p>123 Savory Street</p>
-                <p>Culinary District</p>
-                <p className="mt-2">info@revolverumami.com</p>
-                <p>(555) 123-4567</p>
+                <p>Amman Jordan</p>
+                {/*<p>Culinary District</p>*/}
+                <p className="mt-2">umamiamman@gmail.com</p>
+                <p>(962) 7 9089 4715</p>
               </address>
             </div>
           </div>
@@ -56,8 +58,8 @@ export function Footer() {
             <div className="mt-6">
               <h3 className="font-playfair text-lg mb-4">Policies</h3>
               <nav className="flex flex-col space-y-2">
-                <Link to="/privacy" className="text-umami-light/80 hover:text-umami-cream transition-colors font-montserrat text-sm">Privacy Policy</Link>
-                <Link to="/terms" className="text-umami-light/80 hover:text-umami-cream transition-colors font-montserrat text-sm">Terms of Service</Link>
+                <Link to="/privacy-policy" className="text-umami-light/80 hover:text-umami-cream transition-colors font-montserrat text-sm">Privacy Policy</Link>
+                <Link to="/terms-of-service" className="text-umami-light/80 hover:text-umami-cream transition-colors font-montserrat text-sm">Terms of Service</Link>
               </nav>
             </div>
           </div>

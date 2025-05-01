@@ -11,7 +11,10 @@ import Chef from "./pages/Chef";
 import BakedGoods from "./pages/BakedGoods";
 import Catering from "./pages/Catering";
 import CateringMenu from "./pages/CateringMenu";
+import Gallery from "./pages/Gallery";
 import Subscriptions from "./pages/Subscriptions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -32,8 +35,11 @@ const App = () => (
           <Route path="/catering" element={<Catering />} />
           <Route path="/baked-goods" element={<BakedGoods />} />
           <Route path="/catering-menu" element={<CateringMenu />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/subscriptions" element={<Subscriptions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

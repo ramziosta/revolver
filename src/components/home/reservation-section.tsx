@@ -7,7 +7,7 @@ import { Calendar, Clock, User, Users } from "lucide-react";
 
 export function ReservationSection() {
   return (
-    <section className="py-20 bg-background">
+    <section id="book-event" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -98,7 +98,7 @@ export function ReservationSection() {
               </div>
               
               <Button type="submit" className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
-                Request Reservation
+              Request Consultation
               </Button>
             </form>
           </div>
