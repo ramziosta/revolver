@@ -2,6 +2,7 @@
 import { Layout } from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import dineinthed from "../../public/dineinthed.jpg"
 import ramzisqueeze from "../../public/ramzisqueeze.jpg"
 const Chef = () => {
   return (
@@ -40,6 +41,10 @@ const Chef = () => {
               <img 
                 src={ramzisqueeze}
                 alt="Chef portrait" 
+                className="rounded-sm w-full h-auto object-cover"
+              />   <img
+                src={dineinthed}
+                alt="Chef portrait"
                 className="rounded-sm w-full h-auto object-cover"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-umami-gold z-0"></div>

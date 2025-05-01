@@ -29,7 +29,7 @@ export const InquiryForm = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" placeholder="(555) 123-4567" />
+                <Input id="phone" placeholder="962 7 9089 4715" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="eventType">Event Type</Label>

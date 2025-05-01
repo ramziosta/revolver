@@ -32,6 +32,11 @@ export function ReservationSection() {
                   <Label htmlFor="email">Email Address</Label>
                   <Input id="email" type="email" placeholder="john@example.com" />
                 </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone number</Label>
+                  <Input id="phone" type="text" placeholder="962 7 9089 4715" />
+                </div>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

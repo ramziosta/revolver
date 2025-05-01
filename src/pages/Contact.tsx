@@ -28,7 +28,7 @@ const Contact = () => {
             Contact
           </span>
           <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">
-            Let’s Talk — Whether It’s Catering, Reservations, or Collaboration.
+            Let’s Talk — Whether It’s Placing an Order, Catering, Reservations, or Collaboration.
           </h1>
           <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
           <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
@@ -117,6 +117,11 @@ const Contact = () => {
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
                   <Input id="email" type="email" placeholder="john@example.com" />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone number</Label>
+                  <Input id="phone" type="text" placeholder="962 7 9089 4715" />
                 </div>
                 
                 <div className="space-y-2">
