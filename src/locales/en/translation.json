@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "bakedGoods": "Baked Goods",
+    "chef": "Chef",
+    "catering": "Catering",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "subscriptions": "Meal Subscription Plans",
+    "explorePlans": "Explore Plans"
+  }
+}

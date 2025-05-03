@@ -249,61 +249,62 @@ export default function SubscriptionPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Button size="lg" className="bg-umami hover:bg-umami/90">
-                            Get Started Now
+                            <Link to="/contact">Get Started Now</Link>
                         </Button>
                         <Button size="lg" variant="outline">
-                            View Sample Menus
+                            <Link to="/menu">View Sample Menus</Link>
+
                         </Button>
                     </div>
                 </div>
             </section>
 
             {/* Testimonials */}
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl font-playfair text-center mb-12">What Our Subscribers Say</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            {
-                                quote: "The meals are restaurant-quality and have made our weeknights so much less stressful. Worth every penny!",
-                                author: "Michelle K.",
-                                role: "Family Plan Subscriber",
-                                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"
-                            },
-                            {
-                                quote: "Our team looks forward to lunch days. It's improved morale and the variety keeps everyone happy.",
-                                author: "Jason R.",
-                                role: "HR Director",
-                                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"
-                            },
-                            {
-                                quote: "The wellness plan has been instrumental in helping me maintain my nutrition goals without sacrificing taste.",
-                                author: "Thomas L.",
-                                role: "Wellness Plan Subscriber",
-                                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"
-                            },
-                        ].map((testimonial, index) => (
-                            <div key={index} className="bg-white p-6 rounded-lg shadow">
-                                <div className="flex items-center mb-4">
-                                    <Star className="w-5 h-5 text-yellow-400" />
-                                    <Star className="w-5 h-5 text-yellow-400" />
-                                    <Star className="w-5 h-5 text-yellow-400" />
-                                    <Star className="w-5 h-5 text-yellow-400" />
-                                    <Star className="w-5 h-5 text-yellow-400" />
-                                </div>
-                                <p className="italic mb-6">{testimonial.quote}</p>
-                                <div className="flex items-center">
-                                    <img src={testimonial.image} alt={testimonial.author} className="w-12 h-12 rounded-full mr-4 object-cover" />
-                                    <div>
-                                        <p className="font-medium">{testimonial.author}</p>
-                                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            {/*<section className="py-16 bg-gray-50">*/}
+            {/*    <div className="max-w-6xl mx-auto px-4">*/}
+            {/*        <h2 className="text-3xl font-playfair text-center mb-12">What Our Subscribers Say</h2>*/}
+            {/*        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">*/}
+            {/*            {[*/}
+            {/*                {*/}
+            {/*                    quote: "The meals are restaurant-quality and have made our weeknights so much less stressful. Worth every penny!",*/}
+            {/*                    author: "Michelle K.",*/}
+            {/*                    role: "Family Plan Subscriber",*/}
+            {/*                    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"*/}
+            {/*                },*/}
+            {/*                {*/}
+            {/*                    quote: "Our team looks forward to lunch days. It's improved morale and the variety keeps everyone happy.",*/}
+            {/*                    author: "Jason R.",*/}
+            {/*                    role: "HR Director",*/}
+            {/*                    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"*/}
+            {/*                },*/}
+            {/*                {*/}
+            {/*                    quote: "The wellness plan has been instrumental in helping me maintain my nutrition goals without sacrificing taste.",*/}
+            {/*                    author: "Thomas L.",*/}
+            {/*                    role: "Wellness Plan Subscriber",*/}
+            {/*                    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80"*/}
+            {/*                },*/}
+            {/*            ].map((testimonial, index) => (*/}
+            {/*                <div key={index} className="bg-white p-6 rounded-lg shadow">*/}
+            {/*                    <div className="flex items-center mb-4">*/}
+            {/*                        <Star className="w-5 h-5 text-yellow-400" />*/}
+            {/*                        <Star className="w-5 h-5 text-yellow-400" />*/}
+            {/*                        <Star className="w-5 h-5 text-yellow-400" />*/}
+            {/*                        <Star className="w-5 h-5 text-yellow-400" />*/}
+            {/*                        <Star className="w-5 h-5 text-yellow-400" />*/}
+            {/*                    </div>*/}
+            {/*                    <p className="italic mb-6">{testimonial.quote}</p>*/}
+            {/*                    <div className="flex items-center">*/}
+            {/*                        <img src={testimonial.image} alt={testimonial.author} className="w-12 h-12 rounded-full mr-4 object-cover" />*/}
+            {/*                        <div>*/}
+            {/*                            <p className="font-medium">{testimonial.author}</p>*/}
+            {/*                            <p className="text-sm text-muted-foreground">{testimonial.role}</p>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            ))}*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             {/* FAQ Section */}
             <section className="py-16 px-4 md:px-12 lg:px-24 max-w-5xl mx-auto">
