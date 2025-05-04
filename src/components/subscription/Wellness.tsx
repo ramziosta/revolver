@@ -1,5 +1,5 @@
-import {Layout} from "@/components/layout/layout";
-import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+import {Layout} from "@/components/layout/layout.tsx";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs.tsx";
 import {HandPlatter, Flame, Briefcase } from "lucide-react";
 
 const wellnessMenu = [

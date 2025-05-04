@@ -1,5 +1,5 @@
 
-import { Layout } from "@/components/layout/layout";import { Button } from "@/components/ui/button";
+import { Layout } from "@/components/layout/layout.tsx";import { Button } from "@/components/ui/button.tsx";
 import { Link } from "react-router-dom";
 import { ChevronRight, Check, Star, Users, Briefcase, Heart } from "lucide-react";
 
@@ -72,21 +72,21 @@ export default function SubscriptionPage() {
                             {
                                 title: "Once a Week",
                                 description: "Perfect for busy professionals who want to enjoy one special chef-prepared meal weekly.",
-                                price: "From $59/week",
+                                price: "From JOD 59/week",
                                 image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                                 features: ["Complete meal for 1-2 people", "Entrée + Side + Dessert", "Weekly menu rotation"]
                             },
                             {
                                 title: "3x a Week",
                                 description: "Our most popular plan! Enjoy multiple chef-crafted dinners without the hassle of cooking.",
-                                price: "From $149/week",
+                                price: "From JOD 149/week",
                                 image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                                 features: ["Three complete meals weekly", "Mix & match menu options", "Flexible delivery schedule"]
                             },
                             {
                                 title: "Family Style - 5x a Week",
                                 description: "Complete meal solutions for busy families who still want to enjoy quality dinners together.",
-                                price: "From $289/week",
+                                price: "From JOD 289/week",
                                 image: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                                 features: ["Family-sized portions (4-10 people)", "Kid-friendly options available", "Full week of dinners covered"]
                             }
@@ -112,7 +112,8 @@ export default function SubscriptionPage() {
                                         ))}
                                     </ul>
                                     <Button variant="default" className="w-full group">
-                                        Choose Plan
+                                        <Link to="/onceAweek">Choose Plan</Link>
+
                                         <ChevronRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
                                 </div>
