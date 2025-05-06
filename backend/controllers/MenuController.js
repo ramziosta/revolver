@@ -1,11 +1,29 @@
-
-import MenuSchema from "../models/menu.js";
+import Catering from "../models/Catering.js";
+import BakedGoods from "../models/BakedGoods.js";
+import MenuSchema from "../models/Menu.js";
 
 // Get all menu categories and their subcategories/items
 export const getAllMenu = async (req, res) => {
     try {
         const menu = await MenuSchema.find();
         res.json(menu);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+export const getAllCateringMenu = async (req, res) => {
+    try {
+        const cateringMenu = await Catering.find();
+        res.json(cateringMenu);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
+export const getAllBakedGoodsMenu = async (req, res) => {
+    try {
+        const bakedGoodsMenu = await BakedGoods.find();
+        res.json(bakedGoodsMenu);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

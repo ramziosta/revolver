@@ -1,4 +1,4 @@
-// models/Menu.js
+// models/CateringMenu.js
 import mongoose from 'mongoose';
 import { MenuCategorySchema } from './MenuCategory.js';
 

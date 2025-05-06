@@ -4,15 +4,15 @@ import React, {useEffect, useState} from "react";
 
 
 const CateringMenu = () => {
-    const [CateringMenuCategories, setMenuCategories] = useState([]);
+    const [CateringMenuCategories, setCateringMenuCategories] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:8000/menu')
+        fetch('http://localhost:8000/catering')
             .then((res) => res.json())
             .then((data) => {
-                console.log("Fetched menu data:", data); // 👈 Log it
-                setMenuCategories(data);
+                console.log("Fetched menu data:", data);
+                setCateringMenuCategories(data);
                 setLoading(false);
             })
             .catch((err) => {

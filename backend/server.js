@@ -2,6 +2,8 @@ import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
 import router  from './routes/router.js';
+import cateringRouter from './routes/cateringRouter.js';
+import bakedGoods   from './routes/bakedGoodsRouter.js';
 import cors from 'cors';
 
 
@@ -25,7 +27,8 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.use('/catering', router);
+app.use('/catering', cateringRouter);
+app.use('/bakedgoods', bakedGoods);
 app.use('/menu', router);
 
 
