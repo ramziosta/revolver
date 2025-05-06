@@ -1,12 +1,10 @@
 import express from 'express';
 const router = express.Router();
 
-import { getAllTraders, getOneTrader, createTrader, updateTrader, deleteTrader } from '../controllers/TradersController.js';
+import {getAllMenu, } from '../controllers/MenuController.js';
 
-router.get('/', getAllTraders);
-router.get('/:id', getOneTrader);
-router.post('/', createTrader);
-router.put('/:id', updateTrader);
-router.delete('/:id', deleteTrader);
+router.get('/', getAllMenu);
+
+
 
 export default router;

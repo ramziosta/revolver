@@ -7,19 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server -w ../frontend/src/data.json --port 8000",
+    "server": "node server.js",
     "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
     "axios": "^1.8.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "express": "^4.21.2",
     "json-server": "^1.0.0-beta.3",
     "mongoose": "^8.12.1"
-  },
-  "devDependencies": {
   },
   "description": "This template should help get you started developing with Vue 3 in Vite.",
   "main": "../frontend/vite.config.js",
