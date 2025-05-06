@@ -1,5 +1,5 @@
-// models/Catering.js
+// models/Menu.js
 import mongoose from 'mongoose';
-import { MenuCategorySchema } from './MenuSchema.js';
+import { MenuCategorySchema } from './MenuCategory.js';
 
-export default mongoose.model('Catering', MenuCategorySchema, 'cateringMenu');
+export default mongoose.model('Catering', MenuCategorySchema, 'catering');

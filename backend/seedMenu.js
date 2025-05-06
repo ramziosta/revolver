@@ -1,14 +1,14 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import menuData from "./menuData.json" with { type: "json" };
-import MenuSchema from './models/MenuSchema.js';
+import cateringMenuData from "./cateringMenuData.json" with { type: "json" };
+import catering from './models/Catering.js';
 dotenv.config();
 
 try {
     await mongoose.connect(process.env.MONGODB_URI);
 
-    await MenuSchema.deleteMany({});
-    await MenuSchema.insertMany(menuData);
+    await catering.deleteMany({});
+    await catering.insertMany(cateringMenuData);
 
     console.log('Menu data seeded successfully');
     process.exit();

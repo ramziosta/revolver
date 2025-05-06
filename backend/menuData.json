@@ -12,17 +12,17 @@
           {
             "name": "Chicken and Rice",
             "description": "With gremolata and lemon",
-            "price": "8.00"
+            "price": ""
           },
           {
             "name": "Minestrone Soup",
             "description": "Hearty vegetable soup in a rich tomato broth",
-            "price": "7.50"
+            "price": ""
           },
           {
             "name": "Beef and Barley Soup",
             "description": "Tender beef and pearl barley in a savory broth",
-            "price": "9.00"
+            "price": ""
           }
         ]
       },
@@ -33,32 +33,32 @@
           {
             "name": "Zucchini & Mint Soup",
             "description": "Purée of spring zucchini, fresh mint, green garlic, and lemon crème fraîche",
-            "price": "9.50"
+            "price": ""
           },
           {
             "name": "Spring Mushroom & Barley Broth",
             "description": "Wild mushrooms, pearl barley, green peas, and a light vegetable consommé",
-            "price": "10.00"
+            "price": ""
           },
           {
             "name": "Curried Carrot & Coconut Soup",
             "description": "Gingered carrot purée, mild curry, coconut milk, lime leaf, and crispy shallots",
-            "price": "9.00"
+            "price": ""
           },
           {
             "name": "Spring Pea & Tarragon Soup",
             "description": "Sweet peas blended with tarragon and crème fraîche, topped with sugar snap slivers and microgreens",
-            "price": "10.50"
+            "price": ""
           },
           {
             "name": "Spring Onion & New Potato Soup",
             "description": "Creamy blend of new potatoes, charred spring onions, chives, and cultured butter",
-            "price": "9.50"
+            "price": ""
           },
           {
             "name": "Asparagus & Lemon Soup",
             "description": "Fresh asparagus purée with preserved lemon, crème fraîche, and shaved radish",
-            "price": "11.00"
+            "price": ""
           }
         ]
       }
@@ -77,17 +77,17 @@
           {
             "name": "Mixed Green Salad",
             "description": "Mixed greens, radishes, carrots, tomatoes, fine herbs with champagne vinaigrette",
-            "price": "10.00"
+            "price": ""
           },
           {
             "name": "Greek Village Salad",
             "description": "With Heirloom Tomatoes, Olives, and Feta",
-            "price": "12.00"
+            "price": ""
           },
           {
             "name": "Chopped Caesar Salad",
             "description": "With Fire-roasted corn, cajun cornbread croutons",
-            "price": "11.50"
+            "price": ""
           }
         ]
       },
@@ -98,17 +98,17 @@
           {
             "name": "Roasted Beet & Arugula Salad",
             "description": "Roasted heirloom beets, wild arugula, whipped goat cheese mousse, candied walnuts, sherry vinaigrette",
-            "price": "14.00"
+            "price": ""
           },
           {
             "name": "Spring Artichoke & Fennel Salad",
             "description": "Marinated baby artichokes, shaved fennel, snap peas, preserved lemon vinaigrette, mint, Grana Padano",
-            "price": "15.00"
+            "price": ""
           },
           {
             "name": "Asparagus & Quinoa Salad",
             "description": "Grilled asparagus, red quinoa, pea tendrils, pickled shallots, toasted almonds, lemon-thyme vinaigrette",
-            "price": "13.50"
+            "price": ""
           }
         ]
       }
@@ -127,22 +127,22 @@
           {
             "name": "Curated Cheese Board",
             "description": "With House Accoutrements",
-            "price": "18.00"
+            "price": ""
           },
           {
             "name": "Curated Cheese & Charcuterie Board",
             "description": "With House Accoutrements",
-            "price": "25.00"
+            "price": ""
           },
           {
             "name": "Greek Trio",
             "description": "Classic Greek dips: Taramasalata (creamy fish roe), Tirokafteri (spicy whipped feta), and Melitzanosalata (smoky eggplant), served with warm pita bread",
-            "price": "16.00"
+            "price": ""
           },
           {
             "name": "Spinach & Artichoke Dip",
             "description": "With crispy pita chips, roasted red peppers, and fresh mint",
-            "price": "14.50"
+            "price": ""
           }
         ]
       },
@@ -153,12 +153,12 @@
           {
             "name": "Seared Scallops",
             "description": "Scallops, carrot purée, crispy scallions, brown butter",
-            "price": "19.00"
+            "price": ""
           },
           {
             "name": "Shrimp Giuseppe",
             "description": "Breaded shrimp with Lemony Zip Sauce",
-            "price": "17.00"
+            "price": ""
           }
         ]
       },
@@ -169,32 +169,32 @@
           {
             "name": "Mushroom Tartine",
             "description": "Wild mushrooms, house-made sourdough, hot ricotta, truffle honey",
-            "price": "15.50"
+            "price": ""
           },
           {
             "name": "Beef Tartare",
             "description": "Hand-cut beef, quail egg, capers, shallots, rye crisps",
-            "price": "18.50"
+            "price": ""
           },
           {
             "name": "Potato Gnocchi",
             "description": "Hand-rolled potato gnocchi, asparagus tips, sweet peas, tarragon butter, shaved pecorino",
-            "price": "16.50"
+            "price": ""
           },
           {
             "name": "Goat Cheese Cake",
             "description": "With Frisée and balsamic glaze",
-            "price": "14.00"
+            "price": ""
           },
           {
             "name": "Vegetable Rice Paper Spring Rolls",
             "description": "Fresh vegetables and herbs wrapped in delicate rice paper, served with peanut dipping sauce",
-            "price": "12.00"
+            "price": ""
           },
           {
             "name": "Greek Trio",
             "description": "Taramasalata, Tirokafteri, Melitzanosalata, served with warm pita bread",
-            "price": "16.00"
+            "price": ""
           }
         ]
       }
@@ -213,62 +213,62 @@
           {
             "name": "Spring Egg Noodles",
             "description": "House-made egg noodles, sugar snap peas, spring onions, shiitake mushrooms, ginger-scallion oil, sesame, and yuzu soy glaze",
-            "price": "22.00"
+            "price": ""
           },
           {
             "name": "Vegetarian Lasagna",
             "description": "Layered Eggplant, Zucchini, Spinach, Ricotta, and Roasted Tomato Sauce",
-            "price": "20.00"
+            "price": ""
           },
           {
             "name": "Classic Spaghetti & Meatballs",
             "description": "Hand-Rolled Beef & Veal Meatballs in San Marzano Marinara, Fresh Basil, and Parmesan",
-            "price": "21.50"
+            "price": ""
           },
           {
             "name": "Fettuccine Primavera",
             "description": "Spring Vegetables, Lemon-Basil Butter, and Baby Arugula",
-            "price": "19.50"
+            "price": ""
           },
           {
             "name": "Wild Mushroom Pappardelle",
             "description": "Porcini Cream, Thyme, and Aged Gruyère",
-            "price": "23.00"
+            "price": ""
           },
           {
             "name": "Zucchini and Ricotta Cannelloni",
             "description": "Fresh Basil Pesto Cream and Crispy Garlic",
-            "price": "20.50"
+            "price": ""
           },
           {
             "name": "Shrimp Scampi Linguine",
             "description": "Lemon-Garlic Butter, Parsley, and Chili Flakes",
-            "price": "24.00"
+            "price": ""
           },
           {
             "name": "Cajun Chicken Alfredo",
             "description": "Blackened Chicken Breast, Roasted Peppers, and Creamy Parmesan Sauce",
-            "price": "22.50"
+            "price": ""
           },
           {
             "name": "Classic Bolognese",
             "description": "Slow-Simmered Beef and Veal Ragu with Fresh Tagliatelle",
-            "price": "23.50"
+            "price": ""
           },
           {
             "name": "Broccoli and Macaroni Gratin",
             "description": "Broccoli, Cheddar, Parmesan and Gruyère, with Herbed Breadcrumbs",
-            "price": "19.00"
+            "price": ""
           },
           {
             "name": "Smoked Salmon Carbonara",
             "description": "Linguine with Dill Cream, Lemon, and Capers",
-            "price": "25.00"
+            "price": ""
           },
           {
             "name": "Ricotta Gnocchi",
             "description": "With Roasted Cherry Tomatoes, Basil Oil, and Parmesan Crumble",
-            "price": "21.00"
+            "price": ""
           }
         ]
       },
@@ -279,52 +279,52 @@
           {
             "name": "Roasted Chicken Supreme",
             "description": "Confit garlic jus, cauliflower purée, charred fennel, cherry tomato glaze",
-            "price": "26.00"
+            "price": ""
           },
           {
             "name": "Jerk-Spiced Chicken",
             "description": "With Avocado-Mango Relish and Fragrant Island Rice",
-            "price": "25.00"
+            "price": ""
           },
           {
             "name": "Moroccan-Spiced Chicken Tagine",
             "description": "Braised with Medjool Dates, Apricots & Preserved Lemon, served over Toasted Almond Couscous",
-            "price": "27.00"
+            "price": ""
           },
           {
             "name": "Herb-Roasted Turkey",
             "description": "Accompanied by Roasted Heirloom Vegetables and Pan Reduction Jus",
-            "price": "24.50"
+            "price": ""
           },
           {
             "name": "Mexican Arroz con Pollo",
             "description": "Saffron-Tomato Braised Chicken with Fire-Roasted Peppers and Cilantro Rice Pilaf",
-            "price": "23.00"
+            "price": ""
           },
           {
             "name": "Sesame-Crusted Chicken Medallions",
             "description": "With Ginger-Soy Glaze, Stir-Fried Jasmine Rice & Baby Bok Choy",
-            "price": "25.50"
+            "price": ""
           },
           {
             "name": "Coconut-Curried Chicken",
             "description": "With Kaffir Lime, stir-fried vegetables, and Jasmine Rice",
-            "price": "24.00"
+            "price": ""
           },
           {
             "name": "Chicken Piccata à la Maison",
             "description": "Lemon-Caper Velouté, Sautéed Broccolini, and Olive Oil Potato Confit",
-            "price": "26.50"
+        "price": ""
           },
           {
             "name": "Sumac-Dusted Chicken Paillard",
             "description": "Charred Lemon, Tahini Yogurt, and Pomegranate Couscous",
-            "price": "23.50"
+            "price": ""
           },
           {
             "name": "Tandoori-Spiced Chicken",
             "description": "With Saffron Yogurt Rita Sauce, Roasted Cauliflower, and Pickled Shallots",
-            "price": "27.50"
+            "price": ""
           }
         ]
       },
@@ -335,22 +335,22 @@
           {
             "name": "Market Fish",
             "description": "Pan-seared seasonal fish with spring pea purée, roasted mushrooms, and preserved lemon",
-            "price": "32.00"
+            "price": ""
           },
           {
             "name": "Crispy Skin Salmon",
             "description": "Pan-seared salmon with crispy skin, French lentils, fennel slaw, and orange beurre blanc",
-            "price": "30.00"
+            "price": ""
           },
           {
             "name": "Pan Roasted Market Fish",
             "description": "With Herb Oil, Caperberry Relish, and Seasonal Vegetables",
-            "price": "31.00"
+            "price": ""
           },
           {
             "name": "Tuna Tataki",
             "description": "Seared sesame-crusted tuna with Wasabi Avocado Purée and Soy-Ginger Glaze",
-            "price": "33.00"
+            "price": ""
           }
         ]
       },
@@ -361,32 +361,32 @@
           {
             "name": "NY Strip Steak",
             "description": "10 oz Steak, potato purée, roasted seasonal vegetables, peppercorn demi glace",
-            "price": "38.00"
+            "price": ""
           },
           {
             "name": "Grilled Skirt Steak",
             "description": "With Chimichurri Verde, Roasted Corn Relish, and Smoked Sea Salt",
-            "price": "35.00"
+            "price": ""
           },
           {
             "name": "Steak au Poivre",
             "description": "Peppercorn-Crusted Striploin, Cognac Cream Sauce, and Pommes Frites",
-            "price": "40.00"
+            "price": ""
           },
           {
             "name": "Filet Mignon with Béarnaise",
             "description": "Tenderloin with Tarragon Béarnaise, Haricots Verts, and Fondant Potatoes",
-            "price": "42.00"
+            "price": ""
           },
           {
             "name": "Pistachio-Crusted Lamb Chops",
             "description": "With Whole Grain Mustard Glaze, Baby Root Vegetables, and Red Wine Jus",
-            "price": "45.00"
+            "price": ""
           },
           {
             "name": "Bavette",
             "description": "With Braised Leeks, Parsnip Purée, and Jus",
-            "price": "36.00"
+            "price": ""
           }
         ]
       },
@@ -397,47 +397,47 @@
           {
             "name": "Wild Mushroom Risotto",
             "description": "Arborio rice, seasonal mushrooms, aged parmesan, herbs",
-            "price": "22.00"
+            "price": ""
           },
           {
             "name": "Quattro Formaggi & Broccoli Macaroni",
             "description": "Four-Cheese Béchamel, Roasted Broccoli, and Toasted Herbed Breadcrumbs",
-            "price": "20.00"
+            "price": ""
           },
           {
             "name": "Stuffed Portobello",
             "description": "With Herbed Farro, Baby Kale, and Roasted Red Pepper Coulis",
-            "price": "21.50"
+            "price": ""
           },
           {
             "name": "Five-Spice Tofu Steak",
             "description": "With Chili Crisp, Gingered Napa Cabbage, and Scallion Rice",
-            "price": "23.00"
+            "price": ""
           },
           {
             "name": "Fettuccine Primavera",
             "description": "Spring Vegetables with Lemon-Basil Butter and Baby Arugula",
-            "price": "19.50"
+            "price": ""
           },
           {
             "name": "Eggplant Mille-Feuille",
             "description": "With Tofu Ricotta, Charred Leeks, and Caramelized Miso Glaze",
-            "price": "22.50"
+            "price": ""
           },
           {
             "name": "Wild Mushroom Pappardelle",
             "description": "With Porcini Cream, Thyme, and Aged Gruyère",
-            "price": "23.00"
+            "price": ""
           },
           {
             "name": "Sweet Potato Gnocchi",
             "description": "With Brown Butter, Fried Sage, and Toasted Pepitas",
-            "price": "21.00"
+            "price": ""
           },
           {
             "name": "Cauliflower Steak",
             "description": "With Vadouvan Curry, Cashew Cream, and Pickled Shallots",
-            "price": "24.00"
+            "price": ""
           }
         ]
       }
@@ -456,32 +456,32 @@
           {
             "name": "Seasonal Strata",
             "description": "Savory layered egg bake with seasonal vegetables, cheese, and crispy potato crust",
-            "price": "16.00"
+            "price": ""
           },
           {
             "name": "French Omelette",
             "description": "Classic French omelette with choice of fillings including ham, bacon, sausage, cheddar, Swiss, mushrooms, onions, and peppers, served with home-fries and toasted sourdough bread",
-            "price": "14.50"
+            "price": ""
           },
           {
             "name": "Signature Egg Bake Casserole",
             "description": "Fluffy baked eggs with roasted peppers, spinach, and cheddar",
-            "price": "15.00"
+            "price": ""
           },
           {
             "name": "Quiche Selection",
             "description": "A choice from a variety of quiches including Lorraine (bacon and Swiss), Spinach & Feta, and Wild Mushroom, served with a fresh greens salad",
-            "price": "15.50"
+            "price": ""
           },
           {
             "name": "Gourmet Breakfast Sandwich",
             "description": "With eggs, cheese, and choice of bacon, sausage, or avocado on a toasted brioche bun",
-            "price": "13.00"
+            "price": ""
           },
           {
             "name": "Breakfast Bowl",
             "description": "Scrambled eggs with choice of veggies, meats, and cheeses over crispy golden potatoes with herbs and caramelized onions. Optional sauces include hollandaise, salsa, and pesto",
-            "price": "17.00"
+            "price": ""
           }
         ]
       },
@@ -492,22 +492,22 @@
           {
             "name": "Yogurt Parfait Cups",
             "description": "Layered Greek yogurt with honey, granola, and fresh seasonal berries",
-            "price": "9.00"
+            "price": ""
           },
           {
             "name": "Fresh Fruit Cups",
             "description": "Seasonal fruit medley, perfectly portioned for individual service",
-            "price": "8.00"
+            "price": ""
           },
           {
             "name": "Assorted Muffins & Sweet Breads",
             "description": "Chef's selection of house-baked muffins and sweet loaves",
-            "price": "7.50"
+            "price": ""
           },
           {
             "name": "House Jams & Spreads",
             "description": "A variety of artisanal jams, compound butters, and preserves, served with toasted bread",
-            "price": "6.00"
+            "price": ""
           }
         ]
       }
@@ -526,22 +526,22 @@
           {
             "name": "Best Chocolate Chip Cookie",
             "description": "Valrhona chocolate and vanilla butter",
-            "price": "4.00"
+            "price": ""
           },
           {
             "name": "Brownie with Tahini Swirls",
             "description": "Rich chocolate brownie with Halava bits and a swirl of tahini",
-            "price": "5.00"
+            "price": ""
           },
           {
             "name": "Blondie",
             "description": "Chewy blondie with toasted pecans and a hint of sea salt",
-            "price": "4.50"
+            "price": ""
           },
           {
             "name": "Oatmeal Raisin",
             "description": "Classic oatmeal raisin cookie with plump Black and Golden Raisins",
-            "price": "3.50"
+            "price": ""
           }
         ]
       },
@@ -552,17 +552,17 @@
           {
             "name": "Carrot Chamomile Layer Cake",
             "description": "Spiced carrot cake infused with chamomile, honey cream cheese frosting, and walnut praline",
-            "price": "9.00"
+            "price": ""
           },
           {
             "name": "Sour Cream Pound Cake",
             "description": "Classic sour cream pound cake with lemon curd and lemon glaze",
-            "price": "8.50"
+            "price": ""
           },
           {
             "name": "Tiramisu Crepe Cake",
             "description": "Delicate layers of coffee and cocoa crepes with mascarpone cream",
-            "price": "10.00"
+            "price": ""
           }
         ]
       },
@@ -573,12 +573,12 @@
           {
             "name": "Fruit and Lemon Galette",
             "description": "Seasonal fruit medley baked in a flaky crust with vanilla custard and lemon glaze",
-            "price": "11.00"
+            "price": ""
           },
           {
             "name": "Seasonal Fruit Pavlova",
             "description": "Crisp meringue topped with seasonal fruit and vanilla custard",
-            "price": "12.00"
+            "price": ""
           }
         ]
       },
@@ -589,7 +589,7 @@
           {
             "name": "Strawberry and Cream Bambolone",
             "description": "Fluffy Italian doughnut filled with strawberry compote and vanilla bean pastry cream",
-            "price": "7.00"
+            "price": ""
           }
         ]
       }
@@ -608,7 +608,7 @@
           {
             "name": "Seasonal Craft Cocktails",
             "description": "Ask about our rotating selection of handcrafted seasonal cocktails",
-            "price": "14.00"
+            "price": ""
           }
         ]
       },
@@ -630,7 +630,7 @@
           {
             "name": "Artisanal Tea Service",
             "description": "Premium loose-leaf teas, served with house-made accompaniments",
-            "price": "6.00"
+            "price": ""
           }
         ]
       },
@@ -641,22 +641,22 @@
           {
             "name": "Brewed Coffee",
             "description": "Freshly brewed coffee",
-            "price": "4.00"
+            "price": ""
           },
           {
             "name": "Espresso",
             "description": "Single or double shot",
-            "price": "4.50"
+            "price": ""
           },
           {
             "name": "Cappuccino",
             "description": "Espresso with steamed milk and foam",
-            "price": "5.00"
+            "price": ""
           },
           {
             "name": "Latte",
             "description": "Espresso with steamed milk",
-            "price": "5.00"
+            "price": ""
           }
         ]
       },
@@ -667,17 +667,17 @@
           {
             "name": "Freshly Squeezed Juices",
             "description": "Orange, Grapefruit, Apple",
-            "price": "5.00"
+            "price": ""
           },
           {
             "name": "Sparkling Water",
             "description": "Perrier",
-            "price": "4.00"
+            "price": ""
           },
           {
             "name": "Soft Drinks",
             "description": "Coke, Diet Coke, Sprite, Ginger Ale",
-            "price": "3.50"
+            "price": ""
           }
         ]
       }

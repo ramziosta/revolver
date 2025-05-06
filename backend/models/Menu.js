@@ -1,19 +1,5 @@
 // models/Menu.js
 import mongoose from 'mongoose';
+import { MenuCategorySchema } from './MenuCategory.js';
 
-const menuItemSchema = new mongoose.Schema({
-    name: String,
-    description: String,
-    image: String,
-    price: Number,
-    tags: [String],
-});
-
-const menuSchema = new mongoose.Schema({
-    title: String,
-    type: { type: String, required: true }, // 'weekly', 'catering', etc.
-    items: [menuItemSchema],
-    createdAt: { type: Date, default: Date.now },
-});
-
-export default mongoose.model('menuCategory', menuSchema);
+export default mongoose.model('Menu', MenuCategorySchema, 'menu');
