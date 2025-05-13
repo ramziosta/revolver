@@ -19,7 +19,7 @@ export default function SubscriptionPage() {
                     <div className="absolute inset-0 bg-black/50 z-10"></div>
                 </div>
                 <div className="relative z-20 text-center text-white px-4">
-                    <h1 className="text-5xl md:text-6xl font-playfair mb-4">Elevate Your Dining Experience</h1>
+                    <h1 className="text-5xl md:text-6xl font-playfair mb-4">Your Personal Chef, On Repeat</h1>
                     <p className="text-xl font-montserrat max-w-2xl mx-auto opacity-90">
                         Subscribe to chef-crafted meals delivered on your schedule
                     </p>

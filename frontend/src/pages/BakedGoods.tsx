@@ -1,8 +1,8 @@
-import { Layout } from "@/components/layout/layout";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import {Layout} from "@/components/layout/layout";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+import {Button} from "@/components/ui/button";
+import {Link} from "react-router-dom";
+import React, {useEffect, useState} from "react";
 
 const BakedGoods = () => {
     const [bakedGoodsMenuCategories, setBakedGoodsMenuCategories] = useState([]);
@@ -50,7 +50,8 @@ const BakedGoods = () => {
 
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10">
-                    <span className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
+                    <span
+                        className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
                         Heavenly Baked Goods
                     </span>
                     <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">
@@ -102,8 +103,13 @@ const BakedGoods = () => {
                                                     >
                                                         <div className="flex justify-between items-start mb-2">
                                                             <h3 className="font-playfair text-xl">{item.name}</h3>
-                                                            <span className="font-montserrat text-umami-gold">{item.price}</span>
+                                                            <span
+                                                                className="font-montserrat text-umami-gold">{item.price}</span>
                                                         </div>
+                                                        <div className="flex justify-between items-start mb-2">
+                                                            <p className="font-playfair text-l">{item.weight}</p>
+                                                        </div>
+
                                                         <p className="text-umami-default font-cormorant text-xl">{item.description}</p>
                                                         {item.specs && Array.isArray(item.specs) && (
                                                             <ul className="list-disc pl-5 mt-2 text-muted-foreground font-cormorant text-lg space-y-1">
@@ -120,17 +126,27 @@ const BakedGoods = () => {
                                 ))}
                             </Tabs>
                         )}
+                        <div className="mt-12 bg-umami-light p-8 rounded-sm">
+                            <h3 className="font-playfair text-xl mb-4">Catering & Custom Orders</h3>
+                            <p className="text-muted-foreground font-montserrat mb-4">
+                                Planning a brunch, office meeting, special event—or simply stocking your favorites at
+                                home? We offer our full baked goods menu for personal, corporate, and event catering.
+                            </p>
+                            <p className="text-muted-foreground font-montserrat mb-4">
+                                Choose from our seasonal selections or request custom flavors, sizes, and dietary
+                                accommodations. Gluten-free options available. Tray service and bulk pricing offered for
+                                large orders.
+                            </p>
+                            <p className="text-muted-foreground font-montserrat">
+                                Contact us to explore options, availability, and pricing. We’d love to create something
+                                special just for you.
+                            </p>
+                        </div>
                         <div className="text-center">
                             <Button asChild
-                                    className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-8">
+                                    className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
                                 <Link to="/contact">Place Your Order</Link>
                             </Button>
-                        </div>
-                        <div className="mt-12 bg-umami-light/5 p-8 rounded-sm">
-                            <h3 className="font-playfair text-xl mb-4">Catering Information</h3>
-                            <p className="text-muted-foreground font-montserrat">
-                                Please contact us for custom menus, dietary accommodations, or special requests.
-                            </p>
                         </div>
                     </div>
                 </div>

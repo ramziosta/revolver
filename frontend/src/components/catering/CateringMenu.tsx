@@ -140,13 +140,15 @@ const CateringMenu = () => {
                                 </TabsContent>
                             ))}
                         </Tabs>
-                        <div className="mt-12 bg-umami-light/5 p-8 rounded-sm">
+                        <div className="mt-12 bg-umami-light p-8 rounded-sm">
                             <h3 className="font-playfair text-xl mb-4">Catering Information</h3>
                             <p className="text-muted-foreground font-montserrat mb-4">
-                                All catering orders require 48-hour advance notice. Minimum order quantities may apply.
+                                We offer curated catering experiences designed around limited, seasonal selections. Menus are built by course, with seated dinners featuring 4-course service: a starter, salad, entrée, and dessert.
+                                Optional pre-dinner cocktail hours include passed hors d’oeuvres or grazing displays. We also provide flexible setups such as self-serve or hosted stations, baskets, and presentation trays.
+
                             </p>
                             <p className="text-muted-foreground font-montserrat">
-                                Please contact us for custom menus, dietary accommodations, or special requests.
+                                All catering orders require advance notice. Minimum order quantities apply. Please contact us to discuss availability, event format, and customized options. Please contact us for custom menus, dietary accommodations, or special requests.
                             </p>
                         </div>
                     </div>

@@ -5,6 +5,7 @@ const BakedGoodItemSchema = new mongoose.Schema({
     name: String,
     description: String,
     price: String,
+    weight: String,
     isGlutenFree: Boolean,
     ingredients: [String],
     category: String // Optional, like "Pastries", "Cakes"

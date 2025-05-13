@@ -8,46 +8,55 @@
       {
         "name": "White Sourdough",
         "description": "Classic White Sourdough",
+        "weight": "850g",
         "price": "JOD 6"
       },
       {
         "name": "Whole Wheat Sourdough",
         "description": "100% Whole Wheat flour",
+        "weight": "850g",
         "price": "JOD 6"
       },
       {
         "name": "Artisanal Loaf Sourdough",
         "description": "Specialty blend of grains flours",
+        "weight": "850g",
         "price": "JOD 6"
       },
       {
         "name": "100%  Rye Sourdough",
         "description": "Russian Rye Flour and Caraway Seeds",
+        "weight": "850g",
         "price": "JOD 6"
       },
       {
         "name": "MultiSeed Whole Grain Sourdough",
         "description": "With a blend of Pumpkin, Sesame, Sunflower, poppy and Black Seeds",
+        "weight": "850g",
         "price": "JOD 7"
       },
       {
         "name": "Brioche Loaf",
         "description": "Classic, Variations include: Chocolate chip, Raisin & walnut, Apple Cinnamon",
-        "price": "JOD 7  JOD 8"
+        "weight": "450g",
+        "price": "JOD 7 JOD 8"
       },
       {
         "name": "Cinnamon Swirl Bread",
-        "description": "Buttery with a swirl of Cinnamon Sugar",
-        "price": "JOD 7"
+        "description": "Buttery with a swirl of Cinnamon Sugar and cream cheese frosting",
+        "weight": "450g",
+        "price": "JOD 8"
       },
       {
         "name": "Ciabatta",
         "description": "Classic Italian Bread with a chewy crust and open crumbs",
+        "weight": "380g",
         "price": "JOD 4"
       },
       {
         "name": "Focaccia",
-        "description": "Classic Herb, Tomato Feta and Basil, Black and Green Olive, Sausage and Cheddar, and Caramelized Onions, Mushroom and Goat Cheese",
+        "description": "Flavors include: Classic Herb, Tomato Feta and Basil, Black and Green Olive, Sausage and Cheddar, and Caramelized Onions, Mushroom and Goat Cheese",
+        "weight": "800g",
         "price": "JOD 7"
       }
     ]
@@ -59,7 +68,7 @@
     "icon": "Cookie",
     "items": [
       {
-        "name": "Best Chocolate Chip Cookies",
+        "name": "Best Chocolate Chip Cookie",
         "description": "",
         "price": "JOD 3"
       },
@@ -154,6 +163,8 @@
       {
         "name": "Tiered Cakes",
         "description": "Tailored Layer Cake (Check with us), 12 Layer Chocolate Cake, Strawberry, Banana Toffee, Birthday Cake Funfetti, Coconut, Lotus Chocolate, Olive Oil Lemon Basil. ",
+        "weight": "Available in 2-tier, 3-tier, and 4-tier sizes",
+        "price": "Starting from JOD 35 up to JOD 110",
         "specs": [
           "Each cake features three or more generous layers, filled and topped with a variety of premium ingredients.",
           "Signature flavors include Red Velvet, Carrot, Banana, Coffee, and Lemon.",
@@ -164,19 +175,28 @@
       },
       {
         "name": "Bundt and Coffee Cakes",
+        "weight": "Available in medium and large sizes",
+        "price": "Starting from JOD 18 up to JOD 35",
         "description": "Sour Cream Pound Cake, Vanilla Chocolate Marble Cake, Lemon Pound Cake with Lemon Curd, Spiced Coffee with Streusel Toppings."
+
       },
       {
         "name": "Crepe Cakes",
-        "description": "Tiramisu, Matcha, Crème Brûlée, Milk Tea, Chocolate Mocha"
+        "description": "Tiramisu, Matcha, Crème Brûlée, Milk Tea, Chocolate Mocha",
+        "weight": "Available in 20 layer, and 30 layer sizes",
+        "price": "Starting from JOD 35 up to JOD 60"
       },
       {
         "name": "Cupcakes & Muffins",
-        "description": "Custard Castella, Chocolate Espresso Cream, Rosemary Orange, Lemon Blueberry, Multigrain Health, Apple Granola, Ginger Orange Crunch"
+        "description": "Custard Castella, Chocolate Espresso Cream, Rosemary Orange, Lemon Blueberry, Multigrain Health, Apple Granola, Ginger Orange Crunch",
+        "weight": "Available in 6, 8, 12, and 16 cup sizes and more",
+        "price": "Starting from JOD 15 and up"
       },
       {
         "name": "Cheesecake",
-        "description": "Baked, No-Bake Cheesecake, and  Burnt Basque Cheesecake  served with a variety of toppings as Strawberry Compote, Blueberry Compote, Raspberry Compote, Salted Caramel, Chocolate Sauce, Seasonal Fruit Compote, Dulce De Leche"
+        "description": "Baked, No-Bake Cheesecake, and  Burnt Basque Cheesecake  served with a variety of toppings as Strawberry Compote, Blueberry Compote, Raspberry Compote, Salted Caramel, Chocolate Sauce, Seasonal Fruit Compote, Dulce De Leche",
+        "weight": "Available in 9 inch and 12 inch sizes",
+        "price": "Starting from JOD 35 up to JOD 85"
       }
     ]
   },
@@ -189,32 +209,36 @@
       {
         "name": "Quiche",
         "description": "Lorraine: Bacon and Swiss, Mediterranean:Tomato Basil and Feta, French: Mushroom and Goat Cheese",
-        "price": ""
+        "weight": "9 inch pie",
+        "price": "Starting from JOD 15 up to JOD 45"
       },
       {
         "name": "Egg Bake Casserole",
         "description": "Potato Strata topped with eggs, and fillings including: Mushrooms, Sausage, veggies, and Cheeses. Sauces include: Black Peppercorn Gravy, Ranchero, Hollandaise and more.",
-        "price": ""
+        "weight": "9 inch pie",
+        "price": "Starting from JOD 15 up to JOD 45"
       },
       {
         "name": "Home Fries",
-        "description": "Crispy oven baked Potatoes with roasted garlic and herbs. Add cheese, baccon and veggies : Onions, Mushrooms and peppers.",
-        "price": ""
+        "description": "Crispy oven baked Potatoes with roasted garlic and herbs. Add cheese, bacon and veggies extra: Onions, Mushrooms and peppers.",
+        "weight": "medium(8-12 ppl), large(12-20 ppl) and (30-40 ppl) x-large pan",
+        "price": "JOD 10, 20 JOD and JOD 30"
       },
       {
         "name": "Savory Egg Crêpe",
-        "description": "Filled with eggs, and cheese, extra fillings include: Sausage, mushrooms, chicken, and veggies",
-        "price": ""
+        "description": "Filled with eggs, and cheese, extra fillings include: Sausage, mushrooms, chicken, and veggies served with house salad.",
+        "weight": "2 pieces per order",
+        "price": "JOD 10"
       },
       {
         "name": "Savory Herb Scone",
-        "description": "Parmesan and chive scone served warm",
-        "price": ""
+        "description": "Parmesan and chive",
+        "price": "2.5 JOD"
       },
       {
         "name": "Buttermilk Biscuits",
         "description": "Classic, Cheese, Roasted Garlic and Herb, Bacon and Cheddar.",
-        "price": ""
+        "price": "From 2.5 JOD to 3.5 JOD"
       }
     ]
   },
@@ -227,47 +251,56 @@
       {
         "name": "Rustic Seasonal Galette",
         "description": "Free-form tart with options like cinnamon apples, grilled peaches with burrata, or stone fruits.",
-        "price": ""
+        "weight": "medium(8-12 ppl), large(12-20) ppl",
+        "price": "20 JOD 30 JOD"
       },
       {
         "name": "Berry Cobbler",
         "description": "Mixed seasonal berries baked with vanilla biscuit topping.",
-        "price": ""
+        "weight": "medium(8-12 ppl), large(12-20) ppl",
+        "price": "20 JOD 30 JOD"
       },
       {
         "name": "Pecan Pie",
         "description": "Toasted pecans in a rich brown sugar custard with flaky pie crust.",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Pumpkin Pie",
         "description": "Pumpkin in a rich butternut custard with flaky pie crust.",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Chocolate Cream Pie",
         "description": "Rich chocolate custard in a flaky pie crust with whipped cream and chocolate shavings",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Apple Pie",
         "description": "Classic apple pie with flaky crust and spiced apple filling.",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Banoffie Pie",
         "description": "Banana, toffee, and whipped cream in a graham cracker crust.",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Lemon Meringue Pie",
         "description": "Tart and creamy lemon custard in a flaky pie crust with toasted meringue.",
-        "price": ""
+        "weight": "8 inch",
+        "price": "20 JOD"
       },
       {
         "name": "Peach Cobbler",
         "description": "Fresh peaches baked with vanilla biscuit topping.",
-        "price": ""
+        "weight": "medium(8-12 ppl), large(12-20) ppl",
+        "price": "20 JOD 30 JOD"
       }
     ]
   },
@@ -280,37 +313,37 @@
       {
         "name": "Crème brûlée",
         "description": "Filled with French pastry cream with a burnt sugar crunch",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Chocolate",
         "description": "Filled with chocolate pastry cream and coated with cocoa powder and sugar",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Café Latte",
         "description": "Filled with coffee cream",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Mexicano",
         "description": "Filled with dulce de leche and coated with cinnamon sugar",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Thai Dream",
         "description": "Filled with coconut cream, mango mousse and coated with toasted coconut",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Strawberry",
         "description": "Filled with strawberry jam and pastry cream",
-        "price": ""
+        "price": "3.5 JOD"
       },
       {
         "name": "Lemon",
         "description": "Filled with lemon curd and topped with toasted marshmallow",
-        "price": ""
+        "price": "3.5 JOD"
       }
     ]
   }
