@@ -10,7 +10,7 @@ import cors from 'cors';
 const app = express();
 
 const allowedOrigins = [
-    'http://localhost:8080',                // Local dev frontend
+    'http://localhost:5173',                // Local dev frontend
 ];
 
 app.use(cors({

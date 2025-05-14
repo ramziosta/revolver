@@ -2,8 +2,8 @@
 import { Layout } from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import dineinthed from "../../public/dineinthed.jpg"
-import ramzisqueeze from "../../public/ramzisqueeze.jpg"
+import dineinthed from "../assets/dineinthed.jpg"
+import ramzisqueeze from "../assets/ramzisqueeze.jpg"
 const Chef = () => {
   return (
     <Layout>
@@ -28,7 +28,7 @@ const Chef = () => {
           <h1 className="text-4xl md:text-6xl font-playfair mb-6">Meet Chef Ramzi Osta</h1>
           <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
           <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
-            The creative force behind Revolver by Umami. With deep roots in New York’s culinary scene and a passion for seasonality and innovation, Chef Ramzi brings global sophistication to every dish served.
+            The creative force behind Revolver by Umami, Chef Ramzi blends his Jordanian heritage with years of experience in New York City’s high-end culinary world, where innovation and technique are always at the cutting edge. His work honors seasonality and technique — spanning artisanal baking, French pastries, Asian desserts, and bold Indian and Latin flavors — all brought together with a globally inspired, artistic touch.
           </p>
         </div>
       </section>

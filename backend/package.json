@@ -1,5 +1,5 @@
 {
-  "name": "product",
+  "name": "revolver",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -21,16 +21,15 @@
     "nodemon": "^3.1.10"
   },
   "description": "This template should help get you started developing with Vue 3 in Vite.",
-  "main": "../frontend/vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramziosta/vuedemo.git"
+    "url": "git+https://github.com/ramziosta/revolver.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ramziosta/vuedemo/issues"
+    "url": "https://github.com/ramziosta/revolver/issues"
   },
-  "homepage": "https://github.com/ramziosta/vuedemo#readme"
+  "homepage": "https://github.com/ramziosta/revolver"
 }

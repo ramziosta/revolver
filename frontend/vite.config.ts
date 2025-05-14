@@ -10,8 +10,8 @@ const __dirname = path.dirname(__filename);
 export default defineConfig(({ mode }) => ({
     server: {
         host: "::",
-        port: 8080,
-        '/api': 'http://localhost:8080'
+        port: 5173,
+        '/api': 'http://localhost:5173'
     },
     plugins: [
         react(),

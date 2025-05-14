@@ -1,7 +1,7 @@
 
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
-import logo from "../../../public/logo2.png";
+import logo from "../../assets/logo2.png";
 interface LogoProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: "sm" | "md" | "lg";
   asLink?: boolean;
