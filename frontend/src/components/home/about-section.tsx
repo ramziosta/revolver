@@ -18,7 +18,7 @@ export function AboutSection() {
           </div>
 
           <div className="flex flex-col">
-            <span className="text-sm text-umami-gold font-montserrat tracking-widest uppercase mb-3">Our Story</span>
+            <span className="text-m font-semibold text-umami-gold font-montserrat tracking-widest uppercase mb-3">Our Story</span>
             <h2 className="text-3xl md:text-4xl font-playfair mb-6">Artistry in Every Dish</h2>
 
             <p className="text-muted-foreground mb-6 font-montserrat">

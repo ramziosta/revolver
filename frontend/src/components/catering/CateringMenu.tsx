@@ -68,7 +68,6 @@ const CateringMenu = () => {
                                         value={category.id}
                                         className="data-[state=active]:bg-umami data-[state=active]:text-umami-light font-montserrat tracking-wider"
                                     >
-                                        <category.icon className="w-4 h-4 mr-2" />
                                         {category.name}
                                     </TabsTrigger>
                                 ))}

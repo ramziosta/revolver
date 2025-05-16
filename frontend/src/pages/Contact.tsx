@@ -1,4 +1,4 @@
-
+import {useState } from 'react';
 import { Layout } from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,6 +7,43 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    try {
+      const response = await fetch('http://localhost:8000/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      } else {
+        setStatus('Failed to send message.');
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('Error sending message.');
+    }
+  };
+
   return (
     <Layout>
       {/* Hero Section with Parallax Effect */}
@@ -104,33 +141,35 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+            {/*Form*/}
             <div>
               <h2 className="text-3xl font-playfair mb-8">Send a Message</h2>
-              
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" placeholder="John Doe" />
+                  <Input id="name" value={formData.name} onChange={handleChange} placeholder="John Doe" />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
+                  <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone number</Label>
-                  <Input id="phone" type="text" placeholder="962 7 9089 4715" />
+                  <Input id="phone" type="text" value={formData.phone} onChange={handleChange} placeholder="962 7 9089 4715" />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <select 
-                    id="subject" 
-                    className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  <select
+                      id="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                      className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     <option value="">Select a subject</option>
+                    <option value="ordering">Ordering</option>
                     <option value="reservation">Reservation Inquiry</option>
                     <option value="catering">Catering Information</option>
                     <option value="feedback">Feedback</option>
@@ -138,26 +177,30 @@ const Contact = () => {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <textarea 
-                    id="message" 
-                    rows={5}
-                    placeholder="Please enter your message here..."
-                    className="w-full px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 resize-none"
+                  <textarea
+                      id="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={5}
+                      placeholder="Please enter your message here..."
+                      className="w-full px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 resize-none"
                   ></textarea>
                 </div>
-                
+
                 <Button type="submit" className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
                   Send Message
                 </Button>
+
+                {status && <p className="mt-2 text-center text-sm text-muted-foreground">{status}</p>}
               </form>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Map Section */}
       {/*<section className="py-16 bg-umami-light/5">*/}
       {/*  <div className="container mx-auto px-4">*/}

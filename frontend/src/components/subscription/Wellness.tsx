@@ -232,24 +232,24 @@ const WellnessMenu = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <Tabs defaultValue="balanced" className="w-full">
-                            <TabsList className="w-full mb-10 bg-transparent flex justify-center flex-wrap gap-2">
+                            <TabsList className="w-full mb-14 bg-transparent flex justify-center flex-wrap gap-2">
                                 {wellnessMenu.map((category) => (
                                     <TabsTrigger
                                         key={category.id}
                                         value={category.id}
                                         className="data-[state=active]:bg-umami data-[state=active]:text-umami-light font-montserrat tracking-wider"
                                     >
-                                        <category.icon className="w-4 h-4 mr-2"/>
                                         {category.name}
                                     </TabsTrigger>
                                 ))}
                             </TabsList>
-
+                            <div className="h-2" ></div>
                             {wellnessMenu.map((category) => (
                                 <TabsContent key={category.id} value={category.id} className="space-y-10">
                                     {category.subCategories.map((sub) => (
                                         <div key={sub.id}>
-                                            <h2 className="text-2xl font-playfair text-center mb-4">{sub.name}</h2>
+                                            <h2 className="text-2xl font-playfair text-center mb-4 ">{sub.name}</h2>
+                                            <div className="h-2" ></div>
                                             <div className="grid md:grid-cols-2 gap-6">
                                                 {sub.items.map((item, i) => (
                                                     <div key={i} className="border-b border-border pb-4">

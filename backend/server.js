@@ -1,11 +1,12 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import router  from './routes/router.js';
 import cateringRouter from './routes/cateringRouter.js';
-import bakedGoods   from './routes/bakedGoodsRouter.js';
+import bakedGoodsRouter   from './routes/bakedGoodsRouter.js';
 import cors from 'cors';
-
+import contactRouter from "./routes/contact.js";
+dotenv.config();
 
 const app = express();
 
@@ -28,8 +29,9 @@ app.use(cors({
 
 app.use(express.json());
 app.use('/catering', cateringRouter);
-app.use('/bakedgoods', bakedGoods);
+app.use('/bakedgoods', bakedGoodsRouter);
 app.use('/menu', router);
+app.use('/contact', contactRouter);
 
 
 
@@ -47,3 +49,4 @@ mongoose.connect(DB_URI)
     .catch((error) => {
         console.error('Error connecting to MongoDB Atlas:', error.message);
     });
+console.log("Receiver:", process.env.EMAIL_RECEIVER);

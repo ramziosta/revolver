@@ -67,7 +67,7 @@ export default {
 					DEFAULT: '#403E43', // Dark charcoal
 					light: '#F1F1F1',   // Light cream
 					cream: '#E2D1C3',   // Beige tone
-					gold: '#D4AF37',    // Gold accent
+					gold: '#cc9b00',    // Gold accent
 				}
 			},
 			fontFamily: {

@@ -11,7 +11,7 @@ export function HeroSection() {
         style={{ 
           backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070')", 
           backgroundPosition: "center",
-          filter: "brightness(0.3) "
+          filter: "brightness(0.4) "
         }}
       />
       

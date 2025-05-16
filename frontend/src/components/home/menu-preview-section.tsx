@@ -39,7 +39,7 @@ export function MenuPreviewSection() {
     <section className="py-20 bg-umami text-umami-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-sm text-umami-cream font-montserrat tracking-widest uppercase mb-3 inline-block">Taste</span>
+          <span className="text-m font-semibold text-umami-cream font-montserrat tracking-widest uppercase mb-3 inline-block">Taste</span>
           <h2 className="text-3xl md:text-4xl font-playfair mb-3">Current Seasonal Menu</h2>
           <h3 className="text-2xl md:text-3xl text-umami-gold font-playfair mb-3">Spring April 1st - June 20th</h3>
           <p className="text-umami-light/80 max-w-2xl mx-auto font-montserrat">

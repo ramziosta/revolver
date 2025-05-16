@@ -11,7 +11,7 @@ export function ReservationSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-sm text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Reservations</span>
+            <span className="text-m font-semibold text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Reservations</span>
             <h2 className="text-3xl md:text-4xl font-playfair mb-6">Book Your Event</h2>
             
             <p className="text-muted-foreground mb-6 font-montserrat">

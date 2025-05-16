@@ -13,7 +13,7 @@ export function CateringSection() {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="text-sm text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Catering</span>
+          <span className="text-m font-semibold text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Catering</span>
           <h2 className="text-3xl md:text-4xl font-playfair mb-6">Elevated Events & Private Dining</h2>
           <p className="text-muted-foreground font-montserrat">
             Bring the Revolver by Umami experience to your special occasions. Our catering services offer the same commitment to restaurant quality and creativity, tailored to your event's needs.

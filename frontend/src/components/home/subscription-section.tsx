@@ -12,7 +12,7 @@ export function SubscriptionSection() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-3xl mx-auto text-center mb-16">
-                    <span className=" py-2 px-4 rounded-full mb-6 text-sm text-umami-DEFAULT bg-umami-gold font-montserrat tracking-widest uppercase inline-block " >Subscription Meal Service</span>
+                    <span className=" py-4 px-6 rounded-full mb-6 text-m font-semibold text-umami-light bg-umami-gold font-montserrat tracking-widest uppercase inline-block " >Subscription Meal Service</span>
                     <h2 className="text-3xl md:text-4xl font-playfair mb-6">Flexible Meal Plans for Every Lifestyle</h2>
                     <p className="text-muted-foreground font-montserrat">
                         Choose from personal, family, or office meal plans — designed for convenience, wellness, and variety. Delivered to your door or workplace, just when you need it.

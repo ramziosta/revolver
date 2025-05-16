@@ -23,7 +23,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-sm text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Testimonials</span>
+            <span className="text-m font-semibold text-umami-gold font-montserrat tracking-widest uppercase mb-3 inline-block">Testimonials</span>
             <h2 className="text-3xl md:text-4xl font-playfair">What Others Are Saying</h2>
           </div>
           

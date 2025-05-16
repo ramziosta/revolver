@@ -84,8 +84,8 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="text-center">
-                <Button asChild className="bg-umami text-umami-light hover:bg-umami-dark transition-colors duration-300 font-montserrat tracking-wider">
-                  <Link to="/subscriptions">Explore Plans</Link>
+                <Button asChild className="bg-umami-gold text-umami-light hover:bg-umami-dark transition-colors duration-300 font-montserrat tracking-wider">
+                  <Link to="/subscriptions">Meal Subscription Plans</Link>
                 </Button>
               </div>
             </nav>
