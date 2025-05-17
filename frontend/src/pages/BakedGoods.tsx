@@ -145,7 +145,7 @@ const BakedGoods = () => {
                         <div className="text-center">
                             <Button asChild
                                     className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
-                                <Link to="/contact">Place Your Order</Link>
+                                <Link to="/contact?type=ordering">Place Your Order</Link>
                             </Button>
                         </div>
                     </div>

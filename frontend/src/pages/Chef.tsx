@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import dineinthed from "../assets/dineinthed.jpg"
 import ramzisqueeze from "../assets/ramzisqueeze.jpg"
+import React from "react";
 const Chef = () => {
   return (
     <Layout>
@@ -110,6 +111,13 @@ const Chef = () => {
             </blockquote>
             
             <p className="font-montserrat">— Chef Ramzi Osta</p>
+
+            <div className="text-center">
+              <Button asChild
+                      className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
+                <Link to="/contact?type=chef">Book Your Private Dining Experience</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

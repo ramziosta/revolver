@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/layout";
 function TermsOfService() {
     return (
         <Layout>
+            <div className="bg-gray-600 p-12 text-white">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
             <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
             <p className="mb-4">Effective Date: <strong>01-01-2025</strong></p>
@@ -63,6 +64,7 @@ function TermsOfService() {
 
             <p className="mt-6">Contact us at: <strong>umamiamman@gmail.com</strong></p>
         </div>
+                </div>
         </Layout>
     );
 }

@@ -2,7 +2,8 @@ import { Layout } from "@/components/layout/layout";
 function PrivacyPolicy() {
     return (
         <Layout>
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+            <div className="bg-gray-600 p-12 text-white">
+        <div className="container mx-auto px-4 py-10 max-w-3xl mt-12">
             <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
             <p className="mb-4">
                 Effective Date: <strong>01-01-2025</strong>
@@ -59,6 +60,7 @@ function PrivacyPolicy() {
                 Updates will be posted here with a revised effective date.
             </p>
         </div>
+                </div>
         </Layout>
     );
 }

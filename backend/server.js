@@ -33,6 +33,7 @@ app.use('/bakedgoods', bakedGoodsRouter);
 app.use('/menu', router);
 app.use('/contact', contactRouter);
 app.use('/reservation', contactRouter)
+app.use('/event', contactRouter)
 
 
 

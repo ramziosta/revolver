@@ -90,4 +90,46 @@ const reservationController = async (req, res) => {
     }
 };
 
-export {contactController, reservationController};
+
+const eventInquiryController = async (req, res) => {
+    const { name, email, phone, eventType, date, guests, details } = req.body;
+
+    if (!name || !email || !details) {
+        return res.status(400).json({ error: "Missing required fields." });
+    }
+
+    const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
+        },
+    });
+
+    const mailOptions = {
+        from: `"${name}" <${email}>`,
+        to: process.env.EMAIL_RECEIVER,
+        subject: `🍽️ Private Chef / Event Inquiry: ${eventType || "General"}`,
+        html: `
+      <h3>Private Chef / Event Inquiry</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone || "N/A"}</p>
+      <p><strong>Event Type:</strong> ${eventType || "N/A"}</p>
+      <p><strong>Date:</strong> ${date || "N/A"}</p>
+      <p><strong>Guests:</strong> ${guests || "N/A"}</p>
+      <p><strong>Details:</strong></p>
+      <p>${details}</p>
+    `,
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        res.status(200).json({ message: "Inquiry sent successfully." });
+    } catch (err) {
+        console.error("Email send error:", err);
+        res.status(500).json({ error: "Failed to send message." });
+    }
+};
+
+export {contactController, reservationController, eventInquiryController};

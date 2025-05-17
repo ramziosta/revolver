@@ -1,48 +1,73 @@
-import {useState } from 'react';
+import {useState,useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import { Layout } from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock,  } from "lucide-react";
 
 
 const Contact = () => {
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+
+  // Get parameters from URL
+  const initialType = query.get("type") || "";
+  const initialPlan = query.get("plan") || "";
+
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: initialType || "",
+    message: initialPlan ? `Subscription Plan: ${initialPlan}` : "",
   });
 
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+    setStatus("Sending...");
 
     try {
-      const response = await fetch('http://localhost:8000/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("http://localhost:8000/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setStatus('Message sent successfully!');
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setStatus("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
       } else {
-        setStatus('Failed to send message.');
+        setStatus("Failed to send message. Please try again.");
       }
-    } catch (err) {
-      console.error(err);
-      setStatus('Error sending message.');
+    } catch (error) {
+      console.error(error);
+      setStatus("Error sending message.");
     }
   };
+
+  // Scroll to form when param is detected
+  useEffect(() => {
+    const formAnchor = document.getElementById("contact-form");
+    if (formAnchor) {
+      formAnchor.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <Layout>
@@ -65,7 +90,7 @@ const Contact = () => {
             Contact
           </span>
           <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">
-            Let’s Talk — Whether It’s Placing an Order, Catering, Reservations, or Collaboration.
+            Place an Order, Book a Reservation, Request Catering, or Explore Collaboration.
           </h1>
           <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
           <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
@@ -142,23 +167,44 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
             {/*Form*/}
-            <div>
+            <div className="bg-umami/5 p-5">
               <h2 className="text-3xl font-playfair mb-8">Send a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" value={formData.name} onChange={handleChange} placeholder="John Doe" />
+                  <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="John Doe"
+                      required
+                  />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" />
+                  <Input
+                      id="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="john@example.com"
+                      required
+                  />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone number</Label>
-                  <Input id="phone" type="text" value={formData.phone} onChange={handleChange} placeholder="962 7 9089 4715" />
+                  <Label htmlFor="phone">Phone Number</Label>
+                  <Input
+                      id="phone"
+                      type="text"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="962 7 9089 4715"
+                      required
+                  />
                 </div>
 
                 <div className="space-y-2">
@@ -168,12 +214,14 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      required
                   >
                     <option value="">Select a subject</option>
                     <option value="ordering">Ordering</option>
                     <option value="reservation">Reservation Inquiry</option>
                     <option value="catering">Catering Information</option>
-                    <option value="subscription">Meal Subscriptions</option>
+                    <option value="subscription">Meal Subscription</option>
+                    <option value="chef">Private Chef</option>
                     <option value="feedback">Feedback</option>
                     <option value="employment">Employment Opportunities</option>
                     <option value="other">Other</option>
@@ -187,16 +235,20 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows={5}
-                      placeholder="Please enter your message here..."
+                      placeholder="Tell us more about your needs, preferences, or event..."
                       className="w-full px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 resize-none"
+                      required
                   ></textarea>
                 </div>
 
-                <Button type="submit" className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
+                <Button
+                    type="submit"
+                    className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider"
+                >
                   Send Message
                 </Button>
 
-                {status && <p className="mt-2 text-center text-sm text-muted-foreground">{status}</p>}
+                {status && <p className="text-center text-sm text-muted-foreground">{status}</p>}
               </form>
             </div>
           </div>

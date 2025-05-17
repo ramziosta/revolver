@@ -1,6 +1,9 @@
 import {Layout} from "@/components/layout/layout.tsx";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs.tsx";
 import {HandPlatter, Flame, Briefcase } from "lucide-react";
+import {Button} from "@/components/ui/button.tsx";
+import {Link} from "react-router-dom";
+import React from "react";
 
 const wellnessMenu = [
     {
@@ -263,6 +266,13 @@ const WellnessMenu = () => {
                                 </TabsContent>
                             ))}
                         </Tabs>
+
+                    </div>
+                    <div className="text-center">
+                        <Button asChild
+                                className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
+                            <Link to="/contact?type=subscription">Eat Better. Feel Better. Subscribe Now!</Link>
+                        </Button>
                     </div>
                 </div>
             </section>

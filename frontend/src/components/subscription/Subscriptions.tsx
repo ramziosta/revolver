@@ -2,6 +2,7 @@
 import { Layout } from "@/components/layout/layout.tsx";import { Button } from "@/components/ui/button.tsx";
 import { Link } from "react-router-dom";
 import { ChevronRight, Check, Star, Users, Briefcase, Heart } from "lucide-react";
+import React from "react";
 
 export default function SubscriptionPage() {
     return (
@@ -111,14 +112,16 @@ export default function SubscriptionPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <Button variant="default" className="w-full group">
-                                        <Link to="/onceAweek">Choose Plan</Link>
 
-                                        <ChevronRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                                    </Button>
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className="text-center">
+                        <Button asChild
+                                className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
+                            <Link to="/contact?type=subscription"> Choose Your Meal Subscription Plan</Link>
+                        </Button>
                     </div>
                 </div>
 
@@ -156,8 +159,8 @@ export default function SubscriptionPage() {
                                     </li>
                                 </ul>
                             </div>
-                            <Button asChild className="text-md" size="lg">
-                                <Link to="/contact">Schedule a Team Consultation</Link>
+                            <Button asChild className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider">
+                                <Link to="/contact?type=subscription">Schedule a Team Consultation</Link>
                             </Button>
                         </div>
                         <div className="relative">
@@ -174,7 +177,8 @@ export default function SubscriptionPage() {
                                     <Star className="w-5 h-5 text-yellow-400" />
                                     <Star className="w-5 h-5 text-yellow-400" />
                                 </div>
-                                <p className="text-sm italic">"The office lunch program has transformed our culture. The food is amazing and it's brought our team closer together."</p>
+                                <p className="text-sm italic">"Since we started the Umami office lunch program, our team not only eats better.
+                                    The food is consistently outstanding, it brought ease and consistency to our busy days. The food is exceptional, and lunch has become the moment we all look forward to."</p>
                                 <p className="text-xs font-semibold mt-2">— Sarah T., Marketing Director</p>
                             </div>
                         </div>
@@ -249,8 +253,8 @@ export default function SubscriptionPage() {
                         Join our community of satisfied customers who have simplified their dining experience while enjoying restaurant-quality meals at home or work.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <Button size="lg" className="bg-umami hover:bg-umami/90">
-                            <Link to="/contact">Get Started Now</Link>
+                        <Button size="lg" className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider">
+                            <Link to="/contact?type=subscription">Get Started Now</Link>
                         </Button>
                         <Button size="lg" variant="outline">
                             <Link to="/menu">View Sample Menus</Link>
