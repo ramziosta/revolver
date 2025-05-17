@@ -104,16 +104,17 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
-                  <Mail className="text-umami-gold mr-4 h-5 w-5 mt-1" />
-                  <div>
-                    <h3 className="font-playfair text-lg mb-2">Email Us</h3>
-                    <p className="text-muted-foreground font-montserrat">
-                     umamiamman@gmail.com
-                    </p>
-                  </div>
-                </div>
+
+                {/*Mail*/}
+                {/*<div className="flex items-start">*/}
+                {/*  <Mail className="text-umami-gold mr-4 h-5 w-5 mt-1" />*/}
+                {/*  <div>*/}
+                {/*    <h3 className="font-playfair text-lg mb-2">Email Us</h3>*/}
+                {/*    <p className="text-muted-foreground font-montserrat">*/}
+                {/*     umamiamman@gmail.com*/}
+                {/*    </p>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
                 
                 <div className="flex items-start">
                   <Clock className="text-umami-gold mr-4 h-5 w-5 mt-1" />
@@ -172,6 +173,7 @@ const Contact = () => {
                     <option value="ordering">Ordering</option>
                     <option value="reservation">Reservation Inquiry</option>
                     <option value="catering">Catering Information</option>
+                    <option value="subscription">Meal Subscriptions</option>
                     <option value="feedback">Feedback</option>
                     <option value="employment">Employment Opportunities</option>
                     <option value="other">Other</option>

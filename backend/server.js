@@ -32,6 +32,7 @@ app.use('/catering', cateringRouter);
 app.use('/bakedgoods', bakedGoodsRouter);
 app.use('/menu', router);
 app.use('/contact', contactRouter);
+app.use('/reservation', contactRouter)
 
 
 
@@ -50,3 +51,4 @@ mongoose.connect(DB_URI)
         console.error('Error connecting to MongoDB Atlas:', error.message);
     });
 console.log("Receiver:", process.env.EMAIL_RECEIVER);
+console.log("Sender:", process.env.EMAIL_USER);

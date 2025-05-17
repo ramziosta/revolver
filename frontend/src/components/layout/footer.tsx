@@ -1,8 +1,8 @@
 
 import { Logo } from "@/components/ui/logo";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter,} from "lucide-react";
 import { Link } from "react-router-dom";
-
+import whatsapp from "@/assets/whatsapp.png";
 export function Footer() {
   return (
     <footer className="bg-umami text-umami-light py-12">
@@ -19,6 +19,14 @@ export function Footer() {
               </a>
               <a href="https://www.facebook.com/profile.php?id=61570837547092#" className="text-umami-light hover:text-umami-cream transition-colors">
                 <Facebook size={20} />
+              </a>
+              <a
+                  href="https://wa.me/962790894715"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg z-50"
+              >
+                <img src={whatsapp}  alt="WhatsApp" className="h-12 w-12"/>
               </a>
               {/*<a href="#" className="text-umami-light hover:text-umami-cream transition-colors">*/}
               {/*  <Twitter size={20} />*/}
@@ -40,9 +48,14 @@ export function Footer() {
               <address className="font-montserrat text-sm not-italic text-umami-light/80">
                 <p>Amman Jordan</p>
                 {/*<p>Culinary District</p>*/}
-                <p className="mt-2">umamiamman@gmail.com</p>
-                <p>(962) 7 9089 4715</p>
+                <p className="mt-2">
+                  Reach out to us via our <a href="/contact" className="text-umami-gold hover:underline">contact page</a> or message us directly on WhatsApp using the chat button below.
+                </p>
+                <p className="mt-1">
+                  You can also call us at <a href="tel:+962790894715" className="text-umami-gold hover:underline">(962) 7 9089 4715</a>
+                </p>
               </address>
+
             </div>
           </div>
           
