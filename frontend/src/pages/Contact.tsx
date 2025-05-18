@@ -32,12 +32,13 @@ const Contact = () => {
     }));
   };
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/contact`, {
+      const response = await fetch(`${API_BASE_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
