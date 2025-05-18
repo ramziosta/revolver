@@ -10,7 +10,6 @@ dotenv.config();
 
 const app = express();
 
-const cors = require('cors');
 const allowedOrigins = [
     'http://localhost:5173',
     'https://revolver-tau.vercel.app',
