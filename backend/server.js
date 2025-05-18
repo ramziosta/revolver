@@ -39,7 +39,7 @@ app.use('/event', contactRouter)
 
 
 const DB_URI = process.env.MONGODB_URI;
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 // Connect to MongoDB
 mongoose.connect(DB_URI)
