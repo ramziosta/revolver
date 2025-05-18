@@ -26,7 +26,7 @@ export const InquiryForm = () => {
     setStatus('Sending...');
 
     try {
-      const response = await fetch('http://localhost:8000/contact/event', {
+      const response = await fetch('https://revolver-pcce.onrender.com/contact/event', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
