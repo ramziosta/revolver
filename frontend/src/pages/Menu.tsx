@@ -35,9 +35,9 @@ const Menu = () => {
 
   const [menuCategories, setMenuCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   useEffect(() => {
-    fetch(`${API_BASE_URL}/menu`)
+    fetch("https://revolver-pcce.onrender.com/menu")
         .then((res) => res.json())
         .then((data) => {
           console.log("Fetched menu data:", data); // 👈 Log it

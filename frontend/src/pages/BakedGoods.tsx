@@ -8,9 +8,9 @@ const BakedGoods = () => {
     const [bakedGoodsMenuCategories, setBakedGoodsMenuCategories] = useState([]);
     const [loading, setLoading] = useState(true);
     const [activeTab, setActiveTab] = useState("");
-    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
     useEffect(() => {
-        fetch(`${API_BASE_URL}/bakedgoods')`)
+        fetch("https://revolver-pcce.onrender.com/bakedgoods")
             .then((res) => res.json())
             .then((data) => {
                 console.log("Fetched menu data:", data); // 👈 Log it
