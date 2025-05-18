@@ -1,27 +1,10 @@
 import React from "react";
 
-const recommendations = [
-    {
-        name: "Spring Herb Risotto",
-        image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        description: "Creamy arborio rice with seasonal spring herbs, asparagus, and parmesan"
-    },
-    {
-        name: "Pan-Seared Scallops",
-        image: "https://images.unsplash.com/photo-1532980193608-32e2e719a8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        description: "With pea purée, crispy pancetta, and lemon butter sauce"
-    },
-    {
-        name: "Rhubarb & Strawberry Tart",
-        image: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        description: "Seasonal fruit tart with vanilla bean custard and almond crust"
-    }
-]
 const instagram =[
     {
         title: "Artisanal Baked Goods",
         description: "Sourdough breads, cakes, cookies, brunch favorites and more.",
-        href: "/baked-goods",
+        href: "https://revolver-tau.vercel.app/baked-goods",
         image: "https://images.unsplash.com/photo-1595526417596-c0fdbf75287b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
