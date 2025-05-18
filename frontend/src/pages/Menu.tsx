@@ -37,7 +37,7 @@ const Menu = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/menu')
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/menu`)
         .then((res) => res.json())
         .then((data) => {
           console.log("Fetched menu data:", data); // 👈 Log it

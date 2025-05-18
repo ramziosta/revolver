@@ -10,7 +10,7 @@ const BakedGoods = () => {
     const [activeTab, setActiveTab] = useState("");
 
     useEffect(() => {
-        fetch('http://localhost:8000/bakedgoods')
+        fetch(`${import.meta.env.VITE_API_BASE_URL}/bakedgoods')`)
             .then((res) => res.json())
             .then((data) => {
                 console.log("Fetched menu data:", data); // 👈 Log it
