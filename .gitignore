@@ -27,5 +27,6 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-/frontend/Hidden
+.env
+frontend/.env
 backend/.env
