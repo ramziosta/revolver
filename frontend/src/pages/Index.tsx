@@ -17,7 +17,7 @@ const Index = () => {
             <SubscriptionSection/>
             <MenuPreviewSection/>
             <CateringSection/>
-            <TestimonialsSection/>
+            {/*<TestimonialsSection/>*/}
             <ReservationSection/>
         </Layout>
     );
