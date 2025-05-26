@@ -26,7 +26,7 @@ export function SubscriptionSection() {
                             Weekly flexible meal plans for 1–2 or up to 10 people. Includes entrée, soup or salad, and dessert.
                         </p>
                         <img
-                            src="https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=2070"
+                            src="https://plus.unsplash.com/premium_photo-1671809031237-ed80c7eb6e7c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Personal meals"
                             className="w-full h-40 object-cover rounded-sm mb-4"
                         />
@@ -38,7 +38,7 @@ export function SubscriptionSection() {
                             Brunch, lunch, and more for teams of 5 and up. Choose frequency and add-ons like dessert or fruit platters.
                         </p>
                         <img
-                            src="https://images.unsplash.com/photo-1565299543923-37dd37887442?q=80&w=2070"
+                            src="https://images.unsplash.com/photo-1616645297079-dfaf44a6f977?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Office catering"
                             className="w-full h-40 object-cover rounded-sm mb-4"
                         />
@@ -50,7 +50,7 @@ export function SubscriptionSection() {
                             Nutritionally balanced meals designed for fitness, health, and performance. Available in personal and corporate formats.
                         </p>
                         <img
-                            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=2070"
+                            src="https://plus.unsplash.com/premium_photo-1664648005742-0c360f4910b2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Healthy meals"
                             className="w-full h-40 object-cover rounded-sm mb-4"
                         />

@@ -26,7 +26,7 @@ const Chef = () => {
     <span className="bg-umami-gold text-umami-default font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
       Our Chef
     </span>
-          <h1 className="text-4xl md:text-6xl font-playfair mb-6">Meet Chef Ramzi Osta</h1>
+          <h1 className="text-4xl md:text-6xl font-playfair mb-6 ">Meet Chef Ramzi Osta</h1>
           <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
           <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
             The creative force behind Revolver by Umami, Chef Ramzi blends his Jordanian heritage with years of experience in New York City’s high-end culinary world, where innovation and technique are always at the cutting edge. His work honors seasonality and technique — spanning artisanal baking, French pastries, Asian desserts, and bold Indian and Latin flavors — all brought together with a globally inspired, artistic touch.
@@ -51,9 +51,9 @@ const Chef = () => {
               <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-umami-gold z-0"></div>
             </div>
 
-            <div>
-              <h2 className="text-3xl font-playfair mb-2">Chef Ramzi Osta</h2>
-              <p className="text-umami-gold font-montserrat text-sm tracking-wider uppercase mb-6">Executive Chef & Founder</p>
+            <div  >
+              <h2 className="text-3xl font-playfair mb-2 0 text-center">Chef Ramzi Osta</h2>
+              <p className="text-umami-gold font-montserrat text-sm tracking-wider uppercase mb-6 text-center">Executive Chef & Founder</p>
 
               <p className="text-muted-foreground font-montserrat mb-4">
                 With over 20 years of international culinary experience, Chef Ramzi Osta brings a globally refined touch to every plate. His career was shaped in New York City’s vibrant food scene, where he trained and led in top-tier kitchens across both fine dining and high-volume hospitality.
@@ -67,8 +67,8 @@ const Chef = () => {
                 Chef Ramzi’s vision blends classical techniques with bold, modern flavors—whether developing private dining experiences, elegant catering menus, or curated wellness-focused subscriptions. His mission is simple: food that nourishes, delights, and tells a story.
               </p>
               
-              <div className="flex space-x-4">
-                <Button asChild className="bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
+              <div className="flex space-x-4 justify-center">
+                <Button asChild className="bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider ">
                   <Link to="/menu">Explore The Menu</Link>
                 </Button>
               </div>

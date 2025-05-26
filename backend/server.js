@@ -6,6 +6,7 @@ import cateringRouter from './routes/cateringRouter.js';
 import bakedGoodsRouter   from './routes/bakedGoodsRouter.js';
 import cors from 'cors';
 import contactRouter from "./routes/contact.js";
+import imageRouter from "./routes/imagesRouter.js";
 dotenv.config();
 
 const app = express();
@@ -34,6 +35,7 @@ app.use('/menu', router);
 app.use('/contact', contactRouter);
 app.use('/reservation', contactRouter)
 app.use('/event', contactRouter)
+app.use('/images', imageRouter);
 
 
 

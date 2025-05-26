@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import image from "../../assets/table.jpg";
 
 export function AboutSection() {
   return (
@@ -9,14 +10,14 @@ export function AboutSection() {
           <div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974"
+                src={image} //"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974"
                 alt="Elegantly plated dish"
-                className="rounded-md w-full h-auto object-cover"
+                className="rounded-md w-[140%] h-auto object-cover"
+style={{ filter: "brightness(0.9)" }}
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-umami-gold z-0"></div>
             </div>
           </div>
-
           <div className="flex flex-col">
             <span className="text-m font-semibold text-umami-gold font-montserrat tracking-widest uppercase mb-3">Our Story</span>
             <h2 className="text-3xl md:text-4xl font-playfair mb-6">Artistry in Every Dish</h2>

@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 import { Calendar, Clock, User, Users } from "lucide-react";
 import {useState} from "react";
+import image from "../../assets/event.jpg";
 
 export function ReservationSection() {
   const [bookingFormData, setBookingFormData] = useState({
@@ -206,7 +207,7 @@ export function ReservationSection() {
           <div className="hidden md:block">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974"
+                src={image} //"https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974"
                 alt="Restaurant interior"
                 className="rounded-sm w-full h-auto object-cover"
               />

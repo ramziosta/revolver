@@ -16,6 +16,7 @@ export function HeroSection() {
       />
       
       {/* Content */}
+        console.log("hello")
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-playfair text-umami-light  font-medium mb-6">
           <span className="block">Culinary Artistry</span>

@@ -74,7 +74,7 @@ export default function SubscriptionPage() {
                                 title: "Once a Week",
                                 description: "Perfect for busy professionals who want to enjoy one special chef-prepared meal weekly.",
                                 price: "From JOD 59/week",
-                                image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                                image: "https://plus.unsplash.com/premium_photo-1668618296951-ae17b19e40d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                                 features: ["Complete meal for 1-2 people", "Entrée + Side + Dessert", "Weekly menu rotation"]
                             },
                             {
@@ -88,7 +88,7 @@ export default function SubscriptionPage() {
                                 title: "Family Style - 5x a Week",
                                 description: "Complete meal solutions for busy families who still want to enjoy quality dinners together.",
                                 price: "From JOD 289/week",
-                                image: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                                image: "https://images.unsplash.com/photo-1639696318374-2934d7c11182?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGRpbm5lciUyMGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D",
                                 features: ["Family-sized portions (4-10 people)", "Kid-friendly options available", "Full week of dinners covered"]
                             }
                         ].map((plan, index) => (
@@ -237,7 +237,7 @@ export default function SubscriptionPage() {
                             </div>
                             <div className="relative">
                                 <img
-                                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGVhbHRoeSUyMG1lYWx8ZW58MHx8MHx8fDA%3D"
                                     alt="Healthy meal preparation"
                                     className="h-full w-full object-cover"
                                 />

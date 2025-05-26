@@ -13,7 +13,7 @@ const BakedGoods = () => {
         fetch("https://revolver-pcce.onrender.com/bakedgoods")
             .then((res) => res.json())
             .then((data) => {
-                console.log("Fetched menu data:", data); // 👈 Log it
+                console.log("Fetched menu data:", data);
                 setBakedGoodsMenuCategories(data);
                 setActiveTab(data[0]._id);
                 setLoading(false);

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import {Layout } from "@/components/layout/layout";
-
+import React, { useState, useEffect } from "react";
 
 const galleryImages = [
     {
@@ -30,6 +30,39 @@ const galleryImages = [
 ];
 
 export default function GalleryPage() {
+    //instagram featured images from the database
+    const [instagramImages, setInstagramImages] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+
+            fetch("https://revolver-pcce.onrender.com/images")
+                .then((res: Response) => res.json())
+                .then((data) => {
+                    console.log("fetching images", data);
+                    setInstagramImages(data);
+                    setLoading(false);
+                })
+                .catch((err) => {
+                    console.error('Error Loading images:', err);
+                    setLoading(false);
+                });
+    }, []);
+
+    // instagram images from service
+    useEffect(() => {
+
+        const scriptId = "elfsight-platform-script";
+        if (!document.getElementById(scriptId)) {
+            const script = document.createElement("script");
+            script.id = scriptId;
+            script.src = "https://static.elfsight.com/platform/platform.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }, []);
+    if (loading) {
+        return <div className="text-center py-20">Loading menu...</div>;
+    }
     return (
         <Layout>
             {/* Hero Section */}
@@ -69,7 +102,7 @@ export default function GalleryPage() {
         <main className="container mx-auto px-4 py-12 mt-14">
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {galleryImages.map((image, idx) => (
+                {instagramImages.map((image, idx) => (
                     <div key={idx} className="overflow-hidden rounded-2xl shadow-lg">
                         <img
                             src={image.src}
@@ -81,6 +114,7 @@ export default function GalleryPage() {
                     </div>
                 ))}
             </div>
+            <div className="elfsight-app-417857f2-998e-4542-b478-26fac8b964d8" data-elfsight-app-lazy></div>
         </main>
         </Layout>
     );
