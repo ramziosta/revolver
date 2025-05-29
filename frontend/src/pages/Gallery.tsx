@@ -76,22 +76,53 @@ export default function GalleryPage() {
                 </div>
             </section>
 
-            <main className="container mx-auto px-4 py-12 mt-14">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <main className="container mx-auto px-4 py-16  bg-umami/bg-umami 2bg-umami bg-umami/20 ">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-playfair text-umami mb-4">
+                        Signature Plates & Seasonal Bites
+                    </h2>
+                    <p className="max-w-2xl mx-auto text-muted-foreground text-base font-montserrat">
+                        A curated collection of our most inspired dishes — from elegant desserts to seasonal mains.
+                    </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  ">
+
                     {instagramImages.map((image, idx) => (
-                        <div key={idx} className="overflow-hidden rounded-2xl shadow-lg">
-                            <img
-                                src={image.image}
-                                alt={image.alt || image.title || ""}
-                                title={image.title || ""}
-                                className={cn(
-                                    "w-full h-64 object-cover transform hover:scale-105 transition duration-300"
+                        <div
+                            key={idx}
+                            className="rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-background flex flex-col transition-transform hover:scale-[1.02]"
+                        >
+                            <div className="w-full aspect-[4/3] bg-white flex items-center justify-center">
+                                <img
+                                    src={image.image}
+                                    alt={image.alt || image.title || ""}
+                                    className="max-h-full max-w-full object-contain"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <h3 className="text-lg font-playfair text-umami mb-2">
+                                    {image.title}
+                                </h3>
+                                {image.description && (
+                                    <p className="text-muted-foreground text-sm font-montserrat">
+                                        {image.description}
+                                    </p>
                                 )}
-                            />
+                            </div>
                         </div>
                     ))}
                 </div>
-                <div className="elfsight-app-417857f2-998e-4542-b478-26fac8b964d8" data-elfsight-app-lazy></div>
+
+                {/* Elfsight embed below the gallery */}
+                <section className="mt-24 text-center">
+                    <h2 className="text-3xl md:text-4xl font-playfair text-umami mb-12">
+                        Follow Us on Instagram
+                    </h2>
+                    <div
+                        className="elfsight-app-417857f2-998e-4542-b478-26fac8b964d8 mx-auto font-playfair "
+                        data-elfsight-app-lazy
+                    ></div>
+                </section>
             </main>
         </Layout>
     );
