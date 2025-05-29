@@ -5,8 +5,9 @@ const InstagramImageSchema = new mongoose.Schema({
     alt: String,
     category: String,
     description: String,
-    image: String, // URL to the image
-    href: String    // Optional: link to a page or post
+    image: String,
+    href: String
 });
 
-module.exports = mongoose.model('InstagramImage', InstagramImageSchema);
+const InstagramImage = mongoose.model('InstagramImage', InstagramImageSchema);
+export default InstagramImage;

@@ -2,55 +2,29 @@ import { cn } from "@/lib/utils";
 import {Layout } from "@/components/layout/layout";
 import React, { useState, useEffect } from "react";
 
-const galleryImages = [
-    {
-        src: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
-        alt: "Rustic sourdough bread on wooden board",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1605478572073-4e8c04d40cc9?auto=format&fit=crop&w=800&q=80",
-        alt: "Fine dining plated dish with edible flowers",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1559628232-93bd3f28d5e6?auto=format&fit=crop&w=800&q=80",
-        alt: "Chef slicing gourmet meat in open kitchen",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1565895405139-6b71f5a9c866?auto=format&fit=crop&w=800&q=80",
-        alt: "Charcuterie and cheese board spread",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=800&q=80",
-        alt: "Assorted pastries on rustic table",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1598514982834-34ef8e3c8ae3?auto=format&fit=crop&w=800&q=80",
-        alt: "Cocktails and small bites at candlelit dinner",
-    },
-];
+
 
 export default function GalleryPage() {
     //instagram featured images from the database
     const [instagramImages, setInstagramImages] = useState([]);
     const [loading, setLoading] = useState(true);
+    //images and alt from mongoDB
     useEffect(() => {
-
-            fetch("https://revolver-pcce.onrender.com/images")
-                .then((res: Response) => res.json())
-                .then((data) => {
-                    console.log("fetching images", data);
-                    setInstagramImages(data);
-                    setLoading(false);
-                })
-                .catch((err) => {
-                    console.error('Error Loading images:', err);
-                    setLoading(false);
-                });
+        fetch("https://revolver-pcce.onrender.com/images")
+            .then((res) => res.json())
+            .then((data) => {
+                console.log("Fetched menu data:", data);
+                setInstagramImages(data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.error('Error loading menu:', err);
+                setLoading(false);
+            });
     }, []);
 
     // instagram images from service
     useEffect(() => {
-
         const scriptId = "elfsight-platform-script";
         if (!document.getElementById(scriptId)) {
             const script = document.createElement("script");
@@ -60,9 +34,11 @@ export default function GalleryPage() {
             document.body.appendChild(script);
         }
     }, []);
+
     if (loading) {
         return <div className="text-center py-20">Loading menu...</div>;
     }
+
     return (
         <Layout>
             {/* Hero Section */}
@@ -80,9 +56,9 @@ export default function GalleryPage() {
 
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-center items-center text-center px-4 z-10 text-white">
-    <span className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
-      Gallery
-    </span>
+                    <span className="bg-umami-gold text-umami-DEFAULT font-montserrat uppercase tracking-widest text-sm py-2 px-4 rounded-full mb-6">
+                        Gallery
+                    </span>
                     <h1 className="text-5xl md:text-7xl font-playfair mb-6">A Feast for the Eyes</h1>
                     <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
                     <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
@@ -99,23 +75,24 @@ export default function GalleryPage() {
                     </p>
                 </div>
             </section>
-        <main className="container mx-auto px-4 py-12 mt-14">
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                {instagramImages.map((image, idx) => (
-                    <div key={idx} className="overflow-hidden rounded-2xl shadow-lg">
-                        <img
-                            src={image.src}
-                            alt={image.alt}
-                            className={cn(
-                                "w-full h-64 object-cover transform hover:scale-105 transition duration-300"
-                            )}
-                        />
-                    </div>
-                ))}
-            </div>
-            <div className="elfsight-app-417857f2-998e-4542-b478-26fac8b964d8" data-elfsight-app-lazy></div>
-        </main>
+            <main className="container mx-auto px-4 py-12 mt-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {instagramImages.map((image, idx) => (
+                        <div key={idx} className="overflow-hidden rounded-2xl shadow-lg">
+                            <img
+                                src={image.image}
+                                alt={image.alt || image.title || ""}
+                                title={image.title || ""}
+                                className={cn(
+                                    "w-full h-64 object-cover transform hover:scale-105 transition duration-300"
+                                )}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div className="elfsight-app-417857f2-998e-4542-b478-26fac8b964d8" data-elfsight-app-lazy></div>
+            </main>
         </Layout>
     );
 }

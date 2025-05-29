@@ -1,122 +1,108 @@
-import image1 from '@/frontend/src/assets/images/bass.jpg';
-import image2 from 'frontend/src/assets/images/benedict.jpg';
-import image3 from 'frontend/src/assets/images/breadpudding.jpg';
-import image4 from 'frontend/src/assets/images/cake.jpg';
-import image5 from 'frontend/src/assets/images/cheese.jpg';
-import image6 from 'frontend/src/assets/images/chocolate.jpg';
-import image7 from 'frontend/src/assets/images/cheesecake.jpg';
-import image8 from 'frontend/src/assets/images/crockets.jpg';
-import image9 from 'frontend/src/assets/images/dessert.jpg';
-import image10 from 'frontend/src/assets/images/frenchtoast.jpg';
-import image11 from 'frontend/src/assets/images/kale.jpg';
-import image12 from 'frontend/src/assets/images/mezza.jpg';
-import image13 from 'frontend/src/assets/images/parfait.jpg';
-import image14 from 'frontend/src/assets/images/salad.jpg';
-import image15 from 'frontend/src/assets/images/strippedbass.jpg';
-import image16 from 'frontend/src/assets/images/tiramisu.jpg';
-import image17 from 'frontend/src/assets/images/watercress.jpg';
-
-export const instagramImagesData = [
+const instagramImagesData = [
   {
-    title: "Baked Goods",
-    description: "Fresh pastries, breads, and brunch treats.",
-    image: image1,
-    href: "/baked-goods"
+    title: "Bass",
+    alt: "Bass with a twist.",
+    category: "Seafood",
+    description: "Seabass with a twist.",
+    image: 'bass.jpg',
+    href: "/baked-goods",
   },
   {
-    title: "Seasonal Brunch",
+    title: "Eggs Benedict",
     description: "Warm sourdough, croissants, and spreads.",
-    image: image2,
+    image: 'benedict.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Daily Bakes",
+    title: "Bread Pudding",
     description: "Wholesome small-batch goodness.",
-    image: image3,
+    image: 'breadpudding.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Weekend Treats",
+    title: "Cake",
     description: "Flaky, buttery pastries made with love.",
-    image: image4,
+    image: 'cake.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Farm to Table",
+    title: "Cheese and Charcuterie",
     description: "Seasonal ingredients, elevated flavor.",
-    image: image5,
+    image: 'cheese.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Desserts",
+    title: "Chocolate",
     description: "Delicious treats for any occasion.",
-    image: image6,
+    image: 'chocolate.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Cakes",
+    title: "Goat Cheese Cakes",
     description: "Creamy, decadent cakes with a twist.",
-    image: image7,
+    image: 'cheesecake.jpg',
     href: "/baked-goods"
   },
   {
     title: "Crockets",
     description: "Flaky, buttery pastries made with love.",
-    image: image8,
+    image: 'crockets.jpg',
     href: "/baked-goods"
   },
   {
     title: "Desserts",
     description: "Delicious treats for any occasion.",
-    image: image9,
+    image: 'deserts.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Cakes",
+    title: "French Toast",
     description: "Creamy, decadent cakes with a twist.",
-    image: image10,
+    image: 'frenchtoast.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Crockets",
+    title: "Kale",
     description: "Flaky, buttery pastries made with love.",
-    image: image11,
+    image: 'kale.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Desserts",
+    title: "Mezza",
     description: "Delicious treats for any occasion.",
-    image: image12,
+    image: 'mezza.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Cakes",
+    title: "Parfait",
     description: "Creamy, decadent cakes with a twist.",
-    image: image13,
+    image: 'parfait.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Crockets",
+    title: "Lola Rosa Salad",
     description: "Flaky, buttery pastries made with love.",
-    image: image14,
+    image: 'salad.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Desserts",
+    title: "Stripped Bass",
     description: "Delicious treats for any occasion.",
-    image: image15,
+    image: 'strippedbass.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Cakes",
+    title: "Tiramisu",
     description: "Creamy, decadent cakes with a twist.",
-    image: image16,
+    image: 'tiramisu.jpg',
     href: "/baked-goods"
   },
   {
-    title: "Crockets",
+    title: "Watercress Salad",
     description: "Flaky, buttery pastries made with love.",
-    image: image17,
+    image: 'watercress.jpg',
     href: "/baked-goods"
   },
 ];
+
+export default instagramImagesData;

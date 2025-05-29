@@ -1,13 +1,15 @@
-import InstagramImage from '../models/InstagramImages.js';
+import admin from 'firebase-admin';
+import InstagramImages from '../models/InstagramImages.js';
 
 
-const imageController = async (req, res) => {
+
+
+const getAllImages = async (req, res) => {
     try {
-        const images = await InstagramImage.find();
+        const images = await InstagramImages.find();
         res.json(images);
-    } catch (err) {
-        res.status(500).json({ error: 'Server error' });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
     }
-}
-
-export default imageController;
+};
+export default getAllImages;

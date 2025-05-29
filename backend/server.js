@@ -6,7 +6,7 @@ import cateringRouter from './routes/cateringRouter.js';
 import bakedGoodsRouter   from './routes/bakedGoodsRouter.js';
 import cors from 'cors';
 import contactRouter from "./routes/contact.js";
-import imageRouter from "./routes/imagesRouter.js";
+import instagramRouter from './routes/instagramRouter.js';
 dotenv.config();
 
 const app = express();
@@ -14,6 +14,8 @@ const app = express();
 const allowedOrigins = [
     'http://localhost:5173',
     'https://revolver-tau.vercel.app',
+    'https://revolver-pcce.onrender.com'
+
 ];
 
 app.use(cors({
@@ -35,7 +37,10 @@ app.use('/menu', router);
 app.use('/contact', contactRouter);
 app.use('/reservation', contactRouter)
 app.use('/event', contactRouter)
-app.use('/images', imageRouter);
+app.use('/images', instagramRouter);
+
+
+
 
 
 
