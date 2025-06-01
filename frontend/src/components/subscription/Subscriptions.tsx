@@ -73,21 +73,21 @@ export default function SubscriptionPage() {
                             {
                                 title: "Once a Week",
                                 description: "Perfect for busy professionals who want to enjoy one special chef-prepared meal weekly.",
-                                price: "From JOD 59/week",
+                                price: "Starting from JOD 59/week",
                                 image: "https://plus.unsplash.com/premium_photo-1668618296951-ae17b19e40d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                                 features: ["Complete meal for 1-2 people", "Entrée + Side + Dessert", "Weekly menu rotation"]
                             },
                             {
                                 title: "3x a Week",
                                 description: "Our most popular plan! Enjoy multiple chef-crafted dinners without the hassle of cooking.",
-                                price: "From JOD 149/week",
+                                price: "Starting from JOD 149/week",
                                 image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                                 features: ["Three complete meals weekly", "Mix & match menu options", "Flexible delivery schedule"]
                             },
                             {
                                 title: "Family Style - 5x a Week",
                                 description: "Complete meal solutions for busy families who still want to enjoy quality dinners together.",
-                                price: "From JOD 289/week",
+                                price: "Starting from JOD 289/week",
                                 image: "https://images.unsplash.com/photo-1639696318374-2934d7c11182?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGRpbm5lciUyMGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D",
                                 features: ["Family-sized portions (4-10 people)", "Kid-friendly options available", "Full week of dinners covered"]
                             }
@@ -102,7 +102,7 @@ export default function SubscriptionPage() {
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-playfair mb-2">{plan.title}</h3>
-                                    <p className="font-montserrat font-semibold text-umami mb-4">{plan.price}</p>
+                                    <p className="font-montserrat font-semibold text-umami-gold mb-4">{plan.price}</p>
                                     <p className="text-sm font-montserrat mb-4 text-muted-foreground">{plan.description}</p>
                                     <ul className="mb-6 space-y-2">
                                         {plan.features.map((feature, i) => (
@@ -122,6 +122,9 @@ export default function SubscriptionPage() {
                                 className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
                             <Link to="/contact?type=subscription"> Choose Your Meal Subscription Plan</Link>
                         </Button>
+                        <p className="text-sm text-muted-foreground mt-2 font-montserrat italic">
+                            *Delivery not included in subscription price.
+                        </p>
                     </div>
                 </div>
 

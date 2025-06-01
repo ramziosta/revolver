@@ -1,4 +1,3 @@
-import admin from 'firebase-admin';
 import InstagramImages from '../models/InstagramImages.js';
 
 

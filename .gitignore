@@ -27,7 +27,7 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-.env
+
 frontend/.env
 backend/.env
-backend/firebase-admin.json
+
