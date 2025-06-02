@@ -30,4 +30,4 @@ coverage
 
 frontend/.env
 backend/.env
-
+backend/firebase-admin.json
