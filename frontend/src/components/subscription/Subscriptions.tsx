@@ -7,57 +7,76 @@ import React from "react";
 export default function SubscriptionPage() {
     return (
         <Layout>
-        <div className="bg-background">
-            {/* Hero Section */}
-            <section className="relative h-96 flex items-center justify-center overflow-hidden">
-                <div
-                    className="absolute inset-0 bg-cover bg-center z-0"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
-                        backgroundPosition: "center 60%"
-                    }}
-                >
-                    <div className="absolute inset-0 bg-black/50 z-10"></div>
-                </div>
-                <div className="relative z-20 text-center text-white px-4">
-                    <h1 className="text-5xl md:text-6xl font-playfair mb-4">Your Personal Chef, On Repeat</h1>
-                    <p className="text-xl font-montserrat max-w-2xl mx-auto opacity-90">
-                        Subscribe to chef-crafted meals delivered on your schedule
-                    </p>
-                </div>
-            </section>
+            <div className="bg-background">
+                {/* Hero Section */}
+                <section className="relative h-96 flex items-center justify-center overflow-hidden">
+                    <div
+                        className="absolute inset-0 bg-cover bg-center z-0"
+                        style={{
+                            backgroundImage:
+                                "url('https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+                            backgroundPosition: 'center 60%'
+                        }}
+                    >
+                        <div className="absolute inset-0 bg-black/50 z-10"></div>
+                    </div>
+                    <div className="relative z-20 text-center text-white px-4">
+                        <h1 className="text-5xl md:text-6xl font-playfair mb-4">
+                            Your Personal Chef, On Repeat
+                        </h1>
+                        <p className="text-xl font-montserrat max-w-2xl mx-auto opacity-90">
+                            Subscribe to chef-crafted meals delivered on your schedule. Enjoy up to
+                            <span className="text-umami-gold font-semibold"> 20% savings</span> over à la carte pricing!
+                        </p>
+                    </div>
+                </section>
 
-            {/* Main Content */}
-            <section className="py-20 px-4 md:px-12 lg:px-24 max-w-7xl mx-auto">
-                {/* Value Proposition */}
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-playfair mb-6">Why Choose Our Meal Subscription?</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                        <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
-                                <Star className="w-8 h-8 text-white" />
+                {/* Main Content */}
+                <section className="py-20 px-4 md:px-12 lg:px-24 max-w-7xl mx-auto">
+                    {/* Value Proposition */}
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-playfair mb-6">
+                            Why Choose Our Meal Subscription?
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                            <div className="flex flex-col items-center">
+                                <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
+                                    <Star className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-xl font-playfair mb-2">Chef-Crafted Quality</h3>
+                                <p className="text-muted-foreground">
+                                    Gourmet meals prepared by professional chefs using seasonal ingredients
+                                </p>
                             </div>
-                            <h3 className="text-xl font-playfair mb-2">Chef-Crafted Quality</h3>
-                            <p className="text-muted-foreground">Gourmet meals prepared by professional chefs using seasonal ingredients</p>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
-                                <Check className="w-8 h-8 text-white" />
+                            <div className="flex flex-col items-center">
+                                <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
+                                    <Check className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-xl font-playfair mb-2">Flexible & Convenient</h3>
+                                <p className="text-muted-foreground">
+                                    Choose your frequency and meal types with easy scheduling
+                                </p>
                             </div>
-                            <h3 className="text-xl font-playfair mb-2">Flexible & Convenient</h3>
-                            <p className="text-muted-foreground">Choose your frequency and meal types with easy scheduling</p>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
-                                <Heart className="w-8 h-8 text-white" />
+                            <div className="flex flex-col items-center">
+                                <div className="w-16 h-16 rounded-full bg-umami flex items-center justify-center mb-4">
+                                    <Heart className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-xl font-playfair mb-2">Healthful Options</h3>
+                                <p className="text-muted-foreground">
+                                    Nutritionally balanced meals that never compromise on flavor
+                                </p>
                             </div>
-                            <h3 className="text-xl font-playfair mb-2">Healthful Options</h3>
-                            <p className="text-muted-foreground">Nutritionally balanced meals that never compromise on flavor</p>
                         </div>
                     </div>
-                </div>
 
-                {/* PERSONAL & FAMILY PLANS */}
+                    {/* Callout Banner */}
+                    <div className="bg-umami text-white py-6 px-8 rounded-xl text-center mb-20">
+                        <p className="text-lg font-playfair">
+                            First-time subscribers enjoy a <span className="font-bold">5th meal FREE</span> in their first month!
+                        </p>
+                    </div>
+
+                    {/* PERSONAL & FAMILY PLANS */}
                 <div className="mb-24 relative">
                     <div className="flex items-center mb-6">
                         <Users className="w-6 h-6 mr-3 text-umami" />
@@ -72,42 +91,57 @@ export default function SubscriptionPage() {
                         {[
                             {
                                 title: "Once a Week",
-                                description: "Perfect for busy professionals who want to enjoy one special chef-prepared meal weekly.",
-                                price: "Starting from JOD JOD 79/month (Just JOD 19.74 per week)",
+                                description: "Enjoy one luxurious, chef-crafted meal per week—perfect for busy professionals who deserve a treat.",
+                                price: "JOD 95/month (Just JOD 23.75/week)",
                                 image: "https://images.unsplash.com/photo-1580683750935-cecfc7ea57f0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
-                                features: ["Complete meal for 1-2 people", "Entrée + Side + Dessert", "Weekly menu rotation"]
+                                features: [
+                                    "4 gourmet meals per month",
+                                    "Complete meal for 1–2 people",
+                                    "Entrée + Side + Dessert",
+                                    "Weekly rotating menu",
+                                    "First month: get a 5th meal free!"
+                                ]
                             },
                             {
                                 title: "3x a Week",
-                                description: "Our most popular plan! Enjoy multiple chef-crafted dinners without the hassle of cooking.",
-                                price: "Starting from JOD 235/month (Just JOD 58.75/week)",
+                                description: "Our best-seller! Get three chef-prepared meals weekly—delivered fresh and ready when you are.",
+                                price: "JOD 245/month (Just JOD 61.25/week)",
                                 image: "https://images.unsplash.com/photo-1626203313658-886791f37e46?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
-                                features: ["Three complete meals weekly", "Mix & match menu options", "Flexible delivery schedule"]
+                                features: [
+                                    "12 gourmet meals per month",
+                                    "Tailored for 1–2 people",
+                                    "Mix & match options each week",
+                                    "Flexible delivery schedule",
+                                    "First month: get a 13th meal free!"
+                                ]
                             },
                             {
-                                title: "Family Plan – Once a Week ",
-                                description: "A weekly chef-prepared dinner for families who want one special meal together, without the hassle of cooking.",
-                                price: "Starting from JOD 310/month (Just JOD 77.5/week)",
+                                title: "Family Plan – Once a Week",
+                                description: "A weekly chef-prepared dinner that brings the whole family together—no prep, no cleanup, just joy.",
+                                price: "JOD 315/month (Just JOD 78.75/week)",
                                 image: "https://images.unsplash.com/photo-1639696318374-2934d7c11182?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGRpbm5lciUyMGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D",
                                 features: [
-                                    "1 complete family dinner per week ",
-                                    "Family-sized portions (serves 4–6)",
-                                    "Kid-friendly & customizable options",
-                                    "Includes entrée, salad, and dessert for each meal"
+                                    "4 complete family dinners per month",
+                                    "Portions for 4–6 people",
+                                    "Kid-friendly & customizable",
+                                    "Entrée + Salad + Dessert",
+                                    "First month: get a 5th family dinner free!"
                                 ]
                             },
                             {
                                 title: "Family Plan – 3x a Week",
-                                description: "Ideal for families who want to enjoy delicious, chef-prepared meals together without the daily planning or prep.",
-                                price: "Starting from JOD 940/month (Just JOD 235/week)",
+                                description: "Skip the planning and prep—enjoy three nourishing family dinners a week, crafted with care and flavor.",
+                                price: "JOD 940/month (Just JOD 235/week)",
                                 image: "https://images.unsplash.com/photo-1547573854-74d2a71d0826?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                                 features: [
-                                    "3 complete family dinners per week",
-                                    "Family-sized portions (serves 4–6)",
+                                    "12 complete family dinners per month",
+                                    "Portions for 4–6 people",
                                     "Kid-friendly & customizable options",
-                                    "Includes entrée, salad, and dessert for each meal"
+                                    "Entrée + Salad + Dessert each meal",
+                                    "First month: enjoy a 13th meal on us!"
                                 ]
                             }
+
                         ].map((plan, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-xl">
                                 <div className="h-48 overflow-hidden">
@@ -119,12 +153,17 @@ export default function SubscriptionPage() {
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-playfair mb-2">{plan.title}</h3>
-                                    <p className="font-montserrat font-semibold text-umami-gold mb-4">{plan.price}</p>
+                                    <p className="font-montserrat text-umami mb-4">{plan.price}</p>
                                     <p className="text-sm font-montserrat mb-4 text-muted-foreground">{plan.description}</p>
                                     <ul className="mb-6 space-y-2">
                                         {plan.features.map((feature, i) => (
-                                            <li key={i} className="flex items-start text-sm">
-                                                <Check className="w-4 h-4 mr-2 text-umami flex-shrink-0 mt-0.5" />
+                                            <li
+                                                key={i}
+                                                className={`flex items-start text-sm ${
+                                                    i === plan.features.length - 1 ? 'text-umami-gold font-semibold' : ''
+                                                }`}
+                                            >
+                                                <Check className={`w-4 h-4 mr-2 flex-shrink-0 mt-0.5 ${i === plan.features.length - 1 ? 'text-umami-gold' : 'text-umami'}`} />
                                                 <span>{feature}</span>
                                             </li>
                                         ))}
