@@ -68,28 +68,45 @@ export default function SubscriptionPage() {
                         Enjoy ready-to-eat meals with flexible frequencies. Choose from plans for individuals, couples, or families up to 10.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {[
                             {
                                 title: "Once a Week",
                                 description: "Perfect for busy professionals who want to enjoy one special chef-prepared meal weekly.",
-                                price: "Starting from JOD 59/week",
-                                image: "https://plus.unsplash.com/premium_photo-1668618296951-ae17b19e40d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                                price: "Starting from JOD JOD 79/month (Just JOD 19.74 per week)",
+                                image: "https://images.unsplash.com/photo-1580683750935-cecfc7ea57f0?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
                                 features: ["Complete meal for 1-2 people", "Entrée + Side + Dessert", "Weekly menu rotation"]
                             },
                             {
                                 title: "3x a Week",
                                 description: "Our most popular plan! Enjoy multiple chef-crafted dinners without the hassle of cooking.",
-                                price: "Starting from JOD 149/week",
-                                image: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                                price: "Starting from JOD 235/month (Just JOD 58.75/week)",
+                                image: "https://images.unsplash.com/photo-1626203313658-886791f37e46?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8",
                                 features: ["Three complete meals weekly", "Mix & match menu options", "Flexible delivery schedule"]
                             },
                             {
-                                title: "Family Style - 5x a Week",
-                                description: "Complete meal solutions for busy families who still want to enjoy quality dinners together.",
-                                price: "Starting from JOD 289/week",
+                                title: "Family Plan – Once a Week ",
+                                description: "A weekly chef-prepared dinner for families who want one special meal together, without the hassle of cooking.",
+                                price: "Starting from JOD 310/month (Just JOD 77.5/week)",
                                 image: "https://images.unsplash.com/photo-1639696318374-2934d7c11182?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGRpbm5lciUyMGZhbWlseXxlbnwwfHwwfHx8MA%3D%3D",
-                                features: ["Family-sized portions (4-10 people)", "Kid-friendly options available", "Full week of dinners covered"]
+                                features: [
+                                    "1 complete family dinner per week ",
+                                    "Family-sized portions (serves 4–6)",
+                                    "Kid-friendly & customizable options",
+                                    "Includes entrée, salad, and dessert for each meal"
+                                ]
+                            },
+                            {
+                                title: "Family Plan – 3x a Week",
+                                description: "Ideal for families who want to enjoy delicious, chef-prepared meals together without the daily planning or prep.",
+                                price: "Starting from JOD 940/month (Just JOD 235/week)",
+                                image: "https://images.unsplash.com/photo-1547573854-74d2a71d0826?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                                features: [
+                                    "3 complete family dinners per week",
+                                    "Family-sized portions (serves 4–6)",
+                                    "Kid-friendly & customizable options",
+                                    "Includes entrée, salad, and dessert for each meal"
+                                ]
                             }
                         ].map((plan, index) => (
                             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-xl">
