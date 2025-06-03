@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import {Layout } from "@/components/layout/layout";
 import React, { useState, useEffect } from "react";
+import {collection, getDocs} from "firebase/firestore";
+import {db} from "../../firebaseConfig.tsx";
 
 
 
@@ -10,17 +12,22 @@ export default function GalleryPage() {
     const [loading, setLoading] = useState(true);
     //images and alt from mongoDB
     useEffect(() => {
-        fetch("https://revolver-pcce.onrender.com/images")
-            .then((res) => res.json())
-            .then((data) => {
-                console.log("Fetched menu data:", data);
-                setInstagramImages(data);
+        const fetchImages = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "instagramImages")); // Correct Firestore collection
+                const images = querySnapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+                setInstagramImages(images);
+            } catch (error) {
+                console.error("Error fetching images from Firestore:", error);
+            } finally {
                 setLoading(false);
-            })
-            .catch((err) => {
-                console.error('Error loading menu:', err);
-                setLoading(false);
-            });
+            }
+        };
+
+        fetchImages();
     }, []);
 
     // instagram images from service
@@ -85,7 +92,7 @@ export default function GalleryPage() {
                         A curated collection of our most inspired dishes — from elegant desserts to seasonal mains.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10  ">
+                <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10  ">
 
                     {instagramImages.map((image, idx) => (
                         <div
