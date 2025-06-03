@@ -1,42 +1,45 @@
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import admin from 'firebase-admin';
 
-import InstagramImage from './models/InstagramImages.js';
 import instagramImagesData from './instagramImagesData.js';
 
 dotenv.config();
 
-const serviceAccountPath = process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PATH;
-if (!serviceAccountPath || !fs.existsSync(serviceAccountPath)) {
-    console.error('❌ Firebase service account key not found or invalid path.');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const serviceAccountPath = path.resolve(__dirname, process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PATH);
+
+if (!fs.existsSync(serviceAccountPath)) {
+    console.error('❌ Firebase service account key not found at:', serviceAccountPath);
     process.exit(1);
 }
 
 const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
 });
 
 const bucket = admin.storage().bucket();
-
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/revolver';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const firestore = admin.firestore();
 
 const assetsPath = path.join(__dirname, 'assets');
 
-mongoose.connect(dbURI)
-    .then(async () => {
-        console.log('✅ Connected to MongoDB');
+(async () => {
+    try {
+        console.log('✅ Connected to Firebase');
 
-        await InstagramImage.deleteMany({});
-        console.log('🧹 Cleared existing image documents');
+        const collectionRef = firestore.collection('instagramImages');
+
+        // Optional: Clear previous documents
+        const snapshot = await collectionRef.get();
+        const batch = firestore.batch();
+        snapshot.forEach(doc => batch.delete(doc.ref));
+        await batch.commit();
+        console.log('🧹 Cleared existing documents from Firestore');
 
         const uploadedImages = [];
 
@@ -66,11 +69,12 @@ mongoose.connect(dbURI)
 
                 const fullData = {
                     ...imageData,
-                    image: url, // Replace local path with Firebase URL
+                    image: url,
+                    createdAt: admin.firestore.FieldValue.serverTimestamp(),
                 };
 
-                const savedDoc = await InstagramImage.create(fullData);
-                uploadedImages.push(savedDoc);
+                await collectionRef.add(fullData);
+                uploadedImages.push(fullData);
 
                 console.log(`✅ Uploaded & saved: ${imageFileName}`);
             } catch (err) {
@@ -79,6 +83,7 @@ mongoose.connect(dbURI)
         }
 
         console.log(`🎉 Done. ${uploadedImages.length} images uploaded and saved.`);
-        mongoose.connection.close();
-    })
-    .catch(err => console.error('❌ MongoDB connection error:', err));
+    } catch (err) {
+        console.error('❌ Firebase error:', err);
+    }
+})();

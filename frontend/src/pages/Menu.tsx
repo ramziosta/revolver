@@ -2,7 +2,8 @@
 import { Layout } from "@/components/layout/layout";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React, { useEffect, useState } from 'react';
-
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebaseConfig.tsx';
 
 const instagram =[
   "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
@@ -37,17 +38,19 @@ const Menu = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://revolver-pcce.onrender.com/menu")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log("Fetched menu data:", data); // 👈 Log it
-          setMenuCategories(data);
-          setLoading(false);
-        })
-        .catch((err) => {
-          console.error('Error loading menu:', err);
-          setLoading(false);
-        });
+    const fetchMenu = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "menu")); // 'menu' is your Firestore collection name
+        const menuData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setMenuCategories(menuData);
+      } catch (error) {
+        console.error("Error fetching menu from Firestore:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMenu();
   }, []);
 
   if (loading) {

@@ -1,30 +1,33 @@
 import {Layout} from "@/components/layout/layout.tsx";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs.tsx";
 import React, {useEffect, useState} from "react";
-
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../firebaseConfig.tsx';
 
 const CateringMenu = () => {
     const [CateringMenuCategories, setCateringMenuCategories] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("https://revolver-pcce.onrender.com/catering")
-            .then((res) => res.json())
-            .then((data) => {
-                console.log("Fetched menu data:", data);
-                setCateringMenuCategories(data);
+        const fetchMenu = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "menu")); // 'menu' is your Firestore collection name
+                const menuData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setCateringMenuCategories(menuData);
+            } catch (error) {
+                console.error("Error fetching menu from Firestore:", error);
+            } finally {
                 setLoading(false);
-            })
-            .catch((err) => {
-                console.error('Error loading menu:', err);
-                setLoading(false);
-            });
+            }
+        };
+
+        fetchMenu();
     }, []);
 
     if (loading) {
         return <div className="text-center py-20">Loading menu...</div>;
     }
-    
+
     return (
         <Layout>
 

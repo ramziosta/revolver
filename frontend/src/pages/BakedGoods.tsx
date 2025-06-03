@@ -3,25 +3,27 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import {Button} from "@/components/ui/button";
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
-
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebaseConfig.tsx';
 const BakedGoods = () => {
     const [bakedGoodsMenuCategories, setBakedGoodsMenuCategories] = useState([]);
     const [loading, setLoading] = useState(true);
     const [activeTab, setActiveTab] = useState("");
 
     useEffect(() => {
-        fetch("https://revolver-pcce.onrender.com/bakedgoods")
-            .then((res) => res.json())
-            .then((data) => {
-                console.log("Fetched menu data:", data);
-                setBakedGoodsMenuCategories(data);
-                setActiveTab(data[0]._id);
+        const fetchMenu = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "backed goods")); // 'menu' is your Firestore collection name
+                const menuData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setBakedGoodsMenuCategories(menuData);
+            } catch (error) {
+                console.error("Error fetching menu from Firestore:", error);
+            } finally {
                 setLoading(false);
-            })
-            .catch((err) => {
-                console.error('Error loading menu:', err);
-                setLoading(false);
-            });
+            }
+        };
+
+        fetchMenu();
     }, []);
 
     // Handle tab change
