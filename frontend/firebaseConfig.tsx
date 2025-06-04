@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
@@ -13,7 +13,8 @@ const firebaseConfig = {
     measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
+// Only initialize if no apps exist
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 
 // Optional: only enable analytics in the browser
 let analytics;
@@ -22,5 +23,4 @@ if (typeof window !== "undefined") {
 }
 const db = getFirestore(app);
 
-
-export {db, app, analytics };
+export { db, app, analytics };
