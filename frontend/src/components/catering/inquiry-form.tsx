@@ -1,8 +1,10 @@
 
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+// Import EmailJS
+import emailjs from '@emailjs/browser';
 
 export const InquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +19,11 @@ export const InquiryForm = () => {
 
   const [status, setStatus] = useState('');
 
+  // Initialize EmailJS (you only need to do this once)
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
+
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
   };
@@ -26,14 +33,52 @@ export const InquiryForm = () => {
     setStatus('Sending...');
 
     try {
-      const response = await fetch('https://revolver-pcce.onrender.com/contact/event', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+      // Debug: Log environment variables
+      console.log('Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+      console.log('Template ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+      console.log('Public Key:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
-      if (response.ok) {
-        setStatus('Inquiry submitted successfully!');
+      // EmailJS template parameters - format catering inquiry details
+      const cateringMessage = `
+CATERING INQUIRY
+
+Contact Information:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Event Details:
+Event Type: ${formData.eventType}
+Event Date: ${formData.date}
+Number of Guests: ${formData.guests}
+
+Additional Details:
+${formData.details}
+      `.trim();
+
+      const templateParams = {
+        first_name: formData.name.split(' ')[0] || formData.name,
+        last_name: formData.name.split(' ')[1] || '',
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone || "N/A",
+        subject: "Catering Inquiry",
+        message: cateringMessage,
+        reply_to: formData.email,
+      };
+
+      console.log('Template params:', templateParams);
+
+      const result = await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          templateParams
+      );
+
+      console.log('EmailJS result:', result);
+
+      if (result.status === 200) {
+        setStatus('Catering inquiry submitted successfully! We\'ll contact you within 24 hours.');
         setFormData({
           name: '',
           email: '',
@@ -46,9 +91,11 @@ export const InquiryForm = () => {
       } else {
         setStatus('Failed to send inquiry. Please try again or call us.');
       }
-    } catch (err) {
-      console.error(err);
-      setStatus('Error sending inquiry.');
+    } catch (error) {
+      console.error('EmailJS error details:', error);
+      console.error('Error status:', error.status);
+      console.error('Error text:', error.text);
+      setStatus(`Error sending inquiry: ${error.text || error.message}`);
     }
   };
 
@@ -65,18 +112,37 @@ export const InquiryForm = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" value={formData.name} onChange={handleChange} placeholder="John Doe" required />
+                  <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="John Doe"
+                      required
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" required />
+                  <Input
+                      id="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="john@example.com"
+                      required
+                  />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
-                  <Input id="phone" value={formData.phone} onChange={handleChange} placeholder="962 7 9089 4715" required />
+                  <Input
+                      id="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="962 7 9089 4715"
+                      required
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="eventType">Event Type</Label>
@@ -88,10 +154,10 @@ export const InquiryForm = () => {
                       required
                   >
                     <option value="">Select event type</option>
-                    <option value="corporate">Corporate Event</option>
-                    <option value="private">Private Celebration</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="other">Other</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Private Celebration">Private Celebration</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
@@ -99,11 +165,24 @@ export const InquiryForm = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="date">Event Date</Label>
-                  <Input id="date" type="date" value={formData.date} onChange={handleChange} required />
+                  <Input
+                      id="date"
+                      type="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      required
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="guests">Number of Guests</Label>
-                  <Input id="guests" type="number" value={formData.guests} onChange={handleChange} placeholder="50" required />
+                  <Input
+                      id="guests"
+                      type="number"
+                      value={formData.guests}
+                      onChange={handleChange}
+                      placeholder="50"
+                      required
+                  />
                 </div>
               </div>
 
@@ -120,8 +199,12 @@ export const InquiryForm = () => {
                 ></textarea>
               </div>
 
-              <Button type="submit" className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider">
-                Submit Inquiry
+              <Button
+                  type="submit"
+                  className="w-full bg-umami text-umami-light hover:bg-umami-dark font-montserrat tracking-wider"
+                  disabled={status === "Sending..."}
+              >
+                {status === "Sending..." ? "Sending..." : "Submit Inquiry"}
               </Button>
 
               {status && (
