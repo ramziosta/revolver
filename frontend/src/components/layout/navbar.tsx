@@ -53,9 +53,11 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-transparent border border-umami-cream text-umami-cream hover:bg-umami-cream hover:text-umami font-montserrat tracking-wider text-sm">
-              <Link to="/subscriptions">Meal Subscription Plans</Link>
-            </Button>
+            <div className="gradient-border-button">
+              <Button className="bg-transparent border-0 text-l font-bold text-umami-DEFAULT  hover:text-umami-cream font-montserrat tracking-wider rounded">
+                <Link to="/subscriptions">Meal Subscription Plans</Link>
+              </Button>
+            </div>
           </nav>
           
           {/* Mobile Menu Button */}
