@@ -182,6 +182,12 @@ const Menu = () => {
               {/*</div>*/}
             </div>
           </div>
+          <div className="mt-12 bg-umami-light border border-umami-light text-muted-foreground p-6 rounded-md text-sm font-montserrat leading-relaxed max-w-3xl mx-auto">
+            <p className="font-semibold text-umami mb-2">⚠️ Allergies & Dietary Restrictions</p>
+            <p>
+              We take food sensitivities seriously. Please inform us of any allergies or dietary preferences when placing your order. Not all ingredients are listed—feel free to reach out if you have questions or concerns.
+            </p>
+          </div>
         </section>
 
         {/* Featured Items Carousel */}

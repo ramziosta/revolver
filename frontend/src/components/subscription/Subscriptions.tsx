@@ -178,9 +178,16 @@ export default function SubscriptionPage() {
                                 className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
                             <Link to="/contact?type=subscription"> Choose Your Meal Subscription Plan</Link>
                         </Button>
+
                         <p className="text-sm text-muted-foreground mt-2 font-montserrat italic">
                             *Delivery not included in subscription price.
                         </p>
+                        <div className="mt-12 bg-umami-light border border-umami-light text-muted-foreground p-6 rounded-md text-sm font-montserrat leading-relaxed max-w-3xl mx-auto">
+                            <p className="font-semibold text-umami mb-2">⚠️ Allergies & Dietary Restrictions</p>
+                            <p>
+                                We take food sensitivities seriously. Please inform us of any allergies or dietary preferences when placing your order. Not all ingredients are listed—feel free to reach out if you have questions or concerns.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

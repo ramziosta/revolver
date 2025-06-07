@@ -142,6 +142,12 @@ const CateringMenu = () => {
                                 </TabsContent>
                             ))}
                         </Tabs>
+                        <div className="mt-12 bg-umami-light border border-umami-light text-muted-foreground p-6 rounded-md text-sm font-montserrat leading-relaxed max-w-3xl mx-auto">
+                            <p className="font-semibold text-umami mb-2">⚠️ Allergies & Dietary Restrictions</p>
+                            <p>
+                                We take food sensitivities seriously. Please inform us of any allergies or dietary preferences when placing your order. Not all ingredients are listed—feel free to reach out if you have questions or concerns.
+                            </p>
+                        </div>
                         <div className="mt-12 bg-umami-light p-8 rounded-sm">
                             <h3 className="font-playfair text-xl mb-4">Catering Information</h3>
                             <p className="text-muted-foreground font-montserrat mb-4">
