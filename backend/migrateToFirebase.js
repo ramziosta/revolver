@@ -19,6 +19,7 @@ const db = admin.firestore();
 const menuData = JSON.parse(fs.readFileSync('./menuData.json', 'utf8'));
 const bakedGoods = JSON.parse(fs.readFileSync('./bakedGoodsMenuData.json', 'utf8'));
 const cateringData = JSON.parse(fs.readFileSync('./cateringMenuData.json', 'utf8'));
+const cellarData = JSON.parse(fs.readFileSync('./cellarMenuData.json', 'utf8'));
 
 // Upload to Firestore
 const seedCollection = async (collectionName, data) => {
@@ -36,9 +37,7 @@ const seedCollection = async (collectionName, data) => {
 
 const run = async () => {
     try {
-        await seedCollection('menu', menuData);
-        await seedCollection('bakedGoods', bakedGoods);
-        await seedCollection('catering', cateringData);
+        await seedCollection('cellar', cellarData);
         console.log('🎉 All menus uploaded successfully!');
         process.exit();
     } catch (err) {

@@ -134,9 +134,9 @@
 .gradient-border-button {
   position: relative;
   background: #f5f0e4;
-  background: radial-gradient(circle, rgba(245, 240, 228, 1) 1%, #D4AF37 100%);
+  background: radial-gradient(circle, rgba(200, 200, 200, 9) 1%, #b58b02 100%);
   background-size: 300% 300%;
-  animation: gradient-rotate 2s ease infinite;
+  animation: gradient-rotate 4s ease infinite;
   padding: 4px;
   border-radius: 8px;
 }

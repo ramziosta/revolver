@@ -10,6 +10,7 @@ import Chef from "./pages/Chef";
 import BakedGoods from "./pages/BakedGoods";
 import Catering from "./pages/Catering";
 import CateringMenu from "./components/catering/CateringMenu.tsx";
+import Cellar from "./pages/Cellar.tsx";
 import Gallery from "./pages/Gallery";
 import Subscriptions from "./components/subscription/Subscriptions.tsx";
 import OnceAweek from "./components/subscription/OnceAweek";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/catering" element={<Catering />} />
           <Route path="/baked-goods" element={<BakedGoods />} />
           <Route path="/catering-menu" element={<CateringMenu />} />
+          <Route path="/cellar" element={<Cellar />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/subscriptions" element={<Subscriptions />} />

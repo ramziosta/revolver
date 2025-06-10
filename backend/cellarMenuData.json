@@ -1,0 +1,428 @@
+[
+  {
+    "id": "cheeses",
+    "name": "Cheese",
+    "description": "Artisanal cheeses crafted in small batches—aged, fresh, and brined varieties with international character and local flair.",
+    "items": [
+      {
+        "id": "brie",
+        "name": "Brie",
+        "price": "JOD 6.5",
+        "weight": "180g wheel",
+        "description": "Soft-ripened, bloomy rind cheese with a creamy center and delicate mushroomy notes.",
+        "specs": ["Cow’s milk", "Aged 4–6 weeks"]
+      },
+      {
+        "id": "feta",
+        "name": "Greek-Style Feta",
+        "price": "JOD 5",
+        "weight": "200g block in brine",
+        "description": "Tangy, crumbly white cheese aged in brine with a creamy finish. Made with a blend of cow and goat milk.",
+        "specs": ["Brined", "Goat + Cow milk"]
+      },
+      {
+        "id": "bleu-dauvergne",
+        "name": "Bleu d'Auvergne",
+        "price": "JOD 7",
+        "weight": "150g wedge",
+        "description": "Rich French-style blue with a soft texture and deep, earthy flavor.",
+        "specs": ["Cow’s milk", "Mild blue"]
+      },
+      {
+        "id": "gouda",
+        "name": "Aged Gouda",
+        "price": "JOD 6",
+        "weight": "200g wedge",
+        "description": "Pressed and waxed for a nutty, firm cheese with a hint of caramel and salt crystals.",
+        "specs": ["Aged 6+ months", "Cow’s milk"]
+      },
+      {
+        "id": "manchego",
+        "name": "Manchego",
+        "price": "JOD 7",
+        "weight": "180g wedge",
+        "description": "Firm, buttery sheep’s milk cheese aged with a gentle sharpness and grassy aroma.",
+        "specs": ["Sheep’s milk", "Spanish-style"]
+      },
+      {
+        "id": "asiago",
+        "name": "Asiago Fresco",
+        "price": "JOD 5.5",
+        "weight": "200g wedge",
+        "description": "Mild Italian-style cheese, semi-soft with a nutty flavor—perfect grated or sliced.",
+        "specs": ["Cow’s milk", "Mild & versatile"]
+      },
+      {
+        "id": "swiss",
+        "name": "Swiss-Style",
+        "price": "JOD 6.5",
+        "weight": "200g block",
+        "description": "Emmental-style cheese with a smooth texture and signature holes. Sweet and nutty.",
+        "specs": ["Pressed", "Cow’s milk"]
+      },
+      {
+        "id": "tallegio",
+        "name": "Taleggio",
+        "price": "JOD 7",
+        "weight": "150g wedge",
+        "description": "Washed-rind Italian cheese with a pungent aroma and meaty, creamy interior.",
+        "specs": ["Cow’s milk", "Aged & aromatic"]
+      },
+      {
+        "id": "cheddar",
+        "name": "Aged Cheddar",
+        "price": "JOD 6.5",
+        "weight": "200g block",
+        "description": "Classic English-style cheddar, aged for depth with sharp, grassy notes and a smooth crumble.",
+        "specs": ["Aged 3–6 months", "Cow’s milk"]
+      },
+      {
+        "id": "camembert",
+        "name": "Camembert",
+        "price": "JOD 6.5",
+        "weight": "180g wheel",
+        "description": "Soft, bloomy rind cheese with a rustic earthiness and smooth, melting interior.",
+        "specs": ["Cow’s milk", "Aged 3–4 weeks"]
+      },
+      {
+        "id": "ricotta",
+        "name": "Fresh Ricotta",
+        "price": "JOD 4",
+        "weight": "200g tub",
+        "description": "Lusciously light and creamy whey cheese made fresh. Ideal for baking, pastas, or spreading.",
+        "specs": ["Fresh", "Cow’s milk", "Whey-based"]
+      }
+    ]
+  },
+  {
+    "id": "jams-curds-fillings",
+    "name": "Jams, Curds & Fillings",
+    "description": "Lusciously cooked preserves, zesty curds, and fruit-forward fillings crafted for breakfast, baking, or cheese boards.",
+    "items": [
+      {
+        "id": "strawberry-jam",
+        "name": "Strawberry Jam",
+        "price": "JOD 3.5",
+        "weight": "150ml jar",
+        "description": "Classic and comforting, made with ripe Jordanian strawberries and just a touch of lemon.",
+        "specs": ["Contains fruit", "No preservatives"]
+      },
+      {
+        "id": "blood-orange-marmalade",
+        "name": "Blood Orange Marmalade",
+        "price": "JOD 4",
+        "weight": "150ml jar",
+        "description": "Bittersweet and bold with vibrant blood orange peel and juice.",
+        "specs": ["Citrus-forward", "Small batch"]
+      },
+      {
+        "id": "orange-marmalade",
+        "name": "Orange Marmalade",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Bright and tangy with thick-cut orange peel and a smooth jelly finish.",
+        "specs": ["Zesty", "Great with toast or cheese"]
+      },
+      {
+        "id": "mandarin-marmalade",
+        "name": "Mandarin Orange Marmalade",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Delicate, floral marmalade with sweet mandarin segments and zest.",
+        "specs": ["Soft peel", "Mild citrus"]
+      },
+      {
+        "id": "peach-jam",
+        "name": "Peach Jam",
+        "price": "JOD 3.5",
+        "weight": "150ml jar",
+        "description": "Summer-sweet jam made from golden peaches, cooked gently for full flavor.",
+        "specs": ["Naturally sweet", "Pairs well with butter or yogurt"]
+      },
+      {
+        "id": "apricot-jam",
+        "name": "Apricot Jam",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Tangy and vibrant, made with tree-ripened apricots and minimal sugar.",
+        "specs": ["Tart & bright", "Classic with croissants"]
+      },
+      {
+        "id": "apple-sauce",
+        "name": "Apple Sauce",
+        "price": "JOD 3.25",
+        "weight": "150ml jar",
+        "description": "Slow-simmered apples with warm spices—no added sugar, just real fruit.",
+        "specs": ["No sugar added", "Great for kids & baking"]
+      },
+      {
+        "id": "lemon-curd",
+        "name": "Lemon Curd",
+        "price": "JOD 4.25",
+        "weight": "150ml jar",
+        "description": "Rich and tart curd made with fresh lemons, eggs, and local butter.",
+        "specs": ["Contains eggs", "Smooth & tangy"]
+      },
+      {
+        "id": "orange-curd",
+        "name": "Orange Curd",
+        "price": "JOD 4",
+        "weight": "150ml jar",
+        "description": "Creamy and sweet with fresh orange zest and a buttery finish.",
+        "specs": ["Milder than lemon", "Great for tarts"]
+      },
+      {
+        "id": "quince-paste",
+        "name": "Quince Paste (Membrillo)",
+        "price": "JOD 4.5",
+        "weight": "120g block",
+        "description": "Thick, sliceable Spanish-style quince paste perfect for cheese boards.",
+        "specs": ["Pairs with manchego", "Cheese companion"]
+      },
+      {
+        "id": "quince-jam",
+        "name": "Quince Jam",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Lightly spiced quince jam with floral notes and warm finish.",
+        "specs": ["Autumn flavor", "Great with brie"]
+      },
+      {
+        "id": "fig-jam",
+        "name": "Fig Jam",
+        "price": "JOD 4.25",
+        "weight": "150ml jar",
+        "description": "Rich and earthy jam packed with whole figs and a hint of balsamic.",
+        "specs": ["Excellent with goat cheese", "Cheese board essential"]
+      },
+      {
+        "id": "raspberry-jam",
+        "name": "Raspberry Jam",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Bright, tart, and full of texture—made with crushed raspberries.",
+        "specs": ["Seeded", "Bold & vibrant"]
+      },
+      {
+        "id": "blueberry-jam",
+        "name": "Blueberry Jam",
+        "price": "JOD 3.75",
+        "weight": "150ml jar",
+        "description": "Deep and juicy with plump berries and a hint of vanilla.",
+        "specs": ["Rich flavor", "Great with pancakes or scones"]
+      }
+    ]
+  },
+  {
+    "name": "Fresh Pasta",
+    "description": "Our fresh pasta selection is crafted in small batches using semolina, local eggs, and seasonal ingredients. From pillowy gnocchi to silky ribbons, every cut is made for exceptional texture and flavor.",
+    "items": [
+      {
+        "name": "Ricotta Gnocchi",
+        "description": "Delicate and airy dumplings made from ricotta. Light on the palate, rich in flavor.",
+        "price": "6 JOD / 400g",
+        "type": "Soft & Pillowy",
+        "specs": ["Ricotta-based", "Quick-cook", "Pairs well with pesto or sage butter"]
+      },
+      {
+        "name": "Potato Gnocchi",
+        "description": "A comforting classic—fluffy potato dumplings that shine with sage butter or tomato sauce.",
+        "price": "5.5 JOD / 400g",
+        "type": "Soft & Pillowy",
+        "specs": ["Classic texture", "Freezer-friendly", "Best boiled then pan-seared"]
+      },
+      {
+        "name": "Lasagna Sheets",
+        "description": "Fresh, thin pasta sheets perfect for layering in lasagna, cannelloni, or timbales.",
+        "price": "7 JOD / 500g",
+        "type": "Flat & Layered",
+        "specs": ["No pre-boil needed", "Egg-rich", "Freezable in layers"]
+      },
+      {
+        "name": "Parboiled Spätzle",
+        "description": "Rustic egg noodles, parboiled and ready to toss in brown butter, cheese, or gravy.",
+        "price": "6 JOD / 400g",
+        "type": "Rustic & Ready",
+        "specs": ["Hand-pressed", "Pre-cooked", "Just sauté to serve"]
+      },
+      {
+        "name": "Linguini",
+        "description": "Long, flat ribbons ideal for seafood sauces, lemon cream, or pesto.",
+        "price": "5.5 JOD / 500g",
+        "type": "Long Cuts",
+        "specs": ["Fresh-cut", "Cooks in under 4 mins", "Great with oil-based sauces"]
+      },
+      {
+        "name": "Spaghetti",
+        "description": "The timeless classic. Pairs beautifully with tomato sauce, aglio e olio, or carbonara.",
+        "price": "5.5 JOD / 500g",
+        "type": "Long Cuts",
+        "specs": ["Egg-based", "Holds sauce well", "Ideal for family meals"]
+      },
+      {
+        "name": "Tagliatelle",
+        "description": "Silky, egg-rich ribbons made for ragù, porcini cream, or buttered peas.",
+        "price": "6 JOD / 500g",
+        "type": "Long Cuts",
+        "specs": ["Thin and tender", "Best with slow-cooked sauces", "Fresh or frozen"]
+      },
+      {
+        "name": "Herb-Infused Pappardelle",
+        "description": "Wide pasta ribbons with fresh garden herbs kneaded into the dough. Rich, aromatic, and striking.",
+        "price": "6.5 JOD / 500g",
+        "type": "Signature Infusion",
+        "specs": ["Thyme & parsley infused", "Vibrant color", "Pairs well with mushrooms or lamb"]
+      }
+    ]
+  },
+  {
+    "id": "pickles-ferments",
+    "name": "Pickles & Ferments",
+    "description": "Bold, tangy, spicy—our house-made pickles and ferments bring flavor and depth to every plate.",
+    "items": [
+      {
+        "id": "sweet-hot-cucumbers",
+        "name": "Sweet & Hot Baby Cucumber Pickles",
+        "price": "JOD 4.5",
+        "weight": "250g jar",
+        "description": "Crunchy baby cucumbers in a sweet brine with chili heat and whole spices.",
+        "specs": ["Vegetarian", "Gluten-free", "No preservatives"]
+      },
+      {
+        "id": "sriracha",
+        "name": "Fermented Sriracha",
+        "price": "JOD 4",
+        "weight": "150ml bottle",
+        "description": "Naturally fermented chili-garlic sauce with balanced heat and umami.",
+        "specs": ["Fermented", "Vegan", "No preservatives"]
+      },
+      {
+        "id": "green-chili-sauce",
+        "name": "Green Chili Sauce",
+        "price": "JOD 4",
+        "weight": "150ml bottle",
+        "description": "Bright and spicy green chili blend with herbs and garlic. Fermented and vibrant.",
+        "specs": ["Vegan", "Gluten-free", "Fermented"]
+      },
+      {
+        "id": "fire-roasted-chili",
+        "name": "Fire Roasted Chili Sauce",
+        "price": "JOD 4.5",
+        "weight": "150ml bottle",
+        "description": "Smoky, rich sauce made from fire-roasted chilies, fermented for complexity.",
+        "specs": ["Smoky", "Vegan", "Handmade in small batches"]
+      }
+    ]
+  },
+  {
+    "id": "dressings",
+    "name": "Dressings & Sauces",
+    "description": "Bold, handmade dressings and sauces to finish any dish.",
+    "items": [
+      {
+        "id": "umami-house",
+        "name": "Umami’s House",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "A signature creamy dressing with savory herbs and a hint of garlic.",
+        "specs": ["Refrigerated", "No preservatives"]
+      },
+      {
+        "id": "peppercorn-ranch",
+        "name": "Peppercorn Ranch",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "Creamy, herby ranch with cracked peppercorns for a subtle kick.",
+        "specs": ["Refrigerated", "Egg-based"]
+      },
+      {
+        "id": "bleu-cheese-buttermilk",
+        "name": "Bleu Cheese Buttermilk",
+        "price": "JOD 4",
+        "weight": "200ml bottle",
+        "description": "Tangy buttermilk dressing loaded with rich bleu cheese crumbles.",
+        "specs": ["Contains dairy", "Bold flavor"]
+      },
+      {
+        "id": "caesar",
+        "name": "Caesar",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "Classic creamy Caesar with parmesan, anchovy, and lemon.",
+        "specs": ["Contains anchovy", "Egg-based"]
+      },
+      {
+        "id": "honey-mustard",
+        "name": "Honey Mustard",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "Sweet and sharp, made with local honey and Dijon mustard.",
+        "specs": ["Kid-friendly", "No added sugar"]
+      },
+      {
+        "id": "green-goddess",
+        "name": "Herb Green Goddess",
+        "price": "JOD 3.75",
+        "weight": "200ml bottle",
+        "description": "Lush and bright with fresh herbs, garlic, and lemon.",
+        "specs": ["Vegetarian", "Dairy optional"]
+      },
+      {
+        "id": "raspberry-vinaigrette",
+        "name": "Raspberry Vinaigrette",
+        "price": "JOD 3.75",
+        "weight": "200ml bottle",
+        "description": "Fruity, tangy vinaigrette made with ripe raspberries and balsamic.",
+        "specs": ["Vegan", "Fresh fruit-based"]
+      },
+      {
+        "id": "balsamic-vinaigrette",
+        "name": "Balsamic Vinaigrette",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "Smooth and rich with aged balsamic vinegar and extra virgin olive oil.",
+        "specs": ["Vegan", "No added sugar"]
+      },
+      {
+        "id": "sherry-vinaigrette",
+        "name": "Sherry Vinaigrette",
+        "price": "JOD 3.75",
+        "weight": "200ml bottle",
+        "description": "Sharp and elegant vinaigrette made with imported sherry vinegar.",
+        "specs": ["Vegan", "Great for grain salads"]
+      },
+      {
+        "id": "lemon-herb",
+        "name": "Lemon Herb",
+        "price": "JOD 3.5",
+        "weight": "200ml bottle",
+        "description": "Light and zesty with lemon juice, garlic, and chopped herbs.",
+        "specs": ["Vegan", "Bright citrus flavor"]
+      },
+      {
+        "id": "sweet-chili",
+        "name": "Sweet Chili 🌶️",
+        "price": "JOD 3.75",
+        "weight": "200ml bottle",
+        "description": "Sweet and tangy with a kick of red chili—great as a dip or glaze.",
+        "specs": ["Mild heat", "No preservatives"]
+      },
+      {
+        "id": "miso-ginger",
+        "name": "Miso Ginger Soy",
+        "price": "JOD 4",
+        "weight": "200ml bottle",
+        "description": "Savory umami dressing with white miso, fresh ginger, and soy.",
+        "specs": ["Asian-inspired", "Fermented ingredients"]
+      },
+      {
+        "id": "chipotle-lime",
+        "name": "Chipotle-Lime 🌶️",
+        "price": "JOD 3.75",
+        "weight": "200ml bottle",
+        "description": "Smoky chipotle peppers with zesty lime—bold, spicy, and addictive.",
+        "specs": ["Spicy", "Great for tacos and bowls"]
+      }
+    ]
+  }
+]

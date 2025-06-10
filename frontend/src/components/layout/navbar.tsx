@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Menu", path: "/menu" },
   { name: "Baked Goods", path: "/baked-goods" },
+  { name: "The Umami Cellar", path: "/cellar" },
   { name: "Chef", path: "/chef" },
   { name: "Catering", path: "/catering" },
   { name: "Contact", path: "/contact" },
@@ -55,7 +56,7 @@ export function Navbar() {
             ))}
             <div className="gradient-border-button">
               <Button className="bg-transparent border-0 text-l font-bold text-umami-DEFAULT  hover:text-umami-cream font-montserrat tracking-wider rounded">
-                <Link to="/subscriptions">Meal Subscription Plans</Link>
+                <Link to="/subscriptions">Meal Subscription</Link>
               </Button>
             </div>
           </nav>
