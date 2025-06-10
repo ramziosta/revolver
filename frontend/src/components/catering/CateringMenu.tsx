@@ -25,7 +25,34 @@ const CateringMenu = () => {
     }, []);
 
     if (loading) {
-        return <div className="text-center py-20">Loading menu...</div>;
+        return (
+            <Layout>
+                <div className="min-h-screen flex flex-col items-center justify-center bg-background">
+                    <div className="text-center">
+                        {/* Animated loading spinner */}
+                        <div className="relative mb-8">
+                            <div className="w-16 h-16 border-4 border-umami-light border-t-umami-gold rounded-full animate-spin mx-auto"></div>
+                            <div className="absolute inset-0 w-16 h-16 border-4 border-transparent border-t-umami/30 rounded-full animate-spin mx-auto" style={{ animationDirection: 'reverse', animationDuration: '1.5s' }}></div>
+                        </div>
+
+                        {/* Loading text */}
+                        <div className="space-y-2">
+                            <h2 className="text-2xl font-playfair text-umami">Preparing the Catering Menu</h2>
+                            <p className="text-umami-default/70 font-montserrat animate-pulse">
+                                Curating our finest selections...
+                            </p>
+                        </div>
+
+                        {/* Decorative elements */}
+                        <div className="flex items-center justify-center space-x-2 mt-6">
+                            <div className="w-2 h-2 bg-umami-gold rounded-full animate-bounce"></div>
+                            <div className="w-2 h-2 bg-umami-gold rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                            <div className="w-2 h-2 bg-umami-gold rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                        </div>
+                    </div>
+                </div>
+            </Layout>
+        );
     }
 
     return (
