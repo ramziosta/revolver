@@ -71,7 +71,7 @@ export default function SubscriptionPage() {
 
                     {/* Callout Banner */}
                     <div className="bg-umami text-white py-6 px-8 rounded-xl text-center mb-20">
-                        <p className="text-lg font-playfair">
+                        <p className="text-xl font-playfair">
                             First-time subscribers enjoy a <span className="font-bold">5th meal FREE</span> in their first month!
                         </p>
                     </div>

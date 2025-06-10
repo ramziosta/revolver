@@ -133,7 +133,7 @@ const SubjectSelect = ({ value, onChange }) => (
         required
     >
         <option value="">Select a subject</option>
-        <option value="ordering">Ordering</option>
+        <option value="orders">Orders</option>
         <option value="reservation">Reservation Inquiry</option>
         <option value="catering">Catering Information</option>
         <option value="subscription">Meal Subscription</option>

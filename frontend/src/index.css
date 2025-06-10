@@ -140,3 +140,8 @@
   padding: 4px;
   border-radius: 8px;
 }
+
+.gradient {
+  background: #403E43;
+  background: linear-gradient(32deg,rgba(64, 62, 67, 1) 42%, rgba(212, 175, 55, 1) 100%);
+}

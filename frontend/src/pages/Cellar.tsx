@@ -159,7 +159,7 @@ const UmamiCellar = () => {
                         </div>
                         <div className="text-center">
                             <Button asChild className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
-                                <Link to="/contact?type=cellar">Start a Custom Order</Link>
+                                <Link to="/contact?type=orders">Start a Custom Order</Link>
                             </Button>
                             <p className="text-sm text-muted-foreground mt-2 font-montserrat italic">
                                 *Allergen note: Not all ingredients are listed. Please notify us of any food restrictions or sensitivities.
