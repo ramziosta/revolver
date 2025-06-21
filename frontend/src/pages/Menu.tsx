@@ -165,11 +165,10 @@ const Menu = () => {
           </span>
                     <h1 className="text-5xl md:text-7xl font-playfair mb-6 text-white">Our Menu</h1>
                     <div className="h-0.5 w-24 bg-umami-gold mb-8"></div>
-                    <h3 className="text-2xl md:text-3xl text-umami-gold font-playfair mb-4">Spring Collection • April
-                        1st - June 20th</h3>
+                    <h3 className="text-2xl md:text-3xl text-umami-gold font-playfair mb-4">Summer Collection • June 21st - September 20th</h3>
                     <p className="max-w-2xl mx-auto text-white/90 font-montserrat text-lg">
                         Indulge in our chef's seasonal creations, thoughtfully crafted to showcase the vibrant flavors
-                        of spring.
+                        of summer.
                     </p>
 
                 </div>
