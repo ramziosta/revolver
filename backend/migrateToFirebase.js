@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 import admin from 'firebase-admin';
 import dotenv from 'dotenv';
 
@@ -15,13 +14,30 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Load JSON files
+// Load JSON data
 const menuData = JSON.parse(fs.readFileSync('./menuData.json', 'utf8'));
 const bakedGoods = JSON.parse(fs.readFileSync('./bakedGoodsMenuData.json', 'utf8'));
-const cateringData = JSON.parse(fs.readFileSync('./cateringMenuData.json', 'utf8'));
+// const cateringData = JSON.parse(fs.readFileSync('./cateringMenuData.json', 'utf8'));
 const cellarData = JSON.parse(fs.readFileSync('./cellarMenuData.json', 'utf8'));
 
-// Upload to Firestore
+// Delete all documents in a collection
+const clearCollection = async (collectionName) => {
+    const snapshot = await db.collection(collectionName).get();
+    const batch = db.batch();
+
+    snapshot.forEach((doc) => {
+        batch.delete(doc.ref);
+    });
+
+    if (!snapshot.empty) {
+        await batch.commit();
+        console.log(`🗑️ Cleared '${collectionName}' collection (${snapshot.size} docs)`);
+    } else {
+        console.log(`ℹ️ No existing documents to delete in '${collectionName}'`);
+    }
+};
+
+// Upload documents
 const seedCollection = async (collectionName, data) => {
     const batch = db.batch();
     const collectionRef = db.collection(collectionName);
@@ -35,13 +51,18 @@ const seedCollection = async (collectionName, data) => {
     console.log(`✅ Seeded ${data.length} documents to '${collectionName}'`);
 };
 
+// Main run function
 const run = async () => {
     try {
-        await seedCollection('cellar', cellarData);
-        console.log('🎉 All menus uploaded successfully!');
+        const collectionName = 'bakedGoods';
+
+        await clearCollection(collectionName);        // Step 1: Clear old
+        await seedCollection(collectionName, bakedGoods); // Step 2: Upload new
+
+        console.log('🎉 All menus refreshed successfully!');
         process.exit();
     } catch (err) {
-        console.error('❌ Failed to upload:', err);
+        console.error('❌ Failed to refresh menu data:', err);
         process.exit(1);
     }
 };

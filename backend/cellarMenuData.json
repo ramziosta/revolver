@@ -1,6 +1,7 @@
 [
   {
     "id": "cheeses",
+    "order": 1,
     "name": "Cheese",
     "description": "Artisanal cheeses crafted in small batches—aged, fresh, and brined varieties with international character and local flair.",
     "items": [
@@ -96,6 +97,7 @@
   },
   {
     "id": "jams-curds-fillings",
+    "order": 2,
     "name": "Jams, Curds & Fillings",
     "description": "Lusciously cooked preserves, zesty curds, and fruit-forward fillings crafted for breakfast, baking, or cheese boards.",
     "items": [
@@ -215,6 +217,7 @@
   },
   {
     "name": "Fresh Pasta",
+    "order": 3,
     "description": "Our fresh pasta selection is crafted in small batches using semolina, local eggs, and seasonal ingredients. From pillowy gnocchi to silky ribbons, every cut is made for exceptional texture and flavor.",
     "items": [
       {
@@ -277,6 +280,7 @@
   },
   {
     "id": "pickles-ferments",
+    "order": 4,
     "name": "Pickles & Ferments",
     "description": "Bold, tangy, spicy—our house-made pickles and ferments bring flavor and depth to every plate.",
     "items": [
@@ -316,6 +320,7 @@
   },
   {
     "id": "dressings",
+    "order": 5,
     "name": "Dressings & Sauces",
     "description": "Bold, handmade dressings and sauces to finish any dish.",
     "items": [

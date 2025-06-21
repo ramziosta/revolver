@@ -1,63 +1,59 @@
 [
   {
     "id": "soups",
+    "order": "1",
     "name": "Soups",
     "icon": "Soup",
-    "description": "A selection of our finest soups, crafted with fresh, seasonal ingredients.",
+    "description": "Refined, seasonal soups — crafted with market produce and a modern twist.",
     "subCategories": [
       {
         "id": "classic",
         "name": "Classic Soups",
         "items": [
           {
-            "name": "Chicken and Rice",
-            "description": "With gremolata and lemon",
+            "name": "Silky Chicken & Rice",
+            "description": "Slow-simmered broth, tender rice, confit chicken, lemon gremolata, and green garlic oil",
             "price": ""
           },
           {
-            "name": "Minestrone Soup",
-            "description": "Hearty vegetable soup in a rich tomato broth",
+            "name": "Hearty Beef & Barley",
+            "description": "A rustic favorite with slow-cooked beef, root vegetables, pearl barley, and fresh herbs",
             "price": ""
           },
           {
-            "name": "Beef and Barley Soup",
-            "description": "Tender beef and pearl barley in a savory broth",
+            "name": "Roasted Tomato & Red Pepper",
+            "description": "Charred tomatoes and sweet peppers, blended with smoked paprika and basil crème",
             "price": ""
           }
         ]
       },
       {
         "id": "seasonal",
-        "name": "Seasonal Soups",
+        "name": "Summer Soups",
         "items": [
           {
-            "name": "Zucchini & Mint Soup",
-            "description": "Purée of spring zucchini, fresh mint, green garlic, and lemon crème fraîche",
+            "name": "Chilled Sweet Corn & Basil",
+            "description": "Golden corn purée with fresh basil, chili oil, and whipped feta",
             "price": ""
           },
           {
-            "name": "Spring Mushroom & Barley Broth",
-            "description": "Wild mushrooms, pearl barley, green peas, and a light vegetable consommé",
+            "name": "Zucchini & Green Garlic",
+            "description": "Silky summer zucchini, green garlic, lemon, and extra virgin olive oil",
             "price": ""
           },
           {
-            "name": "Curried Carrot & Coconut Soup",
-            "description": "Gingered carrot purée, mild curry, coconut milk, lime leaf, and crispy shallots",
+            "name": "Heirloom Tomato & Strawberry Gazpacho",
+            "description": "Sweet-tart blend of tomatoes and strawberries, finished with pickled shallots and mint",
             "price": ""
           },
           {
-            "name": "Spring Pea & Tarragon Soup",
-            "description": "Sweet peas blended with tarragon and crème fraîche, topped with sugar snap slivers and microgreens",
+            "name": "Leek & Potato Vichyssoise",
+            "description": "A chilled purée of roasted leeks and new potatoes with cultured cream and chive oil",
             "price": ""
           },
           {
-            "name": "Spring Onion & New Potato Soup",
-            "description": "Creamy blend of new potatoes, charred spring onions, chives, and cultured butter",
-            "price": ""
-          },
-          {
-            "name": "Asparagus & Lemon Soup",
-            "description": "Fresh asparagus purée with preserved lemon, crème fraîche, and shaved radish",
+            "name": "Curried Carrot & Coconut (Cold or Hot)",
+            "description": "Spiced carrot soup with coconut milk, kaffir lime, and crispy shallots",
             "price": ""
           }
         ]
@@ -66,9 +62,10 @@
   },
   {
     "id": "salads",
+    "order": "2",
     "name": "Salads",
     "icon": "Salad",
-    "description": "Fresh and vibrant salads, featuring seasonal produce and house-made dressings.",
+    "description": "Fresh, vibrant salads with seasonal produce, bold dressings, and modern Mediterranean flair.",
     "subCategories": [
       {
         "id": "classic",
@@ -76,38 +73,48 @@
         "items": [
           {
             "name": "Mixed Green Salad",
-            "description": "Mixed greens, radishes, carrots, tomatoes, fine herbs with champagne vinaigrette",
+            "description": "Field greens, radish, cucumber, carrot ribbons, and champagne vinaigrette",
             "price": ""
           },
           {
             "name": "Greek Village Salad",
-            "description": "With Heirloom Tomatoes, Olives, and Feta",
+            "description": "Heirloom tomatoes, cucumber, olives, red onion, oregano, creamy feta",
             "price": ""
           },
           {
-            "name": "Chopped Caesar Salad",
-            "description": "With Fire-roasted corn, cajun cornbread croutons",
+            "name": "Caesar Salad",
+            "description": "Chopped romaine, anchovy dressing, parmesan, croutons",
             "price": ""
           }
         ]
       },
       {
         "id": "seasonal",
-        "name": "Seasonal Salads",
+        "name": "Summer Salads",
         "items": [
           {
-            "name": "Roasted Beet & Arugula Salad",
-            "description": "Roasted heirloom beets, wild arugula, whipped goat cheese mousse, candied walnuts, sherry vinaigrette",
+            "name": "Stone Fruit & Burrata Salad",
+            "description": "Peaches and plums, burrata, basil, arugula, aged balsamic, toasted pistachios",
             "price": ""
           },
           {
-            "name": "Spring Artichoke & Fennel Salad",
-            "description": "Marinated baby artichokes, shaved fennel, snap peas, preserved lemon vinaigrette, mint, Grana Padano",
+            "name": "Summer Beet & Citrus",
+            "description": "Roasted beets, orange supremes, arugula, goat cheese mousse, walnut vinaigrette",
             "price": ""
           },
           {
-            "name": "Asparagus & Quinoa Salad",
-            "description": "Grilled asparagus, red quinoa, pea tendrils, pickled shallots, toasted almonds, lemon-thyme vinaigrette",
+            "name": "Grilled Corn & Avocado Salad",
+            "description": "Charred corn, avocado, cherry tomatoes, pickled onions, cilantro-lime vinaigrette",
+            "price": ""
+          },
+          {
+            "name": "Quinoa & Watermelon Salad",
+            "description": "Red quinoa, watermelon cubes, mint, feta, arugula, sherry vinaigrette",
+            "price": ""
+          },
+          {
+            "name": "Shaved Fennel & Snap Pea Salad",
+            "description": "Crisp peas, shaved fennel, radish, lemon-thyme vinaigrette, microgreens",
             "price": ""
           }
         ]
@@ -116,9 +123,10 @@
   },
   {
     "id": "starters",
+    "order": "3",
     "name": "Starters",
     "icon": "Utensils",
-    "description": "A delightful selection of small plates to begin your culinary journey.",
+    "description": "A vibrant collection of spreads, small plates, and light bites to begin your journey.",
     "subCategories": [
       {
         "id": "boards",
@@ -126,74 +134,64 @@
         "items": [
           {
             "name": "Curated Cheese Board",
-            "description": "With House Accoutrements",
+            "description": "A seasonal selection of house-aged cheeses with jams, nuts, and preserves.",
             "price": ""
           },
           {
-            "name": "Curated Cheese & Charcuterie Board",
-            "description": "With House Accoutrements",
+            "name": "Cheese & Charcuterie Board",
+            "description": "Cheeses, cured meats, pickles, mustard, and grilled sourdough.",
             "price": ""
           },
           {
             "name": "Greek Trio",
-            "description": "Classic Greek dips: Taramasalata (creamy fish roe), Tirokafteri (spicy whipped feta), and Melitzanosalata (smoky eggplant), served with warm pita bread",
+            "description": "Taramasalata, Tirokafteri, and Melitzanosalata, served with warm pita.",
             "price": ""
           },
           {
             "name": "Spinach & Artichoke Dip",
-            "description": "With crispy pita chips, roasted red peppers, and fresh mint",
+            "description": "Baked with three cheeses, served with za'atar pita chips.",
             "price": ""
           }
         ]
       },
       {
-        "id": "seafood",
-        "name": "Seafood Starters",
-        "items": [
-          {
-            "name": "Seared Scallops",
-            "description": "Scallops, carrot purée, crispy scallions, brown butter",
-            "price": ""
-          },
-          {
-            "name": "Shrimp Giuseppe",
-            "description": "Breaded shrimp with Lemony Zip Sauce",
-            "price": ""
-          }
-        ]
-      },
-      {
-        "id": "main-starter",
-        "name": "Main Starters",
+        "id": "vegetarian-starters",
+        "name": "Vegetarian Starters",
         "items": [
           {
             "name": "Mushroom Tartine",
-            "description": "Wild mushrooms, house-made sourdough, hot ricotta, truffle honey",
-            "price": ""
-          },
-          {
-            "name": "Beef Tartare",
-            "description": "Hand-cut beef, quail egg, capers, shallots, rye crisps",
-            "price": ""
-          },
-          {
-            "name": "Potato Gnocchi",
-            "description": "Hand-rolled potato gnocchi, asparagus tips, sweet peas, tarragon butter, shaved pecorino",
+            "description": "Sautéed mushrooms, truffle ricotta, and hot honey on grilled sourdough.",
             "price": ""
           },
           {
             "name": "Goat Cheese Cake",
-            "description": "With Frisée and balsamic glaze",
+            "description": "Savory goat cheese custard with frisée, fig jam, and balsamic glaze.",
             "price": ""
           },
           {
-            "name": "Vegetable Rice Paper Spring Rolls",
-            "description": "Fresh vegetables and herbs wrapped in delicate rice paper, served with peanut dipping sauce",
+            "name": "Vegetable Spring Rolls",
+            "description": "Fresh herbs, rice noodles, peanut dipping sauce.",
+            "price": ""
+          }
+        ]
+      },
+      {
+        "id": "seafood-starters",
+        "name": "Seafood Starters",
+        "items": [
+          {
+            "name": "Seared Scallops",
+            "description": "On carrot purée with crispy shallots and brown butter.",
             "price": ""
           },
           {
-            "name": "Greek Trio",
-            "description": "Taramasalata, Tirokafteri, Melitzanosalata, served with warm pita bread",
+            "name": "Shrimp Giuseppe",
+            "description": "Crispy shrimp with lemony zip sauce and pickled herbs.",
+            "price": ""
+          },
+          {
+            "name": "Mini Tuna Tartare Cones",
+            "description": "Spicy tuna, avocado, sesame, in miso cones.",
             "price": ""
           }
         ]
@@ -202,72 +200,43 @@
   },
   {
     "id": "mains",
+    "order": "4",
     "name": "Main Courses",
     "icon": "HandPlatter",
-    "description": "Refined dishes inspired by global cuisine, using house-made pasta and prime meats.",
+    "description": "Refined summer dishes inspired by global cuisine, featuring house-made pasta, prime meats, and sun-kissed seasonal produce.",
     "subCategories": [
       {
         "id": "noodles",
         "name": "Noodles",
         "items": [
           {
-            "name": "Spring Egg Noodles",
-            "description": "House-made egg noodles, sugar snap peas, spring onions, shiitake mushrooms, ginger-scallion oil, sesame, and yuzu soy glaze",
+            "name": "Summer Egg Noodles",
+            "description": "House-made egg noodles with grilled zucchini, sweet corn, scallions, sesame, and a ginger-lime soy glaze",
             "price": ""
           },
           {
-            "name": "Vegetarian Lasagna",
-            "description": "Layered Eggplant, Zucchini, Spinach, Ricotta, and Roasted Tomato Sauce",
+            "name": "Grilled Vegetable Lasagna",
+            "description": "Layers of summer squash, roasted peppers, spinach, basil ricotta, and cherry tomato sauce",
             "price": ""
           },
           {
-            "name": "Classic Spaghetti & Meatballs",
-            "description": "Hand-Rolled Beef & Veal Meatballs in San Marzano Marinara, Fresh Basil, and Parmesan",
-            "price": ""
-          },
-          {
-            "name": "Fettuccine Primavera",
-            "description": "Spring Vegetables, Lemon-Basil Butter, and Baby Arugula",
-            "price": ""
-          },
-          {
-            "name": "Wild Mushroom Pappardelle",
-            "description": "Porcini Cream, Thyme, and Aged Gruyère",
-            "price": ""
-          },
-          {
-            "name": "Zucchini and Ricotta Cannelloni",
-            "description": "Fresh Basil Pesto Cream and Crispy Garlic",
+            "name": "Spaghetti & Summer Herb Meatballs",
+            "description": "Beef & veal meatballs with fresh basil, mint, lemon zest, and San Marzano marinara",
             "price": ""
           },
           {
             "name": "Shrimp Scampi Linguine",
-            "description": "Lemon-Garlic Butter, Parsley, and Chili Flakes",
+            "description": "Chili-lime butter, blistered cherry tomatoes, and parsley",
             "price": ""
           },
           {
-            "name": "Cajun Chicken Alfredo",
-            "description": "Blackened Chicken Breast, Roasted Peppers, and Creamy Parmesan Sauce",
+            "name": "Summer Bolognese",
+            "description": "Light veal and beef ragu with summer herbs and hand-cut tagliatelle",
             "price": ""
           },
           {
-            "name": "Classic Bolognese",
-            "description": "Slow-Simmered Beef and Veal Ragu with Fresh Tagliatelle",
-            "price": ""
-          },
-          {
-            "name": "Broccoli and Macaroni Gratin",
-            "description": "Broccoli, Cheddar, Parmesan and Gruyère, with Herbed Breadcrumbs",
-            "price": ""
-          },
-          {
-            "name": "Smoked Salmon Carbonara",
-            "description": "Linguine with Dill Cream, Lemon, and Capers",
-            "price": ""
-          },
-          {
-            "name": "Ricotta Gnocchi",
-            "description": "With Roasted Cherry Tomatoes, Basil Oil, and Parmesan Crumble",
+            "name": "Ricotta Gnocchi with Corn & Basil",
+            "description": "Served with charred corn, parmesan crumble, and roasted tomato vinaigrette",
             "price": ""
           }
         ]
@@ -277,53 +246,38 @@
         "name": "Poultry",
         "items": [
           {
-            "name": "Roasted Chicken Supreme",
-            "description": "Confit garlic jus, cauliflower purée, charred fennel, cherry tomato glaze",
+            "name": "Herbed Chicken Supreme",
+            "description": "Grilled chicken breast with sweet corn purée, cherry tomato vinaigrette, and baby greens",
             "price": ""
           },
           {
             "name": "Jerk-Spiced Chicken",
-            "description": "With Avocado-Mango Relish and Fragrant Island Rice",
+            "description": "With pineapple-avocado salsa and island-style coconut rice",
             "price": ""
           },
           {
-            "name": "Moroccan-Spiced Chicken Tagine",
-            "description": "Braised with Medjool Dates, Apricots & Preserved Lemon, served over Toasted Almond Couscous",
+            "name": "Citrus Chicken Tagine",
+            "description": "Braised with golden apricots, preserved lemon, and summer vegetables over couscous",
             "price": ""
           },
           {
-            "name": "Herb-Roasted Turkey",
-            "description": "Accompanied by Roasted Heirloom Vegetables and Pan Reduction Jus",
+            "name": "Mexican Pollo Asado Bowl",
+            "description": "Grilled chicken with lime, cilantro rice, grilled corn, and roasted pepper crema",
             "price": ""
           },
           {
-            "name": "Mexican Arroz con Pollo",
-            "description": "Saffron-Tomato Braised Chicken with Fire-Roasted Peppers and Cilantro Rice Pilaf",
+            "name": "Grilled Coconut-Curry Chicken",
+            "description": "Served with mango relish and jasmine rice salad",
             "price": ""
           },
           {
-            "name": "Sesame-Crusted Chicken Medallions",
-            "description": "With Ginger-Soy Glaze, Stir-Fried Jasmine Rice & Baby Bok Choy",
+            "name": "Lemon-Caper Chicken Piccata",
+            "description": "With grilled broccolini and chilled olive oil potato salad",
             "price": ""
           },
           {
-            "name": "Coconut-Curried Chicken",
-            "description": "With Kaffir Lime, stir-fried vegetables, and Jasmine Rice",
-            "price": ""
-          },
-          {
-            "name": "Chicken Piccata à la Maison",
-            "description": "Lemon-Caper Velouté, Sautéed Broccolini, and Olive Oil Potato Confit",
-        "price": ""
-          },
-          {
-            "name": "Sumac-Dusted Chicken Paillard",
-            "description": "Charred Lemon, Tahini Yogurt, and Pomegranate Couscous",
-            "price": ""
-          },
-          {
-            "name": "Tandoori-Spiced Chicken",
-            "description": "With Saffron Yogurt Rita Sauce, Roasted Cauliflower, and Pickled Shallots",
+            "name": "Tandoori Chicken with Cucumber Raita",
+            "description": "Charred summer squash, pickled shallots, and coriander drizzle",
             "price": ""
           }
         ]
@@ -333,23 +287,18 @@
         "name": "Seafood",
         "items": [
           {
-            "name": "Market Fish",
-            "description": "Pan-seared seasonal fish with spring pea purée, roasted mushrooms, and preserved lemon",
+            "name": "Grilled Market Fish",
+            "description": "Served over corn purée, summer bean salad, and basil oil",
             "price": ""
           },
           {
             "name": "Crispy Skin Salmon",
-            "description": "Pan-seared salmon with crispy skin, French lentils, fennel slaw, and orange beurre blanc",
-            "price": ""
-          },
-          {
-            "name": "Pan Roasted Market Fish",
-            "description": "With Herb Oil, Caperberry Relish, and Seasonal Vegetables",
+            "description": "With fennel-orange slaw, lemon couscous, and saffron aioli",
             "price": ""
           },
           {
             "name": "Tuna Tataki",
-            "description": "Seared sesame-crusted tuna with Wasabi Avocado Purée and Soy-Ginger Glaze",
+            "description": "Sesame-crusted with avocado crema, pickled cucumber, and citrus-soy glaze",
             "price": ""
           }
         ]
@@ -360,32 +309,27 @@
         "items": [
           {
             "name": "NY Strip Steak",
-            "description": "Pan-seared Steak, potato purée, roasted seasonal vegetables, peppercorn demi glace",
+            "description": "Grilled and sliced, served with charred corn salsa, arugula, and chimichurri",
             "price": ""
           },
           {
             "name": "Grilled Skirt Steak",
-            "description": "With Chimichurri Verde, Roasted Corn Relish, and Smoked Sea Salt",
+            "description": "With avocado herb sauce, cherry tomato relish, and smoked sea salt",
             "price": ""
           },
           {
             "name": "Steak au Poivre",
-            "description": "Peppercorn-Crusted Striploin, Cognac Cream Sauce, and Pommes Frites",
+            "description": "Served summer-style with chilled potato salad and mustard greens",
             "price": ""
           },
           {
-            "name": "Filet Mignon with Béarnaise",
-            "description": "Tenderloin with Tarragon Béarnaise, Haricots Verts, and Fondant Potatoes",
+            "name": "Filet Mignon with Summer Béarnaise",
+            "description": "Tarragon béarnaise, zucchini ribbons, and fondant potatoes",
             "price": ""
           },
           {
-            "name": "Pistachio-Crusted Lamb Chops",
-            "description": "With Whole Grain Mustard Glaze, Baby Root Vegetables, and Red Wine Jus",
-            "price": ""
-          },
-          {
-            "name": "Bavette",
-            "description": "With Braised Leeks, Parsnip Purée, and Jus",
+            "name": "Grilled Lamb Chops with Mint Gremolata",
+            "description": "With baby carrots, citrus glaze, and herbed farro",
             "price": ""
           }
         ]
@@ -395,48 +339,33 @@
         "name": "Vegetarian",
         "items": [
           {
-            "name": "Wild Mushroom Risotto",
-            "description": "Arborio rice, seasonal mushrooms, aged parmesan, herbs",
-            "price": ""
-          },
-          {
-            "name": "Quattro Formaggi & Broccoli Macaroni",
-            "description": "Four-Cheese Béchamel, Roasted Broccoli, and Toasted Herbed Breadcrumbs",
+            "name": "Grilled Corn Risotto",
+            "description": "Creamy arborio rice with corn, parmesan, and summer herb oil",
             "price": ""
           },
           {
             "name": "Stuffed Portobello",
-            "description": "With Herbed Farro, Baby Kale, and Roasted Red Pepper Coulis",
+            "description": "Filled with lemon-herb farro, kale, and roasted pepper coulis",
             "price": ""
           },
           {
-            "name": "Five-Spice Tofu Steak",
-            "description": "With Chili Crisp, Gingered Napa Cabbage, and Scallion Rice",
+            "name": "Five-Spice Tofu with Summer Slaw",
+            "description": "Chili crisp tofu with citrus cabbage slaw and jasmine rice",
             "price": ""
           },
           {
-            "name": "Fettuccine Primavera",
-            "description": "Spring Vegetables with Lemon-Basil Butter and Baby Arugula",
-            "price": ""
-          },
-          {
-            "name": "Eggplant Mille-Feuille",
-            "description": "With Tofu Ricotta, Charred Leeks, and Caramelized Miso Glaze",
-            "price": ""
-          },
-          {
-            "name": "Wild Mushroom Pappardelle",
-            "description": "With Porcini Cream, Thyme, and Aged Gruyère",
+            "name": "Grilled Eggplant Stack",
+            "description": "Layered with cashew ricotta, heirloom tomatoes, and basil-miso dressing",
             "price": ""
           },
           {
             "name": "Sweet Potato Gnocchi",
-            "description": "With Brown Butter, Fried Sage, and Toasted Pepitas",
+            "description": "With grilled peaches, brown butter, and toasted pecans",
             "price": ""
           },
           {
             "name": "Cauliflower Steak",
-            "description": "With Vadouvan Curry, Cashew Cream, and Pickled Shallots",
+            "description": "Vadouvan curry, lime cashew cream, and pickled summer onions",
             "price": ""
           }
         ]
@@ -445,42 +374,43 @@
   },
   {
     "id": "brunch",
+    "order": "5",
     "name": "Brunch",
     "icon": "EggFried",
-    "description": "A delightful brunch menu featuring both sweet and savory options, available Saturday and Sunday from 10:00 AM to 2:00 PM.",
+    "description": "A vibrant summer brunch menu blending sunny flavors and seasonal produce, available Saturday and Sunday from 10:00 AM to 2:00 PM.",
     "subCategories": [
       {
         "id": "savory",
         "name": "Savory",
         "items": [
           {
-            "name": "Seasonal Strata",
-            "description": "Savory layered egg bake with seasonal vegetables, cheese, and crispy potato crust",
+            "name": "Summer Strata",
+            "description": "Savory baked egg dish with zucchini, corn, cherry tomatoes, basil, and cheese over a crispy potato crust",
             "price": ""
           },
           {
             "name": "French Omelette",
-            "description": "Classic French omelette with choice of fillings including ham, bacon, sausage, cheddar, Swiss, mushrooms, onions, and peppers, served with home-fries and toasted sourdough bread",
+            "description": "Delicate omelette with your choice of fillings: smoked salmon, goat cheese, herbed cream, mushrooms, cherry tomatoes, and fresh herbs. Served with a baby greens salad and toasted sourdough",
             "price": ""
           },
           {
-            "name": "Signature Egg Bake Casserole",
-            "description": "Fluffy baked eggs with roasted peppers, spinach, and cheddar",
+            "name": "Mediterranean Egg Casserole",
+            "description": "Baked eggs with grilled eggplant, spinach, roasted peppers, and feta, finished with a light tomato glaze",
             "price": ""
           },
           {
-            "name": "Quiche Selection",
-            "description": "A choice from a variety of quiches including Lorraine (bacon and Swiss), Spinach & Feta, and Wild Mushroom, served with a fresh greens salad",
+            "name": "Summer Quiche Selection",
+            "description": "Choose from seasonal quiches: Heirloom Tomato & Feta, Corn & Cheddar, or Wild Mushroom & Herb, served with a mixed greens salad",
             "price": ""
           },
           {
-            "name": "Gourmet Breakfast Sandwich",
-            "description": "With eggs, cheese, and choice of bacon, sausage, or avocado on a toasted brioche bun",
+            "name": "Brunch Brioche Sandwich",
+            "description": "Fried or scrambled egg, cheddar, avocado, and lemon aioli on a toasted brioche bun. Add-ons: bacon, turkey sausage, or grilled halloumi",
             "price": ""
           },
           {
-            "name": "Breakfast Bowl",
-            "description": "Scrambled eggs with choice of veggies, meats, and cheeses over crispy golden potatoes with herbs and caramelized onions. Optional sauces include hollandaise, salsa, and pesto",
+            "name": "Garden Breakfast Bowl",
+            "description": "Scrambled eggs with roasted summer veggies, herbs, and crumbled cheese over crispy potatoes. Choice of sauces: harissa yogurt, basil pesto, or lemon tahini",
             "price": ""
           }
         ]
@@ -490,23 +420,23 @@
         "name": "Sweet",
         "items": [
           {
-            "name": "Yogurt Parfait Cups",
-            "description": "Layered Greek yogurt with honey, granola, and fresh seasonal berries",
+            "name": "Summer Yogurt Parfaits",
+            "description": "Greek yogurt layered with stone fruit compote, citrus honey, and house-made granola",
             "price": ""
           },
           {
-            "name": "Fresh Fruit Cups",
-            "description": "Seasonal fruit medley, perfectly portioned for individual service",
+            "name": "Citrus-Mint Fruit Cups",
+            "description": "Chilled melon, berries, and citrus segments with a touch of mint syrup",
             "price": ""
           },
           {
-            "name": "Assorted Muffins & Sweet Breads",
-            "description": "Chef's selection of house-baked muffins and sweet loaves",
+            "name": "Muffins & Tea Loaves",
+            "description": "Daily-baked selections like lemon poppy seed, blueberry cornmeal, and zucchini bread",
             "price": ""
           },
           {
-            "name": "House Jams & Spreads",
-            "description": "A variety of artisanal jams, compound butters, and preserves, served with toasted bread",
+            "name": "Summer Jams & Spreads",
+            "description": "Peach-ginger jam, whipped honey butter, and seasonal preserves served with sourdough toasts",
             "price": ""
           }
         ]
@@ -515,6 +445,7 @@
   },
   {
     "id": "desserts",
+    "order": "6",
     "name": "Desserts",
     "icon": "CakeSlice",
     "description": "Indulge in our decadent selection of house-made desserts.",
@@ -529,8 +460,8 @@
             "price": ""
           },
           {
-            "name": "Brownie with Tahini Swirls",
-            "description": "Rich chocolate brownie with Halava bits and a swirl of tahini",
+            "name": "Rich as FF$$ Brownie",
+            "description": "Rich chocolate brownie with dulce de leche",
             "price": ""
           },
           {
@@ -587,8 +518,8 @@
         "name": "Specials",
         "items": [
           {
-            "name": "Strawberry and Cream Bambolone",
-            "description": "Fluffy Italian doughnut filled with strawberry compote and vanilla bean pastry cream",
+            "name": "Creme Brulee Bambolone",
+            "description": "Fluffy Italian doughnut filled with vanilla bean pastry cream and bruleed sugar",
             "price": ""
           }
         ]
@@ -597,6 +528,7 @@
   },
   {
     "id": "drinks",
+    "order": "7",
     "name": "Beverages",
     "icon": "Martini",
     "description": "A curated selection of beverages to complement your meal.",

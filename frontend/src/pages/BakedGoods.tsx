@@ -107,7 +107,7 @@ const CateringInfo = () => (
 // Order Button Component
 const OrderButton = () => (
     <div className="text-center">
-        <Button asChild className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider mt-12">
+        <Button asChild className="border-umami-light text-umami-light hover:bg-umami-gold hover:text-umami transition-colors duration-300 font-montserrat tracking-wider m-12">
             <Link to="/contact?type=ordering">Place Your Order</Link>
         </Button>
     </div>
@@ -127,7 +127,7 @@ const useMenuData = () => {
                 setBakedGoodsMenuCategories(menuData);
 
                 if (menuData.length > 0) {
-                    const firstTabId = getItemId(menuData[0], Math.random());
+                    const firstTabId = menuData.find(item => item.id === "breads")?.id
                     setActiveTab(firstTabId);
                 }
             } catch (error) {
@@ -142,6 +142,77 @@ const useMenuData = () => {
 
     return { bakedGoodsMenuCategories, loading, activeTab, setActiveTab };
 };
+
+const instagramImages = [
+    {
+        href: "https://www.instagram.com/p/DKWhl17sXDu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        name:"Choux Aux Craquelin with Vanilla Bean Diplomat Cream ",
+        src: "https://cdn.inflact.com/media/503221003_18327144577201224_6813557435685842003_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2F503221003_18327144577201224_6813557435685842003_n.jpg%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dinstagram.fdac149-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_oc%3DQ6cZ2QGSYAeictKa8rT0fx_wwx9U9oX3cjXRmem-_E7W-tSLxK2-wKcQQPx5Bj6PDVFaf9k%26_nc_ohc%3DxUh6xkIchJoQ7kNvwGMdRl9%26_nc_gid%3DaaeasEEwe35aXSHgNp8zWw%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfPAtEv-u2tswVDTxvPf4QSPcn39ppkvOAIwGhk0WWBUTA%26oe%3D684F7C25%26_nc_sid%3Dd885a2&time=1749654000&key=d23e61fa419f09c424fdb1cea211a6c8"
+    },
+    {
+        href: "https://www.instagram.com/p/DJvmuIRMfS7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        name:" The Ultimate Rich a$ Fu$k Brownie$ with Ducle De Leche'",
+        src: "https://cdn.inflact.com/media/498609453_18325375684201224_6661830880450824044_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2F498609453_18325375684201224_6661830880450824044_n.jpg%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dinstagram.fdkr7-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_oc%3DQ6cZ2QHq05w90hx3eFc6AEJVrBq2UZXDGwOMqDyc6ZDxugT96w7S42pe2cLWZeRDaEOCv70%26_nc_ohc%3DQMTXwzBuVdEQ7kNvwEH0N3g%26_nc_gid%3DOxi32_IqtgplPx7GQSt_Dg%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfMQ5oC0Jq_DyPF-qArfvcIF7JMvZu_x4fRFL_vqKi9EQw%26oe%3D684F5F1F%26_nc_sid%3Dd885a2&time=1749654000&key=e9fb77a243301479aaa746b9e8b60b3e"},
+    {
+        href: "https://www.instagram.com/p/DIN-3KTMbkc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        name:"Classic Brioche Loaf",
+        src: "https://cdn.inflact.com/media/489868696_18321194695201224_2002425287252918005_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2F489868696_18321194695201224_2002425287252918005_n.jpg%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dinstagram.fpnh26-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_oc%3DQ6cZ2QEV56nuVIjRRFz0C71NKb-gt6vDZVunJIeKsKEIZcJPAGGQIbuG06RnqHxc4bS3P5I%26_nc_ohc%3DRWjOLESmbAcQ7kNvwHPWV7p%26_nc_gid%3DcNmDwy8aygYwSM21gTMoGA%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfOtpQArJnUrlldU5aDuPXYPnuJrdpjcqck5ROOti79_og%26oe%3D684F7940%26_nc_sid%3Dd885a2&time=1749657600&key=c4a69694c679335b4b7a4c868aebc4c6"},
+    {
+        href: "https://www.instagram.com/reel/DEE5TP6OOF-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        name:"Olive Oil Lemon Cake, Mascarpone Frosting, Lemon Basil Sugar and Lemon Curd",
+        src: "https://cdn.inflact.com/media/471676065_18309148828201224_759405600112511092_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2F471676065_18309148828201224_759405600112511092_n.jpg%3Fstp%3Ddst-jpg_e35_p1080x1080_sh0.08_tt6%26_nc_ht%3Dinstagram.fcgy1-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_oc%3DQ6cZ2QHLAWHXjsZUB8YjIdogEthPsGVj8XMmmkNUbPraM-0UikXq5dmwxt6cLHCOtTVFf5VsG7oxVFDmN26PXnVT6z-k%26_nc_ohc%3DZJjZ-QGPBFUQ7kNvwFpY78f%26_nc_gid%3Dx-x93AxNJCcMi252bLKc9w%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfPj5c9zWxSnvzO0VactjNXWMrlceCHlxa7KDlW7uBlMPA%26oe%3D684F62EE%26_nc_sid%3Dd885a2&time=1749657600&key=48102b46e001e1e9e5d86959d9fcc6ee"
+    },
+]
+const InstagramImages = () => {
+    return (
+        <div>
+            {/* Instagram Feed */}
+            <section className="py-16 bg-gray-50">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-10">
+                        <h2 className="text-2xl font-playfair">Feast Your Eyes</h2>
+                        <div className="h-0.5 w-16 bg-umami-gold mx-auto mt-3 mb-4"></div>
+                        <p className="text-muted-foreground font-montserrat max-w-lg mx-auto">
+                            Follow us on Instagram <span><a href="https://www.instagram.com/umamiamman/"
+                                                            className="text-umami-gold text-lg" target="_blank"
+                                                            rel="noopener noreferrer">@umamiamman</a></span> for more
+                            culinary inspiration
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {instagramImages.map((post, index) => (
+                            <div key={index}>
+                            <a
+                                href={post.href || "#"} // Fallback to "#" if href is empty
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                key={index}
+                                className="block aspect-square overflow-hidden group relative"
+                            >
+                                <img
+                                    src={post.src}
+                                    alt="Instagram food post"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all flex items-center justify-center opacity-0 group-hover:opacity-100">
+      <span className="text-white font-montserrat">
+        {post.href ? "View Post" : "Coming Soon"}
+      </span>
+                                </div>
+
+                            </a>
+                                <p className="text-center text-sm text-gray-500 mt-2">
+                                    {post.name}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
 
 // Main Component
 const BakedGoods = () => {
@@ -214,6 +285,7 @@ const BakedGoods = () => {
 
                         <CateringInfo />
                         <OrderButton />
+                        <InstagramImages />
                     </div>
                 </div>
             </section>

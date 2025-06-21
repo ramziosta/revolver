@@ -1,6 +1,7 @@
 [
   {
     "id": "breads",
+    "order": 1,
     "name": "Breads",
     "description": "Handcrafted small-batch Sourdough, French, and Italian breads. Enjoy our artisanal loaves, custom orders, and fresh dinner rolls, made with care and the finest ingredients.",
     "icon": "Croissant",
@@ -63,6 +64,7 @@
   },
   {
     "id": "cookies-bars",
+    "order": 2,
     "name": "Cookies, Bars & Brownies",
     "description": "Indulge in our timeless classics, as well as custom creations tailored just for you. We introduce exciting new flavors every month, with seasonal updates to keep things fresh. Be sure to check back often for the latest treats!",
     "icon": "Cookie",
@@ -156,6 +158,7 @@
   },
   {
     "id": "cakes-cupcakes",
+    "order": 3,
     "name": "Cakes, Cheesecakes & Cupcakes",
     "description": "From classic favorites to inventive seasonal creations, our cakes, cheesecakes, and cupcakes are made to delight. Any cake flavor can be made into cupcakes, and we happily take custom orders. New flavors are added monthly—check back often to see what’s fresh from the oven!",
     "icon": "CakeSlice",
@@ -202,6 +205,7 @@
   },
   {
     "id": "brunch",
+    "order": 4,
     "name": "Brunch",
     "description": "Our brunch menu brings together comforting classics and savory delights made from scratch. From fluffy quiches and loaded egg bakes to herb-scented biscuits and crêpes, each dish is crafted with care and rich flavors. Customize your plate with a variety of fillings, sauces, and seasonal ingredients—perfect for leisurely mornings and hearty appetites.",
     "icon": "EggFried",
@@ -244,6 +248,7 @@
   },
   {
     "id": "pies-galettes",
+    "order": 5,
     "name": "Pies, Cobblers & Galettes",
     "description": "Our pies, cobblers, and galettes celebrate the richness of seasonal fruit and timeless comfort. From buttery lattice-topped pies to rustic open-faced galettes and bubbling cobblers with golden biscuit crusts, each treat is made by hand with love and premium ingredients. Ask us about custom fillings and rotating seasonal specials!",
     "icon": "PieChart",
@@ -306,9 +311,13 @@
   },
   {
     "id": "bamboloni",
+    "order": 6,
     "name": "Bamboloni",
     "icon": "Doughnut",
     "description": "Our Bamboloni are handcrafted Italian doughnuts made from enriched brioche dough for an irresistibly soft, airy texture. Each one is filled with decadent creams, curds, or jams and finished with unique coatings for a perfect bite. We also offer custom flavors and seasonal varieties to keep things deliciously fresh.",
+
+
+
     "items": [
       {
         "name": "Crème brûlée",

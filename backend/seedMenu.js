@@ -15,8 +15,8 @@ try {
     // await catering.insertMany(cateringMenuData);
     // await menu.deleteMany({});
     // await menu.insertMany(menuData);
-    await bakedGoods.deleteMany({});
-    await bakedGoods.insertMany(bakedGoodsMenuData);
+    await menu.deleteMany({});
+    await menu.insertMany(menuData);
 
     console.log('Menu data seeded successfully');
     process.exit();
