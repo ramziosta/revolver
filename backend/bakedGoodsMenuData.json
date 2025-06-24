@@ -263,25 +263,25 @@
         "name": "Berry Cobbler",
         "description": "Mixed seasonal berries baked with vanilla biscuit topping.",
         "weight": "medium(8-12 ppl), large(12-20) ppl",
-        "price": "20 JOD 30 JOD"
+        "price": "25 JOD 35 JOD"
       },
       {
         "name": "Pecan Pie",
         "description": "Toasted pecans in a rich brown sugar custard with flaky pie crust.",
         "weight": "8 inch",
-        "price": "20 JOD"
+        "price": "25 JOD"
       },
       {
         "name": "Pumpkin Pie",
         "description": "Pumpkin in a rich butternut custard with flaky pie crust.",
         "weight": "8 inch",
-        "price": "20 JOD"
+        "price": "25 JOD"
       },
       {
         "name": "Chocolate Cream Pie",
         "description": "Rich chocolate custard in a flaky pie crust with whipped cream and chocolate shavings",
         "weight": "8 inch",
-        "price": "20 JOD"
+        "price": "25 JOD"
       },
       {
         "name": "Apple Pie",
@@ -291,9 +291,9 @@
       },
       {
         "name": "Banoffie Pie",
-        "description": "Banana, toffee, and whipped cream in a graham cracker crust.",
+        "description": "Banana,chocolate, toffee, and whipped cream in a graham cracker crust.",
         "weight": "8 inch",
-        "price": "20 JOD"
+        "price": "25 JOD"
       },
       {
         "name": "Lemon Meringue Pie",
