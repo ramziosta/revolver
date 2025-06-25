@@ -55,7 +55,7 @@ const MenuItem = ({ item }) => {
             {item.specs && Array.isArray(item.specs) && (
                 <ul className="list-disc pl-5 mt-2 text-muted-foreground font-cormorant text-lg space-y-1">
                     {item.specs.map((line, idx) => (
-                        <li key={`${itemId}-spec-${idx}`}>{line}</li>
+                        <li className="whitespace-pre-line" key={`${itemId}-spec-${idx}`}>{line}</li>
                     ))}
                 </ul>
             )}
@@ -67,6 +67,8 @@ const MenuItem = ({ item }) => {
 const CategoryContent = ({ category }) => {
     const tabId = getItemId(category, Math.random());
 
+
+
     return (
         <TabsContent key={tabId} value={tabId} className="space-y-8">
             <div>
@@ -74,6 +76,17 @@ const CategoryContent = ({ category }) => {
                 <p className="max-w-2xl mx-auto text-umami-default/80 font-montserrat text-center mb-6 pb-6">
                     {category.description || ""}
                 </p>
+
+
+                {/* Category-level quantity pricing */}
+                {category.quantityPricing && (
+                    <div className="bg-umami/10 border border-umami/20 rounded-lg p-4 max-w-2xl mx-auto mb-8">
+                        <p className="text-umami  text-center">
+                            <span className="font-semibold">Quantity Options:  </span><br /> {category.quantityPricing}
+                        </p>
+                    </div>
+                )}
+
                 <div className="space-y-8">
                     {(category.items || []).map((item) => (
                         <MenuItem key={getItemId(item, Math.random())} item={item} />
@@ -124,10 +137,14 @@ const useMenuData = () => {
             try {
                 const querySnapshot = await getDocs(collection(db, "bakedGoods"));
                 const menuData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-                setBakedGoodsMenuCategories(menuData);
 
-                if (menuData.length > 0) {
-                    const firstTabId = menuData.find(item => item.id === "breads")?.id
+                // Sort by order field
+                const sortedMenuData = menuData.sort((a, b) => (a["order"] || 0) - (b["order"] || 0));
+                setBakedGoodsMenuCategories(sortedMenuData);
+
+                if (sortedMenuData.length > 0) {
+                    // Set the first item in sorted order as active tab, or find "breads" if it exists
+                    const firstTabId = sortedMenuData.find(item => item.id === "breads")?.id || sortedMenuData[0]?.id;
                     setActiveTab(firstTabId);
                 }
             } catch (error) {

@@ -67,92 +67,92 @@
     "order": 2,
     "name": "Cookies, Bars & Brownies",
     "description": "Indulge in our timeless classics, as well as custom creations tailored just for you. We introduce exciting new flavors every month, with seasonal updates to keep things fresh. Be sure to check back often for the latest treats!",
-    "icon": "Cookie",
+    "quantityPricing": " Cookies:6 pieces: 18 JOD, 8 pieces: 24 JOD, 10 pieces: 30 JOD, 12 pieces: 35 JOD, Bars & Brownies: 6 pieces: 20 JOD, 8 pieces: 32 JOD, 10 pieces: 38 JOD, 12 pieces: 40 JOD",
     "items": [
       {
         "name": "Best Chocolate Chip Cookie",
         "description": "",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Dark Chocolate Peanut Butter Chip",
         "description": "",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Oatmeal Raisin",
         "description": "With plump Black and Golden Raisins",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Lemon Drop",
         "description": "Zesty with White Chocolate Chips",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Samoa Cookie",
         "description": "Caramel Coconut Chocolate Chip",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Stamped Sugar Cookies",
         "description": "Almond and Honey",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Ginger Cookies",
         "description": "Ginger, spice and everything nice",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Red Velvet Macadamia",
         "description": "Chewy and crunchy with a hint of cocoa",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Limoncello Cheesecake Bars",
         "description": "Citrusy and creamy",
-        "price": "JOD 3"
+        "price": "3.5 JOD"
       },
       {
         "name": "Strawberry Crumble",
         "description": "Soft chewy center with a crunch Streusel topping",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       },
       {
         "name": "Millionaire Shortbread",
         "description": "Classic buttery Shortbread with Caramel Center and Chocolate Frosting",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       },
       {
         "name": "GF Chocolate Chip",
         "description": "Gluten-free version of the classic favorite",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       },
       {
         "name": "Brownie with Tahini Swirls",
         "description": "With Halava bits",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       },
       {
-        "name": "Classic Brownie",
-        "description": "With All Valrohna Chocolate chip and cocoa",
-        "price": "JOD 4"
+        "name": "Rich as FF$$ Brownie",
+        "description": "With All Valrohna Chocolate chip and Ducle de Leche",
+        "price": "4.5 JOD"
       },
       {
         "name": "Blondies",
         "description": "With toasted pecans",
-        "price": "JOd 4"
+        "price": "4.5 JOD"
       },
       {
         "name": "Matcha Brownie",
         "description": "With White Chocolate Chips",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       },
       {
         "name": "Red Velvet and Cream Cheese Brownies",
         "description": "Light chocolate with a slight of tang",
-        "price": "JOD 4"
+        "price": "4.5 JOD"
       }
     ]
   },
@@ -161,45 +161,48 @@
     "order": 3,
     "name": "Cakes, Cheesecakes & Cupcakes",
     "description": "From classic favorites to inventive seasonal creations, our cakes, cheesecakes, and cupcakes are made to delight. Any cake flavor can be made into cupcakes, and we happily take custom orders. New flavors are added monthly—check back often to see what’s fresh from the oven!",
-    "icon": "CakeSlice",
+    "quantityPricing": "Cupcakes: 6 pieces: 18 JOD, 8 pieces: 24 JOD, 10 pieces: 30 JOD, 12 pieces: 35 JOD",
     "items": [
       {
         "name": "Tiered Cakes",
         "description": "Tailored Layer Cake (Check with us), 12 Layer Chocolate Cake, Strawberry, Banana Toffee, Birthday Cake Funfetti, Coconut, Lotus Chocolate, Olive Oil Lemon Basil. ",
-        "weight": "Available in 2-tier, 3-tier, and 4-tier sizes",
-        "price": "Starting from JOD 35 up to JOD 110",
+        "weight": "Available in 2-tier, 3-tier, and 4-tier sizes, 6 inch, 8 inch, 10 inch",
+        "price": "Starting from 35 JOD up to 110 JOD",
         "specs": [
           "Each cake features three or more generous layers, filled and topped with a variety of premium ingredients.",
           "Signature flavors include Red Velvet, Carrot, Banana, Coffee, and Lemon.",
           "Fillings range from timeless to indulgent: Vanilla Bean Custard, Strawberry, Raspberry, Blueberry compote, Caramel, Chocolate, Banana Mousse, Lemon Curd, Coffee Cream, Oreo, Lotus, and seasonal favorites like Passion fruit, Mango, Peach, and more.",
           "Our house-made frostings includes but not limited to French buttercream in Vanilla, Chocolate, White Chocolate, Salted Caramel, Mocha, and Lotus.",
-          "Additional frosting options include Cream Cheese, Marshmallow, Whipped Cream, Ganache."
+          "Additional frosting options include Cream Cheese, Marshmallow, Whipped Cream, Ganache.",
+          "Sample pricing:\n 2 layer 6 inch Tia's favorite Chocolate Lotus Cake: 38 JOD\n  3 layer 8 inch Olive Oil Lemon Basil Cake with Lemon Curd and Mascarpone frosting: 50 JOD\n  3 layer Toasted Coconut Mango: 48 JOD\n 2 layer 8 inch Chocolate Mousse Cake with Chocolate Frosting and topped with cream puffs: 40 JOD"
         ]
       },
       {
         "name": "Bundt and Coffee Cakes",
         "weight": "Available in medium and large sizes",
-        "price": "Starting from JOD 18 up to JOD 35",
-        "description": "Sour Cream Pound Cake, Vanilla Chocolate Marble Cake, Lemon Pound Cake with Lemon Curd, Spiced Coffee with Streusel Toppings."
-
+        "price": "Available in Medium Bundt Cake (serves 6–8) and Full Bundt Cake (serves 12–16) ",
+        "specs": ["Sour Cream Pound Cake: 18 JOD / 25 JOD"," Vanilla Chocolate & Raspberry Napolitano  Marble Cake 35 JOD / 45 JOD"," Lemon Pound Cake with Lemon Curd: 25 JOD / 35 JOD"," Spiced Coffee with Streusel Topping: 25 JOD / 35 JOD"," Red Velvet n white chocolate chip with Cream Cheese Frosting 25 JOD / 35 JOD"," Ultimate Chocolate, Triple Layer Bundt Cake with Chocolate glaze 28 JOD / 35 JOD."
+]
       },
       {
         "name": "Crepe Cakes",
-        "description": "Tiramisu, Matcha, Crème Brûlée, Milk Tea, Chocolate Mocha",
-        "weight": "Available in 20 layer, and 30 layer sizes",
-        "price": "Starting from JOD 35 up to JOD 60"
+        "description": "Delicate mille crêpe cakes made with layers of thin crepes, filled with luscious creams, and elegantly frosted. Also available in custom flavors",
+        "weight": "Available in 10 layer, and 20 layer sizes",
+        "specs": ["Tiramisu 30 JOD / 40 JOD","Matcha: 30 JOD / 40 JOD","Crème Brûlée: 30 JOD / 40 JOD","Milk Tea: 30 JOD / 40 JOD","Chocolate Mocha: 35 JOD / 45 JOD"]
       },
       {
         "name": "Cupcakes & Muffins",
         "description": "Custard Castella, Chocolate Espresso Cream, Rosemary Orange, Lemon Blueberry, Multigrain Health, Apple Granola, Ginger Orange Crunch",
         "weight": "Available in 6, 8, 12, and 16 cup sizes and more",
-        "price": "Starting from JOD 15 and up"
+        "price": "",
+        "specs": ["Cupcakes:"," 6 pieces: 18 JOD"," 8 pieces: 24 JOD"," 10 pieces: 30 JOD"," 12 pieces: 35 JOD"]
       },
       {
         "name": "Cheesecake",
-        "description": "Baked, No-Bake Cheesecake, and  Burnt Basque Cheesecake  served with a variety of toppings as Strawberry Compote, Blueberry Compote, Raspberry Compote, Salted Caramel, Chocolate Sauce, Seasonal Fruit Compote, Dulce De Leche",
-        "weight": "Available in 9 inch and 12 inch sizes",
-        "price": "Starting from JOD 35 up to JOD 85"
+        "description": "Baked, No-Bake Cheesecake, and  Burnt Basque Cheesecake served with a variety of toppings as:",
+        "weight": "Available in 9 inches serving 10-12 pieces",
+        "price": "Baked: 40 JOD, No-Bake: 35 JOD, Burnt Basque: 45 JOD",
+        "specs": ["Strawberry Compote"," Blueberry Compote"," Raspberry Compote"," Salted Caramel"," Chocolate Sauce"," Seasonal Fruit Compote"," Dulce De Leche","and more...","Chocolate cheese cake add 5 JOD"]
       }
     ]
   },
@@ -209,40 +212,51 @@
     "name": "Brunch",
     "description": "Our brunch menu brings together comforting classics and savory delights made from scratch. From fluffy quiches and loaded egg bakes to herb-scented biscuits and crêpes, each dish is crafted with care and rich flavors. Customize your plate with a variety of fillings, sauces, and seasonal ingredients—perfect for leisurely mornings and hearty appetites.",
     "icon": "EggFried",
+    "quantityPricing": "Scones: 6 pieces: 15 JOD, 8 pieces: 20 JOD, 10 pieces: 25 JOD, 12 pieces: 30 JOD.",
     "items": [
       {
         "name": "Quiche",
         "description": "Lorraine: Bacon and Swiss, Mediterranean:Tomato Basil and Feta, French: Mushroom and Goat Cheese",
-        "weight": "9 inch pie",
-        "price": "Starting from JOD 15 up to JOD 45"
+        "weight": "8 inch deep dish pie",
+        "price": "18 JOD to 30 JOD",
+        "specs": ["Three cheese: 18 JOD ","Lorraine: Bacon and Swiss: 22 JOD"," Mediterranean:Tomato Basil and Feta: 20 JOD","Mushroom and Goat Cheese: 20 JOD"," Smoked Salmon and Asparagus: 25 JOD"]
       },
       {
         "name": "Egg Bake Casserole",
         "description": "Potato Strata topped with eggs, and fillings including: Mushrooms, Sausage, veggies, and Cheeses. Sauces include: Black Peppercorn Gravy, Ranchero, Hollandaise and more.",
         "weight": "9 inch pie",
-        "price": "Starting from JOD 15 up to JOD 45"
+        "price": "15 JOD to 30 JOD",
+        "specs": ["Mushroom and Sausage: 20 JOD","Mexican chorizo and peppers, with Ranchero Sauce: 25 JOD","Salmon and Asparagus: 30 JOD"]
       },
       {
         "name": "Home Fries",
         "description": "Crispy oven baked Potatoes with roasted garlic and herbs. Add cheese, bacon and veggies extra: Onions, Mushrooms and peppers.",
-        "weight": "medium(8-12 ppl), large(12-20 ppl) and (30-40 ppl) x-large pan",
-        "price": "JOD 10, 20 JOD and JOD 30"
+        "weight": "",
+        "price": "",
+        "specs": ["medium(8-12 ppl) 10 JOD, large(12-20 ppl) 20 JOD and (30-40 ppl) x-large pan 25 JOD", "Extra toppings: 2 JOD, 5 JOD, 7 JOD"]
       },
       {
         "name": "Savory Egg Crêpe",
-        "description": "Filled with eggs, and cheese, extra fillings include: Sausage, mushrooms, chicken, and veggies served with house salad.",
+        "description": "Served with house salad. Filled with eggs, and cheese, extra fillings including: .",
         "weight": "2 pieces per order",
-        "price": "JOD 10"
+        "price": "JOD 10",
+        "specs": ["Sausage n Cheddar"," mushrooms and caramelized onions","chicken and spinach","veggies" ]
       },
       {
         "name": "Savory Herb Scone",
         "description": "Parmesan and chive",
-        "price": "2.5 JOD"
+        "price": "2.0 JOD"
       },
       {
         "name": "Buttermilk Biscuits",
         "description": "Classic, Cheese, Roasted Garlic and Herb, Bacon and Cheddar.",
-        "price": "From 2.5 JOD to 3.5 JOD"
+        "price": "2.0 JOD to 2.5 JOD",
+        "specs": [
+          "Classic Scones:\n 6 pieces: 12 JOD\n 8 pieces: 15 JOD\n 10 pieces: 18 JOD\n 12 pieces: 22 JOD",
+          "Cheese Scones:\n 6 pieces: 15 JOD\n8 pieces: 20 JOD\n10 pieces: 25 JOD\n12 pieces: 30 JOD",
+          "Roasted Garlic and Herb Scones:\n 6 pieces: 15 JOD\n8 pieces: 20 JOD\n10 pieces: 25 JOD\n12 pieces: 30 JOD",
+          "Bacon and Cheddar Scones:\n 6 pieces: 15 JOD\n8 pieces: 20 JOD\n10 pieces: 25 JOD\n12 pieces: 30 JOD"
+        ]
       }
     ]
   },
@@ -257,13 +271,13 @@
         "name": "Rustic Seasonal Galette",
         "description": "Free-form tart with options like cinnamon apples, grilled peaches with burrata, or stone fruits.",
         "weight": "medium(8-12 ppl), large(12-20) ppl",
-        "price": "20 JOD 30 JOD"
+        "price": "20 JOD / 30 JOD"
       },
       {
         "name": "Berry Cobbler",
         "description": "Mixed seasonal berries baked with vanilla biscuit topping.",
         "weight": "medium(8-12 ppl), large(12-20) ppl",
-        "price": "25 JOD 35 JOD"
+        "price": "25 JOD / 35 JOD"
       },
       {
         "name": "Pecan Pie",
@@ -305,7 +319,7 @@
         "name": "Peach Cobbler",
         "description": "Fresh peaches baked with vanilla biscuit topping.",
         "weight": "medium(8-12 ppl), large(12-20) ppl",
-        "price": "20 JOD 30 JOD"
+        "price": "20 JOD / 30 JOD"
       }
     ]
   },
@@ -315,9 +329,7 @@
     "name": "Bamboloni",
     "icon": "Doughnut",
     "description": "Our Bamboloni are handcrafted Italian doughnuts made from enriched brioche dough for an irresistibly soft, airy texture. Each one is filled with decadent creams, curds, or jams and finished with unique coatings for a perfect bite. We also offer custom flavors and seasonal varieties to keep things deliciously fresh.",
-
-
-
+    "quantityPricing": "6 pieces: 18 JOD,  8 pieces: 24 JOD,  10 pieces: 30 JOD,  12 pieces: 35 JOD",
     "items": [
       {
         "name": "Crème brûlée",
@@ -352,6 +364,101 @@
       {
         "name": "Lemon",
         "description": "Filled with lemon curd and topped with toasted marshmallow",
+        "price": "3.5 JOD"
+      }
+    ]
+  } ,
+  {
+    "id": "tiramisu",
+    "order": 7,
+    "name": "Tiramisu",
+    "icon": "cake",
+    "description": "From classic Italian to a more modern twist. Also available in custom and seasonal flavors.",
+    "quantityPricing": "Serves 10 ppl",
+    "items": [
+      {
+        "name": "Original",
+        "description": "Classic Italian recipe with espresso-soaked sponge, mascarpone cream, and a hint of vanilla.",
+        "price": "25 JOD"
+      },
+      {
+        "name": "Marsala Wine Zabayone",
+        "description": "A refined twist featuring Marsala zabayone folded into silky mascarpone and layered with espresso-dipped ladyfingers.",
+        "price": "30 JOD"
+      },
+      {
+        "name": "Strawberry Almond",
+        "description": "Strawberry-soaked ladyfingers layered with almond mascarpone cream and fresh strawberry compote.",
+        "price": "30 JOD"
+      },
+      {
+        "name": "Pistachio Matcha",
+        "description": "Toasted pistachio cream and earthy matcha mascarpone, layered with coffee-kissed sponge.",
+        "price": "30 JOD"
+      },
+      {
+        "name": "Coconut Mango",
+        "description": "Tropical fusion of coconut mascarpone and golden mango preserves layered with espresso sponge.",
+        "price": "30 JOD"
+      },
+      {
+        "name": "Milk Tea",
+        "description": "Earl Grey–infused mascarpone cream and milk tea glaze layered with coffee-soaked sponge.",
+        "price": "25 JOD"
+      },
+      {
+        "name": "Lemon Mascarpone",
+        "description": "Lemon-zest mascarpone layered with sponge and topped with glossy lemon curd.",
+        "price": "30 JOD"
+      }
+    ]
+  },
+  {
+    "id": "choux-craquelin",
+    "order": 8,
+    "name": "Choux au Craquelin",
+    "icon": "cake",
+    "description": "Crisp craquelin-topped choux filled with luxurious creams and mousses — elegant, airy, and indulgent. Seasonal and custom flavors available.",
+    "quantityPricing": "6 pieces: 18 JOD, 8 pieces: 24 JOD, 10 pieces: 30 JOD, 12 pieces: 35 JOD",
+    "items": [
+      {
+        "name": "Chocolate Crémeux",
+        "description": "Filled with rich dark chocolate crémeux and topped with cocoa craquelin.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Strawberry Mousse",
+        "description": "Light strawberry mousse center with a hint of vanilla.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Cinnamon Churro",
+        "description": "Cinnamon-infused cream and a brown sugar craquelin shell rolled in cinnamon sugar.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Lemon Mousse",
+        "description": "With zesty lemon mousse and candied lemon.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Mocha Late",
+        "description": "Espresso cream with a dark chocolate glaze and a touch of sea salt.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Heavenly Vanilla Bean Diplomat",
+        "description": "Silky vanilla bean pastry cream lightened with chantilly in a classic golden shell.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Coconut Cream",
+        "description": "Filled with coconut cream and rolled in toasted coconut flakes.",
+        "price": "3.5 JOD"
+      },
+      {
+        "name": "Arabesque",
+        "description": "Delicate rose water cream with a pistachio crunch and rose petal garnish.",
         "price": "3.5 JOD"
       }
     ]
