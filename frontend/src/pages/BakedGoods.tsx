@@ -71,8 +71,8 @@ const CategoryContent = ({ category }) => {
 
     return (
         <TabsContent key={tabId} value={tabId} className="space-y-8">
-            <div>
-                <h2 className="text-3xl font-playfair mb-8 text-center">{category.name}</h2>
+            <div className="p-12">
+                <h2 className=" text-3xl font-playfair mb-8 text-center">{category.name}</h2>
                 <p className="max-w-2xl mx-auto text-umami-default/80 font-montserrat text-center mb-6 pb-6">
                     {category.description || ""}
                 </p>
@@ -276,7 +276,7 @@ const BakedGoods = () => {
 
             <section className="py-16 bg-background">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto">
+                    <div className="max-w-4xl mx-auto ">
                         {bakedGoodsMenuCategories.length > 0 && (
                             <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
                                 <TabsList className="w-full mb-20 bg-transparent flex flex-wrap gap-2">
