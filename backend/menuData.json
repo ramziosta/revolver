@@ -293,7 +293,7 @@
           },
           {
             "name": "Crispy Skin Salmon",
-            "description": "With fennel-orange slaw, lemon couscous, and saffron aioli",
+            "description": "With red cabbage-orange slaw, lemon couscous, and saffron aioli",
             "price": ""
           },
           {
@@ -308,7 +308,7 @@
         "name": "Meat",
         "items": [
           {
-            "name": "NY Strip Steak",
+            "name": "Rib eye Steak",
             "description": "Grilled and sliced, served with charred corn salsa, arugula, and chimichurri",
             "price": ""
           },

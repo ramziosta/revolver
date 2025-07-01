@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebaseConfig.tsx';
+
 // Helper function to get consistent ID
 const getItemId = (item, fallback) => item._id || item.id || fallback;
 
@@ -39,26 +40,56 @@ const HeroSection = () => (
 );
 
 // Menu Item Component
-const MenuItem = ({ item }) => {
+// Updated MenuItem to handle images nicely
+const MenuItem = ({ item, onImageClick }) => {
     const itemId = getItemId(item, Math.random());
 
+    const handleImageClick = () => {
+        if (onImageClick) {
+            onImageClick(item.image);
+        }
+    };
+
     return (
-        <div className="border-b border-border hover:bg-umami/5 p-4 -mx-4 transition-colors duration-300 pb-6">
-            <div className="flex justify-between items-start mb-2">
-                <h3 className="font-playfair text-xl">{item.name}</h3>
-                <span className="font-montserrat text-umami-gold">{item.price}</span>
-            </div>
-            <div className="flex justify-between items-start mb-2">
-                <p className="font-playfair text-l">{item.weight}</p>
-            </div>
-            <p className="text-umami-default font-cormorant text-xl">{item.description}</p>
-            {item.specs && Array.isArray(item.specs) && (
-                <ul className="list-disc pl-5 mt-2 text-muted-foreground font-cormorant text-lg space-y-1">
-                    {item.specs.map((line, idx) => (
-                        <li className="whitespace-pre-line" key={`${itemId}-spec-${idx}`}>{line}</li>
-                    ))}
-                </ul>
+        <div className="flex flex-col items-center md:flex-row gap-6 border-b border-border hover:bg-umami/5 p-4 -mx-4 transition-colors duration-300 pb-6">
+            {item.image && (
+                <button
+                    onClick={handleImageClick}
+                    className="relative w-64 h-64 rounded-md overflow-hidden focus:outline-none custom-cursor"
+                >
+                    <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-contain pointer-events-none"
+                    />
+
+                    {/* Optional overlay hover effect */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity">
+                        <span className="text-white font-bold text-xl">Click to view</span>
+                    </div>
+                </button>
             )}
+            <div className="flex-1">
+                <div className="flex justify-between items-start mb-2">
+                    <h3 className="font-playfair text-xl">{item.name}</h3>
+                    <span className="font-montserrat text-umami-gold">{item.price}</span>
+                </div>
+                {item.weight && (
+                    <p className="font-montserrat text-muted-foreground mb-1">
+                        {item.weight}
+                    </p>
+                )}
+                <p className="text-umami-default font-cormorant text-xl">
+                    {item.description}
+                </p>
+                {item.specs?.length > 0 && (
+                    <ul className="list-disc pl-5 mt-2 text-muted-foreground font-cormorant text-lg space-y-1">
+                        {item.specs.map((line, idx) => (
+                            <li key={`${itemId}-spec-${idx}`}>{line}</li>
+                        ))}
+                    </ul>
+                )}
+            </div>
         </div>
     );
 };
@@ -66,33 +97,54 @@ const MenuItem = ({ item }) => {
 // Category Content Component
 const CategoryContent = ({ category }) => {
     const tabId = getItemId(category, Math.random());
+    const [expandedImage, setExpandedImage] = useState(null);
 
-
+    const handleClose = () => {
+        setExpandedImage(null);
+    };
 
     return (
         <TabsContent key={tabId} value={tabId} className="space-y-8">
             <div className="p-12">
-                <h2 className=" text-3xl font-playfair mb-8 text-center">{category.name}</h2>
+                <h2 className=" text-3xl font-playfair mb-8 text-center">
+                    {category.name}
+                </h2>
                 <p className="max-w-2xl mx-auto text-umami-default/80 font-montserrat text-center mb-6 pb-6">
                     {category.description || ""}
                 </p>
 
-
-                {/* Category-level quantity pricing */}
                 {category.quantityPricing && (
                     <div className="bg-umami/10 border border-umami/20 rounded-lg p-4 max-w-2xl mx-auto mb-8">
-                        <p className="text-umami  text-center">
-                            <span className="font-semibold">Quantity Options:  </span><br /> {category.quantityPricing}
+                        <p className="text-umami text-center">
+                            <span className="font-semibold">Quantity Options: </span>
+                            <br /> {category.quantityPricing}
                         </p>
                     </div>
                 )}
 
                 <div className="space-y-8">
                     {(category.items || []).map((item) => (
-                        <MenuItem key={getItemId(item, Math.random())} item={item} />
+                        <MenuItem
+                            key={getItemId(item, Math.random())}
+                            item={item}
+                            onImageClick={setExpandedImage}
+                        />
                     ))}
                 </div>
             </div>
+
+            {expandedImage && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 cursor-zoom-out"
+                    onClick={handleClose}
+                >
+                    <img
+                        src={expandedImage}
+                        alt="Expanded"
+                        className="max-h-[90%] max-w-[90%] rounded shadow-lg"
+                    />
+                </div>
+            )}
         </TabsContent>
     );
 };
@@ -164,7 +216,7 @@ const instagramImages = [
     {
         href: "https://www.instagram.com/p/DKWhl17sXDu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         name:"Choux Aux Craquelin with Vanilla Bean Diplomat Cream ",
-        src: "https://cdn.inflact.com/media/503221003_18327144577201224_6813557435685842003_n.jpg?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2F503221003_18327144577201224_6813557435685842003_n.jpg%3Fstp%3Ddst-jpg_e35_s1080x1080_sh0.08_tt6%26_nc_ht%3Dinstagram.fdac149-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_oc%3DQ6cZ2QGSYAeictKa8rT0fx_wwx9U9oX3cjXRmem-_E7W-tSLxK2-wKcQQPx5Bj6PDVFaf9k%26_nc_ohc%3DxUh6xkIchJoQ7kNvwGMdRl9%26_nc_gid%3DaaeasEEwe35aXSHgNp8zWw%26edm%3DANTKIIoBAAAA%26ccb%3D7-5%26oh%3D00_AfPAtEv-u2tswVDTxvPf4QSPcn39ppkvOAIwGhk0WWBUTA%26oe%3D684F7C25%26_nc_sid%3Dd885a2&time=1749654000&key=d23e61fa419f09c424fdb1cea211a6c8"
+        src: "https://instagram.fadj1-1.fna.fbcdn.net/v/t51.2885-15/503221003_18327144577201224_6813557435685842003_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4ODEwLnNkci5mNzU3NjEuZGVmYXVsdF9pbWFnZSJ9&_nc_ht=instagram.fadj1-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2QHjbepKIIJMJ99g_AYe57qKGJGWO9KFnVQRJKNU2mgo-JcL-4qbh5643Yazh4b1Wsk&_nc_ohc=kW31kPbA6SQQ7kNvwFb0ngb&_nc_gid=Hnyq-Ar3L6xY2qqrwvSuBA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzY0NDkwNTkxNzc4MzQzNzU4NA%3D%3D.3-ccb7-5&oh=00_AfPXw4noZq9l3C6_ztlcZyFryCC7LbHpKnn5gxmWttiKyw&oe=68630A65&_nc_sid=10d13b"
     },
     {
         href: "https://www.instagram.com/p/DJvmuIRMfS7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",

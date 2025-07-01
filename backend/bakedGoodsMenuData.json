@@ -10,25 +10,29 @@
         "name": "White Sourdough",
         "description": "Classic White Sourdough",
         "weight": "850g",
-        "price": "JOD 6"
+        "price": "JOD 6",
+        "image": "../assets/sourdough.jpg"
       },
       {
         "name": "Whole Wheat Sourdough",
         "description": "100% Whole Wheat flour",
         "weight": "850g",
-        "price": "JOD 6"
+        "price": "JOD 6",
+        "image": "../assets/wholewheat.jpg"
       },
       {
         "name": "Artisanal Loaf Sourdough",
         "description": "Specialty blend of grains flours",
         "weight": "850g",
-        "price": "JOD 6"
+        "price": "JOD 6",
+        "image": "../assets/artisan.jpeg"
       },
       {
         "name": "100%  Rye Sourdough",
         "description": "Russian Rye Flour and Caraway Seeds",
         "weight": "850g",
-        "price": "JOD 6"
+        "price": "JOD 6",
+        "image": "../assets/rye.jpeg"
       },
       {
         "name": "MultiSeed Whole Grain Sourdough",
@@ -40,25 +44,29 @@
         "name": "Brioche Loaf",
         "description": "Classic, Variations include: Chocolate chip, Raisin & walnut, Apple Cinnamon",
         "weight": "450g",
-        "price": "JOD 7 JOD 8"
+        "price": "JOD 7 JOD 8",
+        "image": "../assets/brioche.jpeg"
       },
       {
         "name": "Cinnamon Swirl Bread",
         "description": "Buttery with a swirl of Cinnamon Sugar and cream cheese frosting",
         "weight": "450g",
-        "price": "JOD 8"
+        "price": "JOD 8",
+        "image": "../assets/cinnamon.jpeg"
       },
       {
         "name": "Ciabatta",
         "description": "Classic Italian Bread with a chewy crust and open crumbs",
         "weight": "380g",
-        "price": "JOD 4"
+        "price": "JOD 4",
+        "image": "../assets/ciabatta.jpeg"
       },
       {
         "name": "Focaccia",
         "description": "Flavors include: Classic Herb, Tomato Feta and Basil, Black and Green Olive, Sausage and Cheddar, and Caramelized Onions, Mushroom and Goat Cheese",
         "weight": "800g",
-        "price": "JOD 7"
+        "price": "JOD 7",
+        "image": "../assets/focaccia.jpg"
       }
     ]
   },
@@ -71,8 +79,9 @@
     "items": [
       {
         "name": "Best Chocolate Chip Cookie",
-        "description": "",
-        "price": "3.5 JOD"
+        "description": "Brown butter cookie with a mix of fine chocolates and a sprinkle of sea salt for balance.",
+        "price": "3.5 JOD",
+        "image": "../assets/chocolate-chip-cookies.jpg"
       },
       {
         "name": "Dark Chocolate Peanut Butter Chip",
@@ -82,7 +91,8 @@
       {
         "name": "Oatmeal Raisin",
         "description": "With plump Black and Golden Raisins",
-        "price": "3.5 JOD"
+        "price": "3.5 JOD",
+        "image": "../assets/oatmeal-raisin.jpg"
       },
       {
         "name": "Lemon Drop",
@@ -97,7 +107,8 @@
       {
         "name": "Stamped Sugar Cookies",
         "description": "Almond and Honey",
-        "price": "3.5 JOD"
+        "price": "3.5 JOD",
+        "image": "../assets/sugar-cookies.jpg"
       },
       {
         "name": "Ginger Cookies",
@@ -135,13 +146,14 @@
         "price": "4.5 JOD"
       },
       {
-        "name": "Rich as FF$$ Brownie",
+        "name": "Rich as F@#$ Brownie",
         "description": "With All Valrohna Chocolate chip and Ducle de Leche",
-        "price": "4.5 JOD"
+        "price": "4.5 JOD",
+        "image": "../assets/brownies.jpg"
       },
       {
-        "name": "Blondies",
-        "description": "With toasted pecans",
+        "name": "The decadent Blondie",
+        "description": "With toasted pecans and white chocolate chips",
         "price": "4.5 JOD"
       },
       {
@@ -174,21 +186,23 @@
           "Fillings range from timeless to indulgent: Vanilla Bean Custard, Strawberry, Raspberry, Blueberry compote, Caramel, Chocolate, Banana Mousse, Lemon Curd, Coffee Cream, Oreo, Lotus, and seasonal favorites like Passion fruit, Mango, Peach, and more.",
           "Our house-made frostings includes but not limited to French buttercream in Vanilla, Chocolate, White Chocolate, Salted Caramel, Mocha, and Lotus.",
           "Additional frosting options include Cream Cheese, Marshmallow, Whipped Cream, Ganache.",
-          "Sample pricing:\n 2 layer 6 inch Tia's favorite Chocolate Lotus Cake: 38 JOD\n  3 layer 8 inch Olive Oil Lemon Basil Cake with Lemon Curd and Mascarpone frosting: 50 JOD\n  3 layer Toasted Coconut Mango: 48 JOD\n 2 layer 8 inch Chocolate Mousse Cake with Chocolate Frosting and topped with cream puffs: 40 JOD"
-        ]
+          "Sample pricing:\n 2 layer 6 inch Tia's favorite Chocolate Lotus Cake: 38 JOD\n  3 layer 8 inch Olive Oil Lemon Basil Cake with Lemon Curd and Mascarpone frosting: 50 JOD\n  3 layer Toasted Coconut Mango: 48 JOD\n 8 inch Chocolate Mousse Cake with Chocolate Frosting and topped with cream puffs: 40 JOD"
+        ],
+        "image": "/assets/chocolate-mousse.jpeg"
       },
       {
         "name": "Bundt and Coffee Cakes",
         "weight": "Available in medium and large sizes",
         "price": "Available in Medium Bundt Cake (serves 6–8) and Full Bundt Cake (serves 12–16) ",
-        "specs": ["Sour Cream Pound Cake: 18 JOD / 25 JOD"," Vanilla Chocolate & Raspberry Napolitano  Marble Cake 35 JOD / 45 JOD"," Lemon Pound Cake with Lemon Curd: 25 JOD / 35 JOD"," Spiced Coffee with Streusel Topping: 25 JOD / 35 JOD"," Red Velvet n white chocolate chip with Cream Cheese Frosting 25 JOD / 35 JOD"," Ultimate Chocolate, Triple Layer Bundt Cake with Chocolate glaze 28 JOD / 35 JOD."
-]
+        "specs": ["Sour Cream Pound Cake: 18 JOD / 25 JOD"," Vanilla Chocolate & Raspberry Napolitano  Marble Cake 35 JOD / 45 JOD"," Lemon Pound Cake with Lemon Curd: 25 JOD / 35 JOD"," Spiced Coffee with Streusel Topping: 25 JOD / 35 JOD"," Red Velvet n white chocolate chip with Cream Cheese Frosting 25 JOD / 35 JOD"," Ultimate Chocolate, Triple Layer Bundt Cake with Chocolate glaze 28 JOD / 35 JOD."],
+          "image": "/assets/napolitan.jpeg"
       },
       {
-        "name": "Crepe Cakes",
+        "name": "Mille Crepe Cakes",
         "description": "Delicate mille crêpe cakes made with layers of thin crepes, filled with luscious creams, and elegantly frosted. Also available in custom flavors",
-        "weight": "Available in 20 layer, and 30 layer sizes",
-        "specs": ["Tiramisu 30 JOD / 40 JOD","Matcha: 30 JOD / 40 JOD","Crème Brûlée: 30 JOD / 40 JOD","Milk Tea: 30 JOD / 40 JOD","Chocolate Mocha: 35 JOD / 45 JOD"]
+        "weight": "Available in 8 inch, 20 layer, and 30 layer sizes",
+        "specs": ["Tiramisu 30 JOD / 40 JOD","Matcha: 30 JOD / 40 JOD","Crème Brûlée: 30 JOD / 40 JOD","Milk Tea: 30 JOD / 40 JOD","Chocolate Mocha: 35 JOD / 45 JOD"],
+        "image": "/assets/tiramisu-mille-crepe.jpeg"
       },
       {
         "name": "Cupcakes & Muffins",
@@ -374,7 +388,7 @@
     "name": "Tiramisu",
     "icon": "cake",
     "description": "From classic Italian to a more modern twist. Also available in custom and seasonal flavors.",
-    "quantityPricing": "Serves 10 ppl",
+    "quantityPricing": "Serves 8-10 ppl",
     "items": [
       {
         "name": "Original",
@@ -422,44 +436,46 @@
     "quantityPricing": "6 pieces: 18 JOD, 8 pieces: 24 JOD, 10 pieces: 30 JOD, 12 pieces: 35 JOD",
     "items": [
       {
+        "name": "Heavenly Vanilla Bean Diplomat",
+        "description": "Silky vanilla bean pastry cream lightened with chantilly in a classic golden shell.",
+        "price": "4.5 JOD",
+        "image": "/assets/choux.jpg"
+      },
+      {
         "name": "Chocolate Crémeux",
         "description": "Filled with rich dark chocolate crémeux and topped with cocoa craquelin.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
       {
         "name": "Strawberry Mousse",
         "description": "Light strawberry mousse center with a hint of vanilla.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
       {
         "name": "Cinnamon Churro",
         "description": "Cinnamon-infused cream and a brown sugar craquelin shell rolled in cinnamon sugar.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
       {
         "name": "Lemon Mousse",
         "description": "With zesty lemon mousse and candied lemon.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
       {
         "name": "Mocha Late",
         "description": "Espresso cream with a dark chocolate glaze and a touch of sea salt.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
-      {
-        "name": "Heavenly Vanilla Bean Diplomat",
-        "description": "Silky vanilla bean pastry cream lightened with chantilly in a classic golden shell.",
-        "price": "3.5 JOD"
-      },
+
       {
         "name": "Coconut Cream",
         "description": "Filled with coconut cream and rolled in toasted coconut flakes.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       },
       {
         "name": "Arabesque",
         "description": "Delicate rose water cream with a pistachio crunch and rose petal garnish.",
-        "price": "3.5 JOD"
+        "price": "4.5 JOD"
       }
     ]
   }
