@@ -71,8 +71,8 @@ const MenuItem = ({ item, onImageClick }) => {
             )}
             <div className="flex-1">
                 <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-playfair text-xl">{item.name}</h3>
-                    <span className="font-montserrat text-umami-gold">{item.price}</span>
+                    <h3 className="font-playfair mr-2 text-xl">{item.name}</h3>
+                    <span className="font-montserrat  text-umami-gold">{item.price}</span>
                 </div>
                 {item.weight && (
                     <p className="font-montserrat text-muted-foreground mb-1">
@@ -112,7 +112,6 @@ const CategoryContent = ({ category }) => {
                 <p className="max-w-2xl mx-auto text-umami-default/80 font-montserrat text-center mb-6 pb-6">
                     {category.description || ""}
                 </p>
-
                 {category.quantityPricing && (
                     <div className="bg-umami/10 border border-umami/20 rounded-lg p-4 max-w-2xl mx-auto mb-8">
                         <p className="text-umami text-center">

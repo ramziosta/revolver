@@ -8,14 +8,14 @@
     "items": [
       {
         "name": "White Sourdough",
-        "description": "Classic White Sourdough",
+        "description": "Classic crunchy and chewy white sourdough made with French flour",
         "weight": "850g",
         "price": "JOD 6",
         "image": "../assets/sourdough.jpg"
       },
       {
         "name": "Whole Wheat Sourdough",
-        "description": "100% Whole Wheat flour",
+        "description": "100% Whole wheat Italian flour",
         "weight": "850g",
         "price": "JOD 6",
         "image": "../assets/wholewheat.jpg"
@@ -38,32 +38,35 @@
         "name": "MultiSeed Whole Grain Sourdough",
         "description": "With a blend of Pumpkin, Sesame, Sunflower, poppy and Black Seeds",
         "weight": "850g",
-        "price": "JOD 7"
+        "price": "JOD 7",
+        "image": "../assets/multiseed.jpg"
       },
       {
         "name": "Brioche Loaf",
-        "description": "Classic, Variations include: Chocolate chip, Raisin & walnut, Apple Cinnamon",
+        "description": "A rich, buttery French bread with a tender crumb and golden crust, perfect for \"Pan Perdu\". Variations include:",
+        "specs": ["Classic","Chocolate chip"," Raisin & walnut", "Apple Cinnamon"],
         "weight": "450g",
         "price": "JOD 7 JOD 8",
         "image": "../assets/brioche.jpeg"
       },
       {
         "name": "Cinnamon Swirl Bread",
-        "description": "Buttery with a swirl of Cinnamon Sugar and cream cheese frosting",
+        "description": "Sweet and Buttery with a swirl of Cinnamon Sugar. Perfect for french toast. Cream Cheese Glaze on the side.",
         "weight": "450g",
         "price": "JOD 8",
         "image": "../assets/cinnamon.jpeg"
       },
       {
         "name": "Ciabatta",
-        "description": "Classic Italian Bread with a chewy crust and open crumbs",
-        "weight": "380g",
-        "price": "JOD 4",
+        "description": "Classic Italian Bread with a chewy crust and open crumb",
+        "weight": "6 pieces",
+        "price": "JOD 5",
         "image": "../assets/ciabatta.jpeg"
       },
       {
         "name": "Focaccia",
-        "description": "Flavors include: Classic Herb, Tomato Feta and Basil, Black and Green Olive, Sausage and Cheddar, and Caramelized Onions, Mushroom and Goat Cheese",
+        "description": "A fluffy, olive oil-rich Italian flatbread topped with herbs, salt, and seasonal toppings. Flavors include:",
+        "specs": ["Classic Herb","Tomato Feta and Basil","Garlic Confit with Black and Green Olives"," Sausage and Cheddar","Caramelized Onions, Mushroom and Goat Cheese"],
         "weight": "800g",
         "price": "JOD 7",
         "image": "../assets/focaccia.jpg"
@@ -75,96 +78,109 @@
     "order": 2,
     "name": "Cookies, Bars & Brownies",
     "description": "Indulge in our timeless classics, as well as custom creations tailored just for you. We introduce exciting new flavors every month, with seasonal updates to keep things fresh. Be sure to check back often for the latest treats!",
-    "quantityPricing": " Cookies:6 pieces: 18 JOD, 8 pieces: 24 JOD, 10 pieces: 30 JOD, 12 pieces: 35 JOD, Bars & Brownies: 6 pieces: 20 JOD, 8 pieces: 32 JOD, 10 pieces: 38 JOD, 12 pieces: 40 JOD",
+    "quantityPricing": "Cookies:\n6 pieces: 18 JOD\n8 pieces: 24 JOD\n10 pieces: 30 JOD\n12 pieces: 35 JOD\nBars & Brownies:\n6 pieces: 20 JOD\n8 pieces: 32 JOD\n10 pieces: 38 JOD\n12 pieces: 40 JOD",
     "items": [
       {
         "name": "Best Chocolate Chip Cookie",
         "description": "Brown butter cookie with a mix of fine chocolates and a sprinkle of sea salt for balance.",
-        "price": "3.5 JOD",
+        "price": "",
         "image": "../assets/chocolate-chip-cookies.jpg"
       },
       {
         "name": "Dark Chocolate Peanut Butter Chip",
         "description": "",
-        "price": "3.5 JOD"
+        "price": "",
+        "image": "../assets/darkchocolate.jpg"
       },
       {
         "name": "Oatmeal Raisin",
         "description": "With plump Black and Golden Raisins",
-        "price": "3.5 JOD",
+        "price": "",
         "image": "../assets/oatmeal-raisin.jpg"
       },
       {
         "name": "Lemon Drop",
         "description": "Zesty with White Chocolate Chips",
-        "price": "3.5 JOD"
+        "price": "",
+        "image": "../assets/lemon-drop.jpg"
       },
       {
         "name": "Samoa Cookie",
-        "description": "Caramel Coconut Chocolate Chip",
-        "price": "3.5 JOD"
+        "description": "Girl Scout's cookie inspiration: Rich chocolate, gooey caramel, and toasted coconut over a shortbread cookie base.",
+        "price": "",
+        "image": "../assets/samoas.jpg"
       },
       {
         "name": "Stamped Sugar Cookies",
-        "description": "Almond and Honey",
-        "price": "3.5 JOD",
+        "description": "Classic buttery and nutty sugar cookies, hand-stamped for a charming, artisanal touch. Flavors include: ",
+        "specs": ["Almond and Honey"," Espresso Chocolate","Lemon Zest","Chai Spice", "Orange Cardamom"],
+        "price": "",
         "image": "../assets/sugar-cookies.jpg"
       },
       {
         "name": "Ginger Cookies",
-        "description": "Ginger, spice and everything nice",
-        "price": "3.5 JOD"
+        "description": "Classic cookies with a warm blend of ginger, spice and everything nice, molasses, and a crackly sugar crust.",
+        "price": "",
+        "image": "../assets/ginger-cookies.jpg"
       },
       {
         "name": "Red Velvet Macadamia",
-        "description": "Chewy and crunchy with a hint of cocoa",
-        "price": "3.5 JOD"
+        "description": "Chewy and crunchy with a hint of cocoa with chocolate chips.",
+        "image": "../assets/red-velvet.jpg",
+        "price": ""
       },
       {
         "name": "Limoncello Cheesecake Bars",
         "description": "Citrusy and creamy",
-        "price": "3.5 JOD"
+        "price": "",
+        "image": "../assets/limoncello.jpg"
       },
       {
         "name": "Strawberry Crumble",
         "description": "Soft chewy center with a crunch Streusel topping",
-        "price": "4.5 JOD"
+        "price": "",
+        "image": "../assets/strawberry-crumble.jpg"
       },
       {
         "name": "Millionaire Shortbread",
         "description": "Classic buttery Shortbread with Caramel Center and Chocolate Frosting",
-        "price": "4.5 JOD"
+        "price": "",
+        "image": "../assets/millionaire-shortbread.jpg"
       },
       {
         "name": "GF Chocolate Chip",
         "description": "Gluten-free version of the classic favorite",
-        "price": "4.5 JOD"
+        "price": "",
+        "image": "../assets/gf-cc-cookie.jpg"
       },
       {
         "name": "Brownie with Tahini Swirls",
         "description": "With Halava bits",
-        "price": "4.5 JOD"
+        "price": "",
+        "image": "../assets/brownies-tahini.jpg"
       },
       {
-        "name": "Rich as F@#$ Brownie",
+        "name": "Rich as F@#$ Brownies",
         "description": "With All Valrohna Chocolate chip and Ducle de Leche",
-        "price": "4.5 JOD",
+        "price": "",
         "image": "../assets/brownies.jpg"
       },
       {
         "name": "The decadent Blondie",
-        "description": "With toasted pecans and white chocolate chips",
-        "price": "4.5 JOD"
+        "description": "With toasted walnuts and white chocolate chips",
+        "price": ""
       },
       {
-        "name": "Matcha Brownie",
-        "description": "With White Chocolate Chips",
-        "price": "4.5 JOD"
+        "name": "Matcha Brownies",
+        "description": "With pistachios",
+        "price": "",
+        "image": "../assets/matcha-brownies.jpg"
       },
       {
         "name": "Red Velvet and Cream Cheese Brownies",
         "description": "Light chocolate with a slight of tang",
-        "price": "4.5 JOD"
+        "price": "",
+        "image": "../assets/redvelvet-brownies.png"
       }
     ]
   },
@@ -177,18 +193,14 @@
     "items": [
       {
         "name": "Tiered Cakes",
-        "description": "Tailored Layer Cake (Check with us), 12 Layer Chocolate Cake, Strawberry, Banana Toffee, Birthday Cake Funfetti, Coconut, Lotus Chocolate, Olive Oil Lemon Basil. ",
-        "weight": "Available in 2-tier, 3-tier, and 4-tier sizes, 6 inch, 8 inch, 10 inch",
-        "price": "Starting from 35 JOD up to 110 JOD",
+        "description": "Tailored Layer Cakes",
+        "weight": "Available in: 2-tier, 3-tier, and 4-tier\n sizes: 6 inch, 8 inch, 10 inch\n   ",
+        "price": "",
         "specs": [
-          "Each cake features three or more generous layers, filled and topped with a variety of premium ingredients.",
-          "Signature flavors include Red Velvet, Carrot, Banana, Coffee, and Lemon.",
-          "Fillings range from timeless to indulgent: Vanilla Bean Custard, Strawberry, Raspberry, Blueberry compote, Caramel, Chocolate, Banana Mousse, Lemon Curd, Coffee Cream, Oreo, Lotus, and seasonal favorites like Passion fruit, Mango, Peach, and more.",
-          "Our house-made frostings includes but not limited to French buttercream in Vanilla, Chocolate, White Chocolate, Salted Caramel, Mocha, and Lotus.",
-          "Additional frosting options include Cream Cheese, Marshmallow, Whipped Cream, Ganache.",
-          "Sample pricing:\n 2 layer 6 inch Tia's favorite Chocolate Lotus Cake: 38 JOD\n  3 layer 8 inch Olive Oil Lemon Basil Cake with Lemon Curd and Mascarpone frosting: 50 JOD\n  3 layer Toasted Coconut Mango: 48 JOD\n 8 inch Chocolate Mousse Cake with Chocolate Frosting and topped with cream puffs: 40 JOD"
-        ],
-        "image": "/assets/chocolate-mousse.jpeg"
+          "Signature flavors include:\n Vanilla,\n Chocolate,\n Red Velvet,\n Carrot,\n Banana,\n Coffee,\n and Lemon.",
+          "Fillings:\n Vanilla Bean Custard,\n Strawberry,\n Raspberry,\n Blueberry,\n Caramel,\n Chocolate,\n Banana Mousse,\n Lemon Curd,\n Coffee Cream,\n Oreo,\n Lotus,\n and seasonal favorites like Passion fruit, Mango, Peach, and more.",
+          "Frostings: French buttercream in:\n Vanilla Bean,\n Chocolate,\n White Chocolate,\n Salted Caramel,\n Mocha \n Lotus.",
+          "Additional frosting options include:\n Toasted Meringue,\n Cream Cheese,\n Marshmallow,\n Whipped Cream,\n Ganache\n Toasted Coconut."]
       },
       {
         "name": "Bundt and Coffee Cakes",
@@ -348,37 +360,37 @@
       {
         "name": "Crème brûlée",
         "description": "Filled with French pastry cream with a burnt sugar crunch",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Chocolate",
         "description": "Filled with chocolate pastry cream and coated with cocoa powder and sugar",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Café Latte",
         "description": "Filled with coffee cream",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Mexicano",
         "description": "Filled with dulce de leche and coated with cinnamon sugar",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Thai Dream",
         "description": "Filled with coconut cream, mango mousse and coated with toasted coconut",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Strawberry",
         "description": "Filled with strawberry jam and pastry cream",
-        "price": "3.5 JOD"
+        "price": ""
       },
       {
         "name": "Lemon",
         "description": "Filled with lemon curd and topped with toasted marshmallow",
-        "price": "3.5 JOD"
+        "price": ""
       }
     ]
   } ,
@@ -438,44 +450,44 @@
       {
         "name": "Heavenly Vanilla Bean Diplomat",
         "description": "Silky vanilla bean pastry cream lightened with chantilly in a classic golden shell.",
-        "price": "4.5 JOD",
+        "price": "",
         "image": "/assets/choux.jpg"
       },
       {
         "name": "Chocolate Crémeux",
         "description": "Filled with rich dark chocolate crémeux and topped with cocoa craquelin.",
-        "price": "4.5 JOD"
+        "price": ""
       },
       {
         "name": "Strawberry Mousse",
         "description": "Light strawberry mousse center with a hint of vanilla.",
-        "price": "4.5 JOD"
+        "price": ""
       },
       {
         "name": "Cinnamon Churro",
         "description": "Cinnamon-infused cream and a brown sugar craquelin shell rolled in cinnamon sugar.",
-        "price": "4.5 JOD"
+        "price": ""
       },
       {
         "name": "Lemon Mousse",
         "description": "With zesty lemon mousse and candied lemon.",
-        "price": "4.5 JOD"
+        "price": ""
       },
       {
         "name": "Mocha Late",
         "description": "Espresso cream with a dark chocolate glaze and a touch of sea salt.",
-        "price": "4.5 JOD"
+        "price": ""
       },
 
       {
         "name": "Coconut Cream",
         "description": "Filled with coconut cream and rolled in toasted coconut flakes.",
-        "price": "4.5 JOD"
+        "price": ""
       },
       {
         "name": "Arabesque",
         "description": "Delicate rose water cream with a pistachio crunch and rose petal garnish.",
-        "price": "4.5 JOD"
+        "price": ""
       }
     ]
   }
