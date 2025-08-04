@@ -1,6 +1,6 @@
 import React from "react";
 
-const instagram =[
+const servicesOffered =[
     {
         title: "Artisanal Baked Goods",
         description: "Sourdough breads, cakes, cookies, brunch favorites and more.",
@@ -43,7 +43,7 @@ const HeroCTASection = () => {
 
                 <div className="max-w-6xl mx-auto">
                     <div className="grid gap-8 md:grid-cols-4 justify-center">
-                        {instagram.map(({ title, description, href, image }) => (
+                        {servicesOffered.map(({ title, description, href, image }) => (
                             <a
                                 key={title}
                                 href={href}
