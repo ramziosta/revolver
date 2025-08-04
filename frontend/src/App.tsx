@@ -19,6 +19,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
 import Wellness from "./components/subscription/Wellness.tsx";
 import NotFound from "./pages/NotFound";
+import UmamiAmman from "./pages/UmamiAmman.tsx";
 import "./i18n";
 
 const queryClient = new QueryClient();
@@ -36,7 +37,7 @@ const App = () => (
           <Route path="/menu" element={<Menu />} />
           <Route path="/chef" element={<Chef />} />
           <Route path="/catering" element={<Catering />} />
-          <Route path="/baked-goods" element={<BakedGoods />} />
+          <Route path="umami-amman" element={<UmamiAmman />} />
           <Route path="/catering-menu" element={<CateringMenu />} />
           <Route path="/cellar" element={<Cellar />} />
           <Route path="/gallery" element={<Gallery />} />

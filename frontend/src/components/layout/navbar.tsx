@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Menu", path: "/menu" },
   // { name: "Baked Goods", path: "/baked-goods" },
+    { name: "Baked Goods", path: "/umami-amman" },
   { name: "The Umami Cellar", path: "/cellar" },
   { name: "Chef", path: "/chef" },
   { name: "Catering", path: "/catering" },
